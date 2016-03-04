@@ -76,6 +76,11 @@
             <option value="Verdana" style='font-family: Verdana'>Verdana</option>
         </select>
     </div>
+    <div>
+        Tips: </br>
+        press 'S' to show answer.</br>
+        press '←' and '→' to go prev/next question.
+    </div>
 </div>
 
 <div id="article_content" class="article_content">
@@ -7300,15 +7305,17 @@ Answer:<span class='answer'> D, E</span><br />
 
     var initAnswerFocusCount = function() {
         var currentTop = document.body.scrollTop;
-
+        var isFoundCurrentPosition = false;
         for (var i = 1; ; i++) {
             var q = document.getElementById('q' + i);
             if (q) {
                 countOfQ++;
-            }
-            if (q.offsetTop >= currentTop) {
-                setAnswerFocusCount(i);
+            } else {
                 return false;
+            }
+            if (!isFoundCurrentPosition && q.offsetTop >= currentTop) {
+                setAnswerFocusCount(i);
+                isFoundCurrentPosition = true;
             }
         }
     }
