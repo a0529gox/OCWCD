@@ -84,7 +84,7 @@
 </div>
 
 <div id="article_content" class="article_content">
-<p><span id="q1">Q: 1</span> To take advantage of the capabilities of modern browsers that use web<br />
+<span id="q1">Q: 1</span> To take advantage of the capabilities of modern browsers that use web<br />
 
 standards, such as XHTML and CSS, your web application is being converted from simple JSP pages to<br />
 
@@ -120,12 +120,13 @@ E. No declaration is needed because the web form XHTML page already declares the
 
 /scripts/screenFunctions.jsp file in the &lt;script&gt; tag.<br />
 
-Answer:<span class='answer'> D</span><br />
+Answer:<span class='answer'> D<br />
 
 解释:JSP Document 使用XML标签表达的JSP。page 指令表示为&lt;jsp:directive.page &gt; <br />
 
 <br />
 
+</span>
 <span id="q2">Q: 2</span> Given the JSP code:<br />
 
 10. &lt;html&gt;<br />
@@ -154,7 +155,7 @@ D.standard action<br />
 
 E.expression language<br />
 
-Answer:<span class='answer'> B, D, E</span><br />
+Answer:<span class='answer'> B, D, E<br />
 
 解析：&lt;html&gt;...template text 模板文本<br />
 
@@ -164,6 +165,7 @@ ${...}expression language EL表达式<br />
 
 <br />
 
+</span>
 <span id="q3">Q: 3</span> You have built a collection of custom tags for your web application. The TLD<br />
 
 file is located in the file: /WEB-INF/myTags.xml. You refer to these tags in your JSPs using the symbolic<br />
@@ -204,12 +206,13 @@ D. &lt;taglib&gt;<br />
 
 &lt;/taglib&gt;<br />
 
-Answer:<span class='answer'> D</span><br />
+Answer:<span class='answer'> D<br />
 
 解析：部署描述链接标签名和实际文件名。<br />
 
 <br />
 
+</span>
 <span id="q4">Q: 4</span> Which implicit object is used in a JSP page to retrieve values associated with<br />
 
 &lt;context-param&gt; entries in the deployment descriptor?<br />
@@ -222,19 +225,24 @@ C.session<br />
 
 D.application<br />
 
-Answer:<span class='answer'> D</span><br />
+Answer:<span class='answer'> D<br />
 
 解析：&lt;context-param&gt;内的值为application范围内的参数。<br />
 
 <br />
 
-<span id="q5">Q: 5</span></p>
-<p><img src="0_12985501935u84.gif" alt="" />
-</p>
-<p>解析：左边答案，右边选择。</p>
-<p><br />
+</span>
+<span id="q5">Q: 5</span><br />
+<img src="0_12985501935u84.gif" alt="" />
+<br />
+解析：左边答案，右边选择。<br />
+<br />
 
-<span id="q6">Q: 6</span><img src="0_1298550205TpPp.gif" alt="" />
+</span>
+<span id="q6">Q: 6</span>
+<div>
+    <img src="0_1298550205TpPp.gif" alt="" />
+</div>
 
 <br />
 
@@ -246,6 +254,7 @@ Answer:<span class='answer'> D</span><br />
 
 &nbsp; <br />
 
+</span>
 <span id="q7">Q: 7</span> You have created a JSP that includes instance variables and a great deal of<br />
 
 scriptlet code. Unfortunately, after extensive load testing, you have discovered several race conditions in<br />
@@ -264,12 +273,13 @@ D.&lt;%@ page useSingleThreadModel='true' %&gt;<br />
 
 E.&lt;%@ page implements='SingleThreadModel' %&gt;<br />
 
-Answer:<span class='answer'> A</span><br />
+Answer:<span class='answer'> A<br />
 
 解析：声明页面线程不安全。<br />
 
 <br />
 
+</span>
 <span id="q8">Q: 8</span> Click the Exhibit button.<br />
 
 The attribute &quot;name&quot; has a value of &quot;Foo,&quot;<br />
@@ -334,12 +344,13 @@ E.No output is produced from this code.<br />
 
 F.Compilation fails because of an error in this code.<br />
 
-Answer:<span class='answer'> A</span><br />
+Answer:<span class='answer'> A<br />
 
 解析：doStartTag()返回SKIP_BODY，所以跳过标签体的内容，即不再执行doAfterBody()<br />
 
 <br />
 
+</span>
 <span id="q9">Q: 9</span> You are building a web application that will be used throughout the<br />
 
 European Union; therefore, it has significant internationalization requirements. You have been tasked to<br />
@@ -428,12 +439,13 @@ this.attributes.put(name, value);<br />
 
 }<br />
 
-Answer:<span class='answer'> E</span><br />
+Answer:<span class='answer'> E<br />
 
 解析：动态属性实现DynamicAttributes接口，重写setDynamicAttributes方法。<br />
 
 <br />
 
+</span>
 <span id="q10">Q: 10</span> Given the JSP code:<br />
 
 &lt;% request.setAttribute(&quot;foo&quot;, &quot;bar&quot;); %&gt;<br />
@@ -462,17 +474,18 @@ D. String x = (String)pageContext.getRequest().getAttribute(&quot;foo&quot;);<br
 
 E. String x = (String) pageContext.getAttribute(&quot;foo&quot;,PageContext.ANY_SCOPE);<br />
 
-Answer:<span class='answer'> D</span><br />
+Answer:<span class='answer'> D<br />
 
-解析：</p>
-<p>属性存放在请求域中，从上下文中获得请求，再获得属性值。<strong></strong>
+解析：<br />
+属性存放在请求域中，从上下文中获得请求，再获得属性值。<strong></strong>
 
-</p>
-<p><strong>setAttribute</strong>
+<br />
+<strong>setAttribute</strong>
 
-(java.lang.String&nbsp;name, java.lang.Object&nbsp;value)</p>
-<p><br />
+(java.lang.String&nbsp;name, java.lang.Object&nbsp;value)<br />
+<br />
 
+</span>
 <span id="q11">Q: 11</span> Which two statements about tag files are true? (Choose two.)<br />
 
 A. Classic tag handlers and tag files CANNOT reside in the same tag library.<br />
@@ -491,13 +504,14 @@ E. If files foo1.tag and foo2.tag both reside in /WEB-INF/tags/bar, the containe
 
 same tag library.<br />
 
-Answer:<span class='answer'> B, E</span></p>
-<p>解析：<br />
+Answer:<span class='answer'> B, E<br />
+解析：<br />
 
-C.不会出现错误而是会忽略。</p>
-<p>D.tag文件要放在/WEB-INF/tags/目录下</p>
-<p><br />
+C.不会出现错误而是会忽略。<br />
+D.tag文件要放在/WEB-INF/tags/目录下<br />
+<br />
 
+</span>
 <span id="q12">Q: 12</span> The sl:shoppingList and sl:item tags output a shopping list to the response<br />
 
 and are used as follows:<br />
@@ -540,7 +554,7 @@ E. ItemSimpleTag can find the enclosing instance of ShoppingListTag by calling f
 
 the PageContext and casting the result to ShoppingListTag.<br />
 
-Answer:<span class='answer'> A</span><br />
+Answer:<span class='answer'> A<br />
 
 解析：<br />
 
@@ -552,6 +566,7 @@ ItemSimpleTag继承SimpleTagSupport类，而SimpleTagSupport继承Object类所�
 
 <br />
 
+</span>
 <span id="q13">Q: 13</span> Servlet A receives a request that it forwards to servlet B within another web<br />
 
 application in the same web container. Servlet A needs to share data with servlet B and that data must<br />
@@ -570,12 +585,13 @@ D. HttpServletRequest<br />
 
 E. HttpServletResponse<br />
 
-Answer:<span class='answer'> D</span><br />
+Answer:<span class='answer'> D<br />
 
 解析：Servlet A接收并请求共享数据，而Servlet A所在的项目不能访问共享数据，所以使用请求域共享.<br />
 
 <br />
 
+</span>
 <span id="q14">Q: 14</span> Your web site has many user-customizable features, for example font and<br />
 
 color preferences on web pages. Your IT department has already built a subsystem for user preferences<br />
@@ -672,13 +688,14 @@ ctx.putAttribute(&quot;myPrefsFactory&quot;, myFactory);<br />
 
 }<br />
 
-Answer:<span class='answer'> C</span><br />
+Answer:<span class='answer'> C<br />
 
 解析：没有ContextListener接口，<br />
 
-ServletContextListener接口只有两个方法contextDestroyed,contextInitialized.</p>
-<p><br />
+ServletContextListener接口只有两个方法contextDestroyed,contextInitialized.<br />
+<br />
 
+</span>
 <span id="q15">Q: 15</span> A developer wants a web application to be notified when the application is<br />
 
 about to be shut down. Which two actions are necessary to accomplish this goal? (Choose two.)<br />
@@ -697,13 +714,14 @@ F.include a class implementing ContextDestroyedListener as part of the web appli
 
 G.include a class implementing HttpSessionAttributeListener as part of the web application deployment<br />
 
-Answer:<span class='answer'> D, E</span><br />
+Answer:<span class='answer'> D, E<br />
 
 解析：部署文件部署监听器，写一个监听器实现ServletContextListener接口。<br />
 
-F选项的接口不存在，G选项的HttpSessionAttributeListener接口是监听会话中的属性状态，而不是项目的状态。</p>
-<p><br />
+F选项的接口不存在，G选项的HttpSessionAttributeListener接口是监听会话中的属性状态，而不是项目的状态。<br />
+<br />
 
+</span>
 <span id="q16">Q: 16</span> You want to create a filter for your web application and your filter will<br />
 
 implement javax.servlet.Filter.<br />
@@ -726,7 +744,7 @@ E. Your filter class must implement a doFilter method that takes, among other th
 
 object and an HTTPServletResponse object.<br />
 
-Answer:<span class='answer'> A, D</span><br />
+Answer:<span class='answer'> A, D<br />
 
 解析：<br />
 
@@ -738,6 +756,7 @@ E.实现doFilter(ServletRequest arg0,ServletResponse arg1,FilterChain arg2)<br /
 
 <br />
 
+</span>
 <span id="q17">Q: 17</span> Which three are true about the HttpServletRequestWrapper class? (Choose<br />
 
 three.)<br />
@@ -758,11 +777,12 @@ F. An HttpServletRequestWrapper may modify the header of a request within an obj
 
 javax.servlet.Filter interface.<br />
 
-Answer:<span class='answer'> A, B, F</span></p>
-<p>解析：HttpServletRequestWrapper用于过滤请求<br />
+Answer:<span class='answer'> A, B, F<br />
+解析：HttpServletRequestWrapper用于过滤请求<br />
 
 <br />
 
+</span>
 <span id="q18">Q: 18</span> Click the Exhibit button.<br />
 
 The resource requested by the RequestDispatcher is available and implemented by the<br />
@@ -811,12 +831,13 @@ B.An exception is thrown at runtime by DestinationServlet.<br />
 
 C.Only &quot;hello from dest&quot; appears in the response output stream.<br />
 
-D.Both &quot;hello from source&quot; and &quot;hello from dest&quot; appear in the response output stream.</p>
-<p>
-Answer:<span class='answer'> A</span></p>
-<p>解析：response.flushBuffer已经committed(提交)，在forward会抛出异常。</p>
-<p><br />
+D.Both &quot;hello from source&quot; and &quot;hello from dest&quot; appear in the response output stream.<br />
 
+Answer:<span class='answer'> A<br />
+解析：response.flushBuffer已经committed(提交)，在forward会抛出异常。<br />
+<br />
+
+</span>
 <span id="q19">Q: 19</span> A developer wants to make a name attribute available to all servlets<br />
 
 associated with a particular user, across multiple requests from that user, from the same browser<br />
@@ -841,12 +862,13 @@ F. pageContext.setAttribute(&quot;name&quot;, theValue,<br />
 
 PageContext.SESSION_SCOPE);<br />
 
-Answer:<span class='answer'> D, F</span><br />
+Answer:<span class='answer'> D, F<br />
 
 解析：A、B没有设定属性域。混合的请求的所以servlet可以访问参数，所以D、F正确<br />
 
 <br />
 
+</span>
 <span id="q20">Q: 20</span> Given the definition of MyServlet:<br />
 
 11. public class MyServlet extends HttpServlet {<br />
@@ -881,12 +903,13 @@ C.The string &quot;value=null&quot; appears in the response stream.<br />
 
 D.The string &quot;value=myAttributeValue&quot; appears in the response stream.<br />
 
-Answer:<span class='answer'> A</span><br />
+Answer:<span class='answer'> A<br />
 
 解析：会话无效化后在调用，就会抛出IllegalStateException<br />
 
 <br />
 
+</span>
 <span id="q21">Q: 21</span> You need to store a Java long primitive attribute, called customerOID, into<br />
 
 the session scope. Which two code snippets allow you to insert this value into the session? (Choose two.)<br />
@@ -915,12 +938,13 @@ F. long customerOID = 47L;<br />
 
 session.setNumericAttribute(&quot;customerOID&quot;, customerOID);<br />
 
-Answer:<span class='answer'> A, C</span><br />
+Answer:<span class='answer'> A, C<br />
 
 解析：HttpSession没有setLongAttribute和setNumericAttribute<br />
 
 <br />
 
+</span>
 <span id="q22">Q: 22</span> A developer for the company web site has been told that users may turn off<br />
 
 cookie support in their browsers. What must the developer do to ensure that these customers can still use<br />
@@ -941,12 +965,13 @@ D. The developer must add the string id=&lt;sessionid&gt; to the end of every UR
 
 with the browser can continue.<br />
 
-Answer:<span class='answer'> A</span><br />
+Answer:<span class='answer'> A<br />
 
 解析：cookie禁用使用适当的URL重写方法，D是重新方法的原理<br />
 
 <br />
 
+</span>
 <span id="q23">Q: 23</span> Your web application requires the adding and deleting of many session<br />
 
 attributes during a complex use case. A bug report has come in that indicates that an important session<br />
@@ -975,12 +1000,13 @@ D. Create an SessionAttributeListener class and implement the attributeDeleted m
 
 name using the getAttributeName method on the event object.<br />
 
-Answer:<span class='answer'> B</span><br />
+Answer:<span class='answer'> B<br />
 
 解析：HttpSessionAttributeListener只有attributeAdded,attributeRemoved和attributeReplaced三个方法。<br />
 
 <br />
 
+</span>
 <span id="q24">Q: 24</span> As a convenience feature, your web pages include an Ajax request every five<br />
 
 minutes to a special servlet that monitors the age of the user's session. The client-side JavaScript that<br />
@@ -1023,12 +1049,13 @@ E.session.getMaxInactiveInterval() - session.getCreationTime();<br />
 
 F.session.getLastAccessedTime() - session.getCreationTime();<br />
 
-Answer:<span class='answer'> F</span><br />
+Answer:<span class='answer'> F<br />
 
 解析：最后访问时间-创建时间()<br />
 
 <br />
 
+</span>
 <span id="q25">Q: 25</span><br />
 
 &nbsp;Which statement is true about web container session management?<br />
@@ -1045,7 +1072,7 @@ D. The JSESSIONID cookie is stored permanently on the client so that a user may 
 
 application and the web container will rejoin that session.<br />
 
-Answer:<span class='answer'> C</span><br />
+Answer:<span class='answer'> C<br />
 
 解析：<br />
 
@@ -1055,6 +1082,7 @@ D.JSESSIONID是禁用cookie时，URL重写产生的，而且不是永久的。<b
 
 <br />
 
+</span>
 <span id="q26">Q: 26</span><br />
 
 &nbsp;One of the use cases in your web application uses many session-scoped<br />
@@ -1101,12 +1129,13 @@ session.deleteAttribute(attr);<br />
 
 E. session.deleteAllAttributes(USE_CASE_ATTRS);<br />
 
-Answer:<span class='answer'> C</span><br />
+Answer:<span class='answer'> C<br />
 
 解析：删除HttpSession会话的属性用removeAttribute<br />
 
 <br />
 
+</span>
 <span id="q27">Q: 27</span> <br />
 
 Assume that a news tag library contains the tags lookup and item:<br />
@@ -1183,7 +1212,7 @@ D. &lt;table&gt;<br />
 
 &lt;/table&gt;<br />
 
-Answer:<span class='answer'> C</span><br />
+Answer:<span class='answer'> C<br />
 
 解析：<br />
 
@@ -1193,6 +1222,7 @@ Answer:<span class='answer'> C</span><br />
 
 <br />
 
+</span>
 <span id="q28">Q: 28</span> Which JSTL code snippet can be used to perform URL rewriting?<br />
 
 A.&lt;a href='&lt;c:url url=&quot;foo.jsp&quot;/&gt;' /&gt;<br />
@@ -1203,12 +1233,13 @@ C.&lt;a href='&lt;c:url value=&quot;foo.jsp&quot;/&gt;' /&gt;<br />
 
 D.&lt;a href='&lt;c:link value=&quot;foo.jsp&quot;/&gt;' /&gt;<br />
 
-Answer:<span class='answer'> C</span><br />
+Answer:<span class='answer'> C<br />
 
 解析：JSTL的URL重新格式&lt;c:url value=&quot;&quot;&gt;<br />
 
 <br />
 
+</span>
 <span id="q29">Q: 29</span> Assume the scoped attribute priority does NOT yet exist. Which two create<br />
 
 and set a new request-scoped attribute priority to the value &quot;medium&quot;? (Choose two.)<br />
@@ -1227,12 +1258,13 @@ F.&lt;c:set property=&quot;priority&quot; scope=&quot;request&quot;&gt;medium&lt
 
 G.&lt;c:set property=&quot;priority&quot; value=&quot;medium&quot; scope=&quot;request&quot; /&gt;<br />
 
-Answer:<span class='answer'> D, E</span><br />
+Answer:<span class='answer'> D, E<br />
 
 解析：JSTL设置属性的两种方式<br />
 
 <br />
 
+</span>
 <span id="q30">Q: 30</span> You are creating a JSP page to display a collection of data. This data can be<br />
 
 displayed in several different ways so the architect on your project decided to create a generic servlet that<br />
@@ -1313,11 +1345,12 @@ D. &lt;c:import var='dataString' url='/WEB-INF/data'&gt;<br />
 
 &lt;/ul&gt;<br />
 
-Answer:<span class='answer'> D</span></p>
-<p>解析：JSTL格式<br />
+Answer:<span class='answer'> D<br />
+解析：JSTL格式<br />
 
 <br />
 
+</span>
 <span id="q31">Q: 31</span> Which three are true about TLD files? (Choose three.)<br />
 
 A. The web container recognizes TLD files placed in any subdirectory of WEB-INF.<br />
@@ -1336,11 +1369,12 @@ E. The web container can automatically extend the tag library map described in a
 
 entries extracted from the web application's TLD files.<br />
 
-Answer:<span class='answer'> A, B, E</span></p>
-<p>解析:D.只有tag files<br />
+Answer:<span class='answer'> A, B, E<br />
+解析:D.只有tag files<br />
 
 <br />
 
+</span>
 <span id="q32">Q: 32</span> Your management has required that all JSPs be created to generate<br />
 
 XHTML-compliant content and to facilitate that decision, you are required to create all JSPs using the<br />
@@ -1395,11 +1429,12 @@ xmlns:c=&quot;http://java.sun.com/jsp/jstl/core&quot;&gt;<br />
 
 &lt;/jsp:root&gt;<br />
 
-Answer:<span class='answer'> D</span></p>
-<p>解析：&lt;html&gt;不是jsp标签，C.导入的是自定义标签库的格式<br />
+Answer:<span class='answer'> D<br />
+解析：&lt;html&gt;不是jsp标签，C.导入的是自定义标签库的格式<br />
 
 <br />
 
+</span>
 <span id="q33">Q: 33</span> Which two JSTL URL-related tags perform URL rewriting? (Choose two.)<br />
 
 A.url<br />
@@ -1412,7 +1447,7 @@ D.import<br />
 
 E.redirect<br />
 
-Answer:<span class='answer'> A, E</span><br />
+Answer:<span class='answer'> A, E<br />
 
 解析：&lt;a href='&lt;c:url value=&quot;foo.jsp&quot;/&gt;' /&gt;<br />
 
@@ -1420,6 +1455,7 @@ Answer:<span class='answer'> A, E</span><br />
 
 <br />
 
+</span>
 <span id="q34">Q: 34</span> A custom JSP tag must be able to support an arbitrary number of attributes<br />
 
 whose names are unknown when the tag class is designed. Which two are true? (Choose two.)<br />
@@ -1438,7 +1474,7 @@ E. The class implementing the echo tag handler must implement the javax.servlet.
 
 interface.<br />
 
-Answer:<span class='answer'> C, E</span><br />
+Answer:<span class='answer'> C, E<br />
 
 解析：DynamicAttributes接口支持任意数量的未知属性，<br />
 
@@ -1446,6 +1482,7 @@ C.允许接受动态属性。E.<br />
 
 <br />
 
+</span>
 <span id="q35">Q: 35</span> A developer has used this code within a servlet:<br />
 
 62. if(request.isUserInRole(&quot;vip&quot;)) {<br />
@@ -1464,13 +1501,14 @@ C.define a security-role named vip in the deployment descriptor<br />
 
 D.declare a security-role-ref for vip in the deployment descriptor<br />
 
-Answer:<span class='answer'> D</span></p>
-<p>解析:<code class="cCode">security-role-ref</code>
+Answer:<span class='answer'> D<br />
+解析:<code class="cCode">security-role-ref</code>
  元素将 <code class="cCode">security-role</code>
  定义的安全角色链接到备用角色名vip<br />
 
 <br />
 
+</span>
 <span id="q36">Q: 36</span> Given:<br />
 
 3. class MyServlet extends HttpServlet {<br />
@@ -1509,12 +1547,13 @@ E.A user whose role is Member can perform a POST.<br />
 
 F.A user whose role is Member can perform a GET.<br />
 
-Answer:<span class='answer'> A, B, C, E</span><br />
+Answer:<span class='answer'> A, B, C, E<br />
 
 解析：只有用户Admin具有GET、PUT方法的访问权。<br />
 
 <br />
 
+</span>
 <span id="q37">Q: 37</span> What is true about Java EE authentication mechanisms?<br />
 
 A. If your deployment descriptor correctly declares an authentication type of CLIENT_CERT, your users must<br />
@@ -1533,7 +1572,7 @@ D. To use Java EE FORM authentication, you must declare two HTML files in your d
 
 and you must use a predefined action in the HTML file that handles your user's login.<br />
 
-Answer:<span class='answer'> D</span><br />
+Answer:<span class='answer'> D<br />
 
 解析：<br />
 
@@ -1549,6 +1588,7 @@ CLIENT-CERT：J2EE规范，数据完整性很强，公共钥匙#<br />
 
 <br />
 
+</span>
 <span id="q38">Q: 38</span> If you want to use the Java EE platform's built-in type of authentication<br />
 
 that uses a custom HTML page for authentication, which two statements are true? (Choose two.)<br />
@@ -1569,11 +1609,12 @@ E. In the HTML related to authentication for this application, you must use pred
 
 variables that store the user and password values.<br />
 
-Answer:<span class='answer'> D, E</span></p>
-<p>解析：A.可以不用。B.不一定。C.不会自动打开<br />
+Answer:<span class='answer'> D, E<br />
+解析：A.可以不用。B.不一定。C.不会自动打开<br />
 
 <br />
 
+</span>
 <span id="q39">Q: 39</span> Given this fragment in a servlet:<br />
 
 23. if(req.isUserInRole(&quot;Admin&quot;)) {<br />
@@ -1612,12 +1653,13 @@ D.If line 24 executes, the user's role will be Administrator.<br />
 
 E.If line 24 executes the user's role will NOT be predictable.<br />
 
-Answer:<span class='answer'> D</span><br />
+Answer:<span class='answer'> D<br />
 
 解析：&lt;role-line&gt;标签的元素是&lt;security-role-ref&gt;标签的替代元素。<br />
 
 <br />
 
+</span>
 <span id="q40">Q: 40</span> Given the security constraint in a DD:<br />
 
 101. &lt;security-constraint&gt;<br />
@@ -1656,12 +1698,13 @@ E.DEVELOPER can do only a POST on resources in the /Bar/Baz directory.<br />
 
 F.DEVELOPER can do a TRACE on any resource in the /Bar/Baz directory.<br />
 
-Answer:<span class='answer'> A, C, D, F</span><br />
+Answer:<span class='answer'> A, C, D, F<br />
 
 解析：E.只有用户DEVELOPER具有POST方法的访问权，但不是只能用POST方法。<br />
 
 <br />
 
+</span>
 <span id="q41">Q: 41</span> Which three are valid URL mappings to a servlet in a web deployment<br />
 
 descriptor? (Choose three.)<br />
@@ -1678,11 +1721,12 @@ E./MyServlet/*<br />
 
 F.MyServlet/*.jsp<br />
 
-Answer:<span class='answer'> B, D, E</span></p>
-<p>解析：B.*.do文件即是servlet.C.不是路径。F.*.jsp是jsp而不是servlet.<br />
+Answer:<span class='answer'> B, D, E<br />
+解析：B.*.do文件即是servlet.C.不是路径。F.*.jsp是jsp而不是servlet.<br />
 
 <br />
 
+</span>
 <span id="q42">Q: 42</span> Click the Task button.<br />
 
 Place the appropriate element names on the left on the web application deployment descriptor on the<br />
@@ -1692,9 +1736,10 @@ right so that files ending in &quot;.mpg&quot; are associated with the MIME type
 <img src="0_12985502177TbV.gif" alt="42" width="756" height="427" />
 <br />
 
-解析：文件格式映射</p>
-<p>&nbsp;</p>
-<p><span id="q43">Q: 43</span> Which three web application deployment descriptor elements allow web<br />
+解析：文件格式映射<br />
+&nbsp;<br />
+</span>
+<span id="q43">Q: 43</span> Which three web application deployment descriptor elements allow web<br />
 
 components to gain references to resources or EJB components? (Choose three.)<br />
 
@@ -1712,11 +1757,12 @@ F.ejb-remote-ref<br />
 
 G.resource-env-ref<br />
 
-Answer:<span class='answer'> A, D, G</span></p>
-<p>解析：部署资源或者EJB组件。<br />
+Answer:<span class='answer'> A, D, G<br />
+解析：部署资源或者EJB组件。<br />
 
 <br />
 
+</span>
 <span id="q44">Q: 44</span> After a merger with another small business, your company has inherited a<br />
 
 legacy WAR file but the original source files were lost. After reading the documentation of that web<br />
@@ -1743,7 +1789,7 @@ D. Unpack the legacy WAR file, move the TLD file to the META-INF directory, move
 
 top-level directory, repackage the WAR, and place that WAR file in your webapp's WEB-INF directory.<br />
 
-Answer:<span class='answer'> C</span><br />
+Answer:<span class='answer'> C<br />
 
 解析：<br />
 
@@ -1753,6 +1799,7 @@ WAR(Web Archive file)封装Web站点,所有D不正确。<br />
 
 <br />
 
+</span>
 <span id="q45">Q: 45</span> Which two actions protect a resource file from direct HTTP access within a<br />
 
 web application? (Choose two.)<br />
@@ -1767,11 +1814,12 @@ D.creating a &lt;web-resource&gt; element within the deployment descriptor<br />
 
 E.creating a &lt;secure-resource&gt; element within the deployment descriptor<br />
 
-Answer:<span class='answer'> B, C</span></p>
-<p>解析：阻止HTTP直接访问，没有D、E的部署标签<br />
+Answer:<span class='answer'> B, C<br />
+解析：阻止HTTP直接访问，没有D、E的部署标签<br />
 
 <br />
 
+</span>
 <span id="q46">Q: 46</span> Given that www.example.com/SCWCDtestApp is a validly deployed Java<br />
 
 EE web application and that all of the JSP files specified in the requests below exist in the locations<br />
@@ -1790,7 +1838,7 @@ E.http://www.example.com/SCWCDtestApp/META-INF/test.jsp<br />
 
 F.http://www.example.com/SCWCDtestApp/Customer/Update/test.jsp<br />
 
-Answer:<span class='answer'> B, E</span><br />
+Answer:<span class='answer'> B, E<br />
 
 解析：<br />
 
@@ -1800,6 +1848,7 @@ E.META-INF是与WEB-INF同层的目录<br />
 
 <br />
 
+</span>
 <span id="q47">Q: 47</span> Which two about WAR files are true? (Choose two.)<br />
 
 A.WAR files must be located in the web application library directory.<br />
@@ -1812,11 +1861,12 @@ D.The web container must serve the content of any META-INF directory located in 
 
 E.The web container must allow access to resources in JARs in the web application library directory.<br />
 
-Answer:<span class='answer'> B, E</span></p>
-<p>解析：WAR为封装WEB站点的文件。所以必须包含部署文件(B).<br />
+Answer:<span class='answer'> B, E<br />
+解析：WAR为封装WEB站点的文件。所以必须包含部署文件(B).<br />
 
 <br />
 
+</span>
 <span id="q48">Q: 48</span> Given this fragment from a Java EE deployment descriptor:<br />
 
 124.&lt;welcome-file&gt;beta.html&lt;/welcome-file&gt;<br />
@@ -1837,11 +1887,12 @@ C.The container first looks in the register directory for alpha.html.<br />
 
 D.The container first looks for a servlet mapping in the deployment descriptor.<br />
 
-Answer:<span class='answer'> D</span></p>
-<p>解析：第一个加载的是部署中映射的servlet（IQ题）<br />
+Answer:<span class='answer'> D<br />
+解析：第一个加载的是部署中映射的servlet（IQ题）<br />
 
 <br />
 
+</span>
 <span id="q49">Q: 49</span> Which EL expression evaluates to the request URI?<br />
 
 A.${requestURI}<br />
@@ -1858,11 +1909,12 @@ F.${pageContext.request.requestURI}<br />
 
 G.${requestScope.request.requestURI}<br />
 
-Answer:<span class='answer'> F</span></p>
-<p>解析：request存放在上下文中<br />
+Answer:<span class='answer'> F<br />
+解析：request存放在上下文中<br />
 
 <br />
 
+</span>
 <span id="q50">Q: 50</span> Given:<br />
 
 1. &lt;% int[] nums = {42,420,4200};<br />
@@ -1891,12 +1943,13 @@ F.An exception is thrown.<br />
 
 G.Compilation or translation fails.<br />
 
-Answer:<span class='answer'> E</span><br />
+Answer:<span class='answer'> E<br />
 
 解析：<br />
 
-lt(&lt;,less then),gt(&gt;,great than),ne(!=,not equal),div(/,divide)</p>   
-<p><span id="q51">Q: 51</span> You have created a web application that you license to real estate brokers.<br />
+lt(&lt;,less then),gt(&gt;,great than),ne(!=,not equal),div(/,divide)<br />   
+</span>
+<span id="q51">Q: 51</span> You have created a web application that you license to real estate brokers.<br />
 
 The webapp is highly customizable including the email address of the broker, which is placed on the<br />
 
@@ -1922,11 +1975,12 @@ D.&lt;a href='mailto:${contextParam@footerEmail}'&gt;Contact me&lt;/a&gt;<br />
 
 E.&lt;a href='mailto:${contextParam.footerEmail}'&gt;Contact me&lt;/a&gt;<br />
 
-Answer:<span class='answer'> C</span><br />
+Answer:<span class='answer'> C<br />
 
-解析：value=getServletContext().getInitparameter(&quot;footerEmail&quot;)</p>
-<p><br />
+解析：value=getServletContext().getInitparameter(&quot;footerEmail&quot;)<br />
+<br />
 
+</span>
 <span id="q52">Q: 52</span> Given an EL function foo, in namespace func, that requires a long as a<br />
 
 parameter and returns a Map, which two are valid invocations of function foo? (Choose two.)<br />
@@ -1943,25 +1997,26 @@ E.${func:foo(&quot;easy&quot;)}<br />
 
 F.${func:foo(&quot;3&quot;).name}<br />
 
-Answer:<span class='answer'> C, F</span><br />
+Answer:<span class='answer'> C, F<br />
 
-解析：EL的前缀为func,EL function（EL 函数）为foo(long parameter)，返回Map对象，参数貌似没什么用</p>
-<p>C.传递参数为2,返回整个Map对象。E.参数不正确。F.参数可以强制转换为long类型，name为Map对象的key值<br />
+解析：EL的前缀为func,EL function（EL 函数）为foo(long parameter)，返回Map对象，参数貌似没什么用<br />
+C.传递参数为2,返回整个Map对象。E.参数不正确。F.参数可以强制转换为long类型，name为Map对象的key值<br />
 
 <br />
 
+</span>
 <span id="q53">Q: 53</span> Click the Exhibit button.<br />
 
 The Appliance class is a Singleton that loads a set of properties into a Map from an external data source.<br />
 
-Assume:</p>
-<p>An instance of the Appliance class exists in the application-scoped attribute, appl<br />
+Assume:<br />
+An instance of the Appliance class exists in the application-scoped attribute, appl<br />
 
 The appliance object includes the name property that maps to the value Cobia<br />
 
-The request-scoped attribute, prop, has the value name.</p>
-<p>Which two EL code snippets will display the string Cobia? (Choose two.)</p>
-<p><br />
+The request-scoped attribute, prop, has the value name.<br />
+Which two EL code snippets will display the string Cobia? (Choose two.)<br />
+<br />
 
 package com.example;<br />
 
@@ -2005,13 +2060,14 @@ E.${appl.getProperties().get(prop)}<br />
 
 F.${appl.getProperties().get('name')}<br />
 
-Answer:<span class='answer'> A, C</span></p>
-<p>解析：上下文中有一个Appliance类对象名为appl，Appliance类有一个Map类型属性props，Map中存放key=name，value=Cobia，要获取cobia。</p>
-<p>A.properties获取Map对象，再根据key值获得值cobia。</p>
-<p>C.properties获取Map对象，再从请求域中名为prop的值name，name作为key值获得值cobia。<br />
+Answer:<span class='answer'> A, C<br />
+解析：上下文中有一个Appliance类对象名为appl，Appliance类有一个Map类型属性props，Map中存放key=name，value=Cobia，要获取cobia。<br />
+A.properties获取Map对象，再根据key值获得值cobia。<br />
+C.properties获取Map对象，再从请求域中名为prop的值name，name作为key值获得值cobia。<br />
 
 <br />
 
+</span>
 <span id="q54">Q: 54</span> Squeaky Beans Inc. hired an outside consultant to develop their web<br />
 
 application. To finish the job quickly, the consultant created several dozen JSP pages that directly<br />
@@ -2032,12 +2088,13 @@ C.Intercepting Filter<br />
 
 D.Business Delegate<br />
 
-Answer:<span class='answer'> D</span></p>
-<p>解析：</p>
-<p>D.Bussiness Delegate(业务代理 )减少表示层(JSPs)与逻辑层的耦合。<br />
+Answer:<span class='answer'> D<br />
+解析：<br />
+D.Bussiness Delegate(业务代理 )减少表示层(JSPs)与逻辑层的耦合。<br />
 
 <br />
 
+</span>
 <span id="q55">Q: 55</span> A developer is designing a web application that must verify for each<br />
 
 request:<br />
@@ -2060,12 +2117,13 @@ D.Template Method<br />
 
 E.Model-View-Controller<br />
 
-Answer:<span class='answer'> C</span></p>
-<p>解析：用过滤器验证请求的安全</p>
-<p>C.Intercepting Filter(拦截过滤器)采用拦截的方式为request和response提供前期或后期的处理。<br />
+Answer:<span class='answer'> C<br />
+解析：用过滤器验证请求的安全<br />
+C.Intercepting Filter(拦截过滤器)采用拦截的方式为request和response提供前期或后期的处理。<br />
 
 <br />
 
+</span>
 <span id="q56">Q: 56</span> The Squeaky Bean company has decided to port their web application to a<br />
 
 new J2EE 1.4 container. While reviewing the application, a developer realizes that in multiple places<br />
@@ -2086,12 +2144,13 @@ E.Business Delegate<br />
 
 F.Model-View-Controller<br />
 
-Answer:<span class='answer'> C</span></p>
-<p>解析：</p>
-<p>C.Servive Locator封装数据库访问（如：JNDI），减少重复代码。<br />
+Answer:<span class='answer'> C<br />
+解析：<br />
+C.Servive Locator封装数据库访问（如：JNDI），减少重复代码。<br />
 
 <br />
 
+</span>
 <span id="q57">Q: 57</span> Which two are characteristics of the Transfer Object design pattern?<br />
 
 (Choose two.)<br />
@@ -2106,12 +2165,13 @@ D. It increases network performance introducing multiple fine-grained remote req
 
 amounts of data.<br />
 
-Answer:<span class='answer'> A, C</span></p>
-<p>解析：</p>
-<p>A.将获取参数改为获取对象，减少颗粒度。</p>
-<p>C.因为并发传送对象造成同步和版本控制的复杂度(并发)。</p>
-<p>&nbsp;</p>
-<p><span id="q58">Q: 58</span> A developer has created a special servlet that is responsible for generating<br />
+Answer:<span class='answer'> A, C<br />
+解析：<br />
+A.将获取参数改为获取对象，减少颗粒度。<br />
+C.因为并发传送对象造成同步和版本控制的复杂度(并发)。<br />
+&nbsp;<br />
+</span>
+<span id="q58">Q: 58</span> A developer has created a special servlet that is responsible for generating<br />
 
 XML content that is sent to a data warehousing subsystem. This subsystem uses HTTP to request these<br />
 
@@ -2133,11 +2193,12 @@ D.Intercepting Filter<br />
 
 E.Composite Facade<br />
 
-Answer:<span class='answer'> D</span></p>
-<p>解析:用拦截器处理请求的数据，使其能被其它servlet使用。<br />
+Answer:<span class='answer'> D<br />
+解析:用拦截器处理请求的数据，使其能被其它servlet使用。<br />
 
 <br />
 
+</span>
 <span id="q59">Q: 59</span> Which two are characteristics of the Service Locator pattern? (Choose two.)<br />
 
 A.It encapsulates component lookup procedures.<br />
@@ -2148,15 +2209,16 @@ C.It improves client performance by caching context and factory objects.<br />
 
 D.It degrades network performance due to increased access to distributed lookup services.<br />
 
-Answer:<span class='answer'> A, C</span></p>
-<p>解析:</p>
-<p>A.封装查找(lookup)方法</p>
-<p>C.通过缓存和工厂对象改进客户端性能</p>
-<p>B.刚好相反，D.利用统一的服务器访问方式，提高了网络的性能。</p>
-<p><br />
+Answer:<span class='answer'> A, C<br />
+解析:<br />
+A.封装查找(lookup)方法<br />
+C.通过缓存和工厂对象改进客户端性能<br />
+B.刚好相反，D.利用统一的服务器访问方式，提高了网络的性能。<br />
+<br />
 
 <br />
 
+</span>
 <span id="q60">Q: 60</span> Click the Task button.<br />
 
 Given a servlet mapped to /control, place the correct URI segment returned as a String on the<br />
@@ -2165,16 +2227,17 @@ corresponding HttpServletRequest method call for the URI: /myapp/control/process
 
 <img src="0_1302498116NBbF.gif" alt="" />
 
-</p>
-<p><img src="0_1302498133vRnc.gif" alt="" />
+<br />
+<img src="0_1302498133vRnc.gif" alt="" />
 
-</p>
-<p>解析:</p>
-<p> getServletPath:获取Servlet的路径(题中Servlet mapped to /control)。</p>
-<p> getPathInfo:获取路径的额外信息。</p>
-<p>getContext:获取根路径，即项目名。</p>
-<p>&nbsp;</p>
-<p><span id="q61">Q: 61</span> You are creating a web form with this HTML:<br />
+<br />
+解析:<br />
+ getServletPath:获取Servlet的路径(题中Servlet mapped to /control)。<br />
+ getPathInfo:获取路径的额外信息。<br />
+getContext:获取根路径，即项目名。<br />
+&nbsp;<br />
+</span>
+<span id="q61">Q: 61</span> You are creating a web form with this HTML:<br />
 
 11. &lt;form action=&quot;sendOrder.jsp&quot;&gt;<br />
 
@@ -2198,11 +2261,12 @@ D. SEND<br />
 
 E. FORM<br />
 
-Answer:<span class='answer'> A</span></p>
-<p>解析：method有两个属性get和post，默认为get。<br />
+Answer:<span class='answer'> A<br />
+解析：method有两个属性get和post，默认为get。<br />
 
 <br />
 
+</span>
 <span id="q62">Q: 62</span> Given an HttpSession session, a ServletRequest request, and a<br />
 
 ServletContext context, which retrieves a URL to /WEB-INF/myconfig.xml within a web application?<br />
@@ -2215,12 +2279,13 @@ C.context.getResource(&quot;/WEB-INF/myconfig.xml&quot;)<br />
 
 D.getClass().getResource(&quot;/WEB-INF/myconfig.xml&quot;)<br />
 
-Answer:<span class='answer'> C</span><br />
+Answer:<span class='answer'> C<br />
 
 解析：资源存放在上下文中(application)，所以通过上下文获取。<br />
 
 <br />
 
+</span>
 <span id="q63">Q: 63</span> Your company has a corporate policy that prohibits storing a customer's<br />
 
 credit card number in any corporate database. However, users have complained that they do NOT want<br />
@@ -2277,7 +2342,7 @@ E. 10. Cookie c = new Cookie(&quot;creditCard&quot;, usersCard);<br />
 
 13. response.setCookie(c);<br />
 
-Answer:<span class='answer'> C</span><br />
+Answer:<span class='answer'> C<br />
 
 解析：<br />
 
@@ -2289,6 +2354,7 @@ addCookie给HttpServletResponse添加cookie<br />
 
 <br />
 
+</span>
 <span id="q64">Q: 64</span> Given a header in an HTTP request:<br />
 
 X-Retries: 4<br />
@@ -2305,7 +2371,7 @@ D.request.getHeaders(&quot;X-Retries&quot;).get(0)<br />
 
 E.request.getRequestHeaders(&quot;X-Retries&quot;).get(0)<br />
 
-Answer:<span class='answer'> A, B</span><br />
+Answer:<span class='answer'> A, B<br />
 
 解析：HttpServletRequest:<br />
 
@@ -2315,6 +2381,7 @@ getIntHeader方法返回请求头文件整形类型的值<br />
 
 <br />
 
+</span>
 <span id="q65">Q: 65</span> For a given ServletResponse response, which two retrieve an object for<br />
 
 writing text data? (Choose two.)<br />
@@ -2329,12 +2396,13 @@ D.response.getWriter().getOutputStream()<br />
 
 E.response.getWriter(Writer.OUTPUT_TEXT)<br />
 
-Answer:<span class='answer'> A, B</span><br />
+Answer:<span class='answer'> A, B<br />
 
 解析：ServletResponse使用getWriter和getOutputStream方法写入内容<br />
 
 <br />
 
+</span>
 <span id="q66">Q: 66</span> Which JSP standard action can be used to import content from a resource<br />
 
 called foo.jsp?<br />
@@ -2351,34 +2419,36 @@ E.&lt;jsp:import&gt;foo.jsp&lt;/jsp:import&gt;<br />
 
 F.&lt;jsp:include&gt;foo.jsp&lt;/jsp:include&gt;<br />
 
-Answer:<span class='answer'> C</span><br />
+Answer:<span class='answer'> C<br />
 
-解析：没有jsp:import这个标签</p>
-<p>&lt;jsp:include page=&quot;&quot;&gt;请求时加载page页面<br />
+解析：没有jsp:import这个标签<br />
+&lt;jsp:include page=&quot;&quot;&gt;请求时加载page页面<br />
 
 &lt;%@include file=&quot;&quot;&gt;编译时与该页面编译为一个文件<br />
 
 <br />
 
+</span>
 <span id="q67">Q: 67</span> Click the Task button.<br />
 
 A servlet context listener loads a list of com.example.Product objects from a database and stores that list<br />
 
 into the catalog attribute of the ServletContext object.<br />
 
-Place code snippets to construct a jsp:useBean standard action to access this catalog.</p>
-<p><img src="0_13026166202bE9.gif" alt="" />
+Place code snippets to construct a jsp:useBean standard action to access this catalog.<br />
+<img src="0_13026166202bE9.gif" alt="" />
 
 <br />
 
 <img src="0_1302617008KT24.gif" alt="" />
 
-</p>
-<p>解析：从数据库中的com.example.Product对象中获取一个List属性(type=&quot;java.util.List)，存放在ServletContext对象中的catalog属性。(id=&quot;catalog&quot; scope=&quot;application&quot; )</p>
-<p>--Servlet的上下文servletContext即jsp的application)</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p><span id="q68">Q: 68</span> A session-scoped attribute is stored by a servlet, and then that servlet<br />
+<br />
+解析：从数据库中的com.example.Product对象中获取一个List属性(type=&quot;java.util.List)，存放在ServletContext对象中的catalog属性。(id=&quot;catalog&quot; scope=&quot;application&quot; )<br />
+--Servlet的上下文servletContext即jsp的application)<br />
+&nbsp;<br />
+&nbsp;<br />
+</span>
+<span id="q68">Q: 68</span> A session-scoped attribute is stored by a servlet, and then that servlet<br />
 
 forwards to a JSP page. Which three jsp:useBean attributes must be used to access this attribute in the<br />
 
@@ -2396,7 +2466,7 @@ E.scope<br />
 
 F.beanName<br />
 
-Answer:<span class='answer'> A, D, E</span><br />
+Answer:<span class='answer'> A, D, E<br />
 
 解析：<br />
 
@@ -2408,6 +2478,7 @@ scope:指定Bean的作用域<br />
 
 <br />
 
+</span>
 <span id="q69">Q: 69</span> You need to create a JavaBean object that is used only within the current<br />
 
 JSP page. It must NOT be accessible to any other page including those that this page might import.<br />
@@ -2426,14 +2497,15 @@ E.&lt;jsp:useBean name='pageBean' class='com.example.MyBean' /&gt;<br />
 
 F.&lt;jsp:makeBean name='pageBean' class='com.example.MyBean' /&gt;<br />
 
-Answer:<span class='answer'> B</span><br />
+Answer:<span class='answer'> B<br />
 
-解析：</p>
-<p>&lt;jsp:useBean id=&quot;&quot; class=&quot;&quot;&gt;</p>
-<p>scope默认值是page<br />
+解析：<br />
+&lt;jsp:useBean id=&quot;&quot; class=&quot;&quot;&gt;<br />
+scope默认值是page<br />
 
 <br />
 
+</span>
 <span id="q70">Q: 70</span> Given an HttpServletRequest request and HttpServletResponse response,<br />
 
 which sets a cookie &quot;username&quot; with the value &quot;joe&quot; in a servlet?<br />
@@ -2452,12 +2524,13 @@ F.response.addCookie(new Cookie(&quot;username&quot;, &quot;joe&quot;))<br />
 
 G.response.addHeader(new Cookie(&quot;username&quot;, &quot;joe&quot;))<br />
 
-Answer:<span class='answer'> F</span><br />
+Answer:<span class='answer'> F<br />
 
 解析：HttpServletResponse通过addCookie方法添加cookie<br />
 
 <br />
 
+</span>
 <span id="q71">Q: 71</span> Your web page includes a Java SE v1.5 applet with the following<br />
 
 declaration:<br />
@@ -2480,11 +2553,12 @@ C.POST<br />
 
 D.RETRIEVE<br />
 
-Answer:<span class='answer'> A</span></p>
-<p>解析：默认的method为GET<br />
+Answer:<span class='answer'> A<br />
+解析：默认的method为GET<br />
 
 <br />
 
+</span>
 <span id="q72">Q: 72</span> You are creating a servlet that generates stock market graphs. You want to<br />
 
 provide the web browser with precise information about the amount of data being sent in the response<br />
@@ -2505,7 +2579,7 @@ E.response.setHeader(&quot;Content-Length&quot;, numberOfBytes);<br />
 
 F.response.setIntHeader(&quot;Content-Length&quot;, numberOfBytes);<br />
 
-Answer:<span class='answer'> B, F</span><br />
+Answer:<span class='answer'> B, F<br />
 
 解析：HttpServletResponse方法：<br />
 
@@ -2515,6 +2589,7 @@ setIntHeader(java.lang.String name,int value)。<br />
 
 <br />
 
+</span>
 <span id="q73">Q: 73</span> You need to retrieve the username cookie from an HTTP request. If this<br />
 
 cookie does NOT exist, then the c variable will be null. Which code snippet must be used to retrieve this<br />
@@ -2583,12 +2658,13 @@ D.<br />
 
 17. }<br />
 
-Answer:<span class='answer'> D</span><br />
+Answer:<span class='answer'> D<br />
 
 解析：request.getCookies()返回的是Cookie[]类型<br />
 
 <br />
 
+</span>
 <span id="q74">Q: 74</span> Given:<br />
 
 10. public void service(ServletRequest request,<br />
@@ -2613,14 +2689,15 @@ D.request.getResourceAsStream();<br />
 
 E.request.getResourceAsStream(ServletRequest.REQUEST);<br />
 
-Answer:<span class='answer'> C</span><br />
+Answer:<span class='answer'> C<br />
 
-解析：</p>
-<p>ServletRequest.getInputStream()返回ServletInputStream类型<br />
+解析：<br />
+ServletRequest.getInputStream()返回ServletInputStream类型<br />
 
-ServletRequest.getReader()返回BufferedReader类型</p>
-<p><br />
+ServletRequest.getReader()返回BufferedReader类型<br />
+<br />
 
+</span>
 <span id="q75">Q: 75</span> Click the Exhibit button.<br />
 
 As a maintenance feature, you have created this servlet to allow you to upload and remove files on your<br />
@@ -2667,12 +2744,13 @@ C. The servlet needs a service method to dispatch the requests to the helper met
 
 D. The doPut and doDelete methods do NOT map to the proper HTTP methods.<br />
 
-Answer:<span class='answer'> B</span><br />
+Answer:<span class='answer'> B<br />
 
 解析：servlet的构造方法不能带参数(题中的构造方法缺super())<br />
 
 <br />
 
+</span>
 <span id="q76">Q: 76</span> You have built a web application with tight security. Several directories of<br />
 
 your webapp are used for internal purposes and you have overridden the default servlet to send an<br />
@@ -2723,8 +2801,8 @@ D. &lt;error-page&gt;<br />
 
 &lt;/error-page&gt;<br />
 
-Answer:<span class='answer'> C</span></p>
-<p>
+Answer:<span class='answer'> C<br />
+
 解析:xml错误页面格式<br />
 
 &lt;error-page&gt;<br />
@@ -2737,6 +2815,7 @@ Answer:<span class='answer'> C</span></p>
 
 <br />
 
+</span>
 <span id="q77">Q: 77</span> You want to create a valid directory structure for your Java EE web<br />
 
 application, and your application uses tag files and a JAR file. Which three must be located directly in<br />
@@ -2755,16 +2834,17 @@ E.A directory called classes<br />
 
 F. A directory called META-INF<br />
 
-Answer:<span class='answer'> B, C, E</span><br />
+Answer:<span class='answer'> B, C, E<br />
 
-解析：</p>
-<p>B.lib(库)放置JAR文件</p>
-<p>C.tags放置tag文件</p>
-<p>E.classes放置class文件(src路径文件)</p>
-<p>tld可以放在自定义的路径。<br />
+解析：<br />
+B.lib(库)放置JAR文件<br />
+C.tags放置tag文件<br />
+E.classes放置class文件(src路径文件)<br />
+tld可以放在自定义的路径。<br />
 
 <br />
 
+</span>
 <span id="q78">Q: 78</span> Given:<br />
 
 11. public class MyServlet extends HttpServlet {<br />
@@ -2803,16 +2883,17 @@ D.response.sendRedirect(302);<br />
 
 E.response.sendErrorRedirect(302);<br />
 
-Answer:<span class='answer'> B</span><br />
+Answer:<span class='answer'> B<br />
 
-解析：</p>
-<p>HttpServletResponse的sendError发送错误状态<br />
+解析：<br />
+HttpServletResponse的sendError发送错误状态<br />
 
-HttpServletResponse的setStatus设置状态代码</p>
-<p>HttpServletResponse的路径重定向<br />
+HttpServletResponse的setStatus设置状态代码<br />
+HttpServletResponse的路径重定向<br />
 
 <br />
 
+</span>
 <span id="q79">Q: 79</span> Which element of the web application deployment descriptor defines the<br />
 
 servlet class associated with a servlet instance?<br />
@@ -2829,12 +2910,13 @@ E.&lt;servlet-class&gt;<br />
 
 F.&lt;servlet-mapping&gt;<br />
 
-Answer:<span class='answer'> E</span><br />
+Answer:<span class='answer'> E<br />
 
 解析：servlet通过&lt;servlet-class&gt;标签部署servlet类<br />
 
 <br />
 
+</span>
 <span id="q80">Q: 80</span> Within the web application deployment descriptor, which defines a valid<br />
 
 JNDI environment entry?<br />
@@ -2875,15 +2957,16 @@ D. &lt;env-entry&gt;<br />
 
 &lt;/env-entry&gt;<br />
 
-Answer:<span class='answer'> D</span><br />
+Answer:<span class='answer'> D<br />
 
 解析：<br />
 
-&lt;eny-entry&gt;用于在web.xml中配置资源，类型为java.lang下的标准类型。</p>
-<p>C的类型错误，应该为java.lang.Integer。<br />
+&lt;eny-entry&gt;用于在web.xml中配置资源，类型为java.lang下的标准类型。<br />
+C的类型错误，应该为java.lang.Integer。<br />
 
 <br />
 
+</span>
 <span id="q81">Q: 81</span> Which three are described in the standard web application deployment<br />
 
 descriptor? (Choose three.)<br />
@@ -2900,15 +2983,16 @@ E.web container default port bindings<br />
 
 F.ServletContext initialization parameters<br />
 
-Answer:<span class='answer'> A, B, F</span><br />
+Answer:<span class='answer'> A, B, F<br />
 
-解析：</p>
-<p>C.上下文根路径.</p>
-<p>D.servlet实例池不用配置。</p>
-<p>E.web容器默认端口不用配置。<br />
+解析：<br />
+C.上下文根路径.<br />
+D.servlet实例池不用配置。<br />
+E.web容器默认端口不用配置。<br />
 
 <br />
 
+</span>
 <span id="q82">Q: 82</span> Which two are true regarding a web application class loader? (Choose two.)<br />
 
 A. A web application may override the web container's implementation classes.<br />
@@ -2925,30 +3009,32 @@ E. Resources in the WAR class directory or in any of the JAR files within the li
 
 accessed using the J2SE semantics of getResource.<br />
 
-Answer:<span class='answer'> C, D</span></p>
-<p>解析：</p>
-<p>web application 不会重写java类。</p>
-<p>J2SE的getResource能读取文件。<br />
+Answer:<span class='answer'> C, D<br />
+解析：<br />
+web application 不会重写java类。<br />
+J2SE的getResource能读取文件。<br />
 
 <br />
 
+</span>
 <span id="q83">Q: 83</span> Click the Task button.<br />
 
 Place the corresponding resources and directories in the proper web application deployment structure.<br />
 
-Answer:<span class='answer'> Check ExamWorx eEngine, Download from Member Center</span></p>
-<p><img src="0_1302703726ckHR.gif" alt="" />
+Answer:<span class='answer'> Check ExamWorx eEngine, Download from Member Center<br />
+<img src="0_1302703726ckHR.gif" alt="" />
 
 <br />
 
 <img src="0_1302703779ML67.gif" alt="" />
 
-</p>
-<p>解析：</p>
-<p>路径没啥好说的，最好理解下各个文件夹存放的内容。</p>
-<p>另外JSP files static content应该是jsp文件和静态文件(html什么的)</p>
-<p>&nbsp;</p>
-<p><span id="q84">Q: 84</span> You are building JSP pages that have a set of menus that are visible based<br />
+<br />
+解析：<br />
+路径没啥好说的，最好理解下各个文件夹存放的内容。<br />
+另外JSP files static content应该是jsp文件和静态文件(html什么的)<br />
+&nbsp;<br />
+</span>
+<span id="q84">Q: 84</span> You are building JSP pages that have a set of menus that are visible based<br />
 
 on a user's security role. These menus are hand-crafted by your web design team; for example, the<br />
 
@@ -2980,13 +3066,14 @@ D. &lt;jsp:if test='request.isUserInRole(&quot;SalesManager&quot;)'&gt;<br />
 
 &lt;/jsp:if&gt;<br />
 
-Answer:<span class='answer'> A</span><br />
+Answer:<span class='answer'> A<br />
 
-解析：B、D的&lt;jsp:if ...&gt;,没有jsp:if标签</p>
-<p>C.&lt;jsp:include file=...&gt;不正确，应该是&lt;jsp:include page=&quot;&quot;&gt;<br />
+解析：B、D的&lt;jsp:if ...&gt;,没有jsp:if标签<br />
+C.&lt;jsp:include file=...&gt;不正确，应该是&lt;jsp:include page=&quot;&quot;&gt;<br />
 
 <br />
 
+</span>
 <span id="q85">Q: 85</span> For debugging purposes, you need to record how many times a given JSP is<br />
 
 invoked before the user's session has been created. The JSP's destroy method stores this information to a<br />
@@ -3013,7 +3100,7 @@ E. &lt;%! int count = 0;<br />
 
 if ( request.getSession(false) == null ) count++; %&gt;<br />
 
-Answer:<span class='answer'> A</span><br />
+Answer:<span class='answer'> A<br />
 
 解析：<br />
 
@@ -3025,6 +3112,7 @@ Answer:<span class='answer'> A</span><br />
 
 <br />
 
+</span>
 <span id="q86">Q: 86</span> For manageability purposes, you have been told to add a &quot;count&quot; instance<br />
 
 variable to a critical JSP Document so that a JMX MBean can track how frequent this JSP is being<br />
@@ -3051,7 +3139,7 @@ int count = 0;<br />
 
 &lt;jsp:scriptlet.declaration&gt;<br />
 
-Answer:<span class='answer'> A</span><br />
+Answer:<span class='answer'> A<br />
 
 解析：<br />
 
@@ -3059,6 +3147,7 @@ XML标签表达的JSPX(JSP Document)声明为:&lt;jsp:declaration&gt;<br />
 
 <br />
 
+</span>
 <span id="q87">Q: 87</span> In a JSP-centric web application, you need to create a catalog browsing JSP<br />
 
 page. The catalog is stored as a List object in the catalog attribute of the webapp's ServletContext object.<br />
@@ -3073,12 +3162,13 @@ C.&lt;% List catalog = application.getAttribute(&quot;catalog&quot;); %&gt;<br /
 
 D.&lt;% List catalog = servletContext.getAttribute(&quot;catalog&quot;); %&gt;<br />
 
-Answer:<span class='answer'> C</span><br />
+Answer:<span class='answer'> C<br />
 
 解析：JSP 的application域相当于Servlet的ServletContext<br />
 
 <br />
 
+</span>
 <span id="q88">Q: 88</span> Given the element from the web application deployment descriptor:<br />
 
 &lt;jsp-property-group&gt;<br />
@@ -3107,12 +3197,13 @@ D. &lt;% int i = 12 %&gt;<br />
 
 &lt;b&gt;&lt;%= i %&gt;&lt;/b&gt;<br />
 
-Answer:<span class='answer'> C</span><br />
+Answer:<span class='answer'> C<br />
 
 解析：&lt;scripting-invalid&gt;表示不支持&lt;%scripting%&gt;语法<br />
 
 <br />
 
+</span>
 <span id="q89">Q: 89</span> You are creating a new JSP page and you need to execute some code that<br />
 
 acts when the page is first executed, but only once. Which three are possible mechanisms for performing<br />
@@ -3129,15 +3220,16 @@ D.In a JSP declaration, which includes an initializer block.<br />
 
 E.In a JSP declaration, which includes a static initializer block.<br />
 
-Answer:<span class='answer'> B, D, E</span></p>
-<p>解析：</p>
-<p>A.jsp没有init方法，只有servlet有</p>
-<p>C.jsp没有构造方法</p>
-<p>D.动态块，初始时运行一次，相当于构造方法。</p>
-<p>E.静态初始块，在运行时只执行一次。</p>
-<p>&nbsp;</p>
-<p><br />
+Answer:<span class='answer'> B, D, E<br />
+解析：<br />
+A.jsp没有init方法，只有servlet有<br />
+C.jsp没有构造方法<br />
+D.动态块，初始时运行一次，相当于构造方法。<br />
+E.静态初始块，在运行时只执行一次。<br />
+&nbsp;<br />
+<br />
 
+</span>
 <span id="q90">Q: 90</span> You are writing a JSP that includes scriptlet code to declare a List variable<br />
 
 and initializes that variable to an ArrayList object. Which two JSP code snippets can you use to import<br />
@@ -3162,12 +3254,13 @@ E. &lt;%@ page import='java.util.List,java.util.ArrayList' %&gt;<br />
 
 F. &lt;%@ import types='java.util.List,java.util.ArrayList' %&gt;<br />
 
-Answer:<span class='answer'> C, E</span><br />
+Answer:<span class='answer'> C, E<br />
 
 解析：JSP导入包&lt;%@ import=&quot;&quot;&gt;<br />
 
 <br />
 
+</span>
 <span id="q91">Q: 91</span> Assume the custom tag my:errorProne always throws a<br />
 
 java.lang.RuntimeException with the message &quot;File not found.&quot;<br />
@@ -3224,12 +3317,13 @@ ${ex.message}<br />
 
 &lt;/my:errorProne&gt;<br />
 
-Answer:<span class='answer'> B</span><br />
+Answer:<span class='answer'> B<br />
 
 解析：JSTL将可能产生异常的代码放在&lt;c:catch&gt;&lt;/c:catch&gt;中，如果其中代码发生异常，异常将被保存在var对象中<br />
 
 <br />
 
+</span>
 <span id="q92">Q: 92</span> A JSP page contains a taglib directive whose uri attribute has the value<br />
 
 dbtags. Which XML element within the web application deployment descriptor defines the associated<br />
@@ -3272,16 +3366,17 @@ D. &lt;taglib&gt;<br />
 
 &lt;/taglib&gt;<br />
 
-Answer:<span class='answer'> D</span><br />
+Answer:<span class='answer'> D<br />
 
-解析：部署链接标签名和标签文件</p>
-<p>&lt;taglib&gt;</p>
-<p>&lt;taglib-uri&gt;**&lt;/taglib-uri&gt;</p>
-<p>&lt;taglib-location&gt;/**&lt;/taglib-location&gt;</p>
-<p>&lt;/taglib&gt;<br />
+解析：部署链接标签名和标签文件<br />
+&lt;taglib&gt;<br />
+&lt;taglib-uri&gt;**&lt;/taglib-uri&gt;<br />
+&lt;taglib-location&gt;/**&lt;/taglib-location&gt;<br />
+&lt;/taglib&gt;<br />
 
 <br />
 
+</span>
 <span id="q93">Q: 93</span> Assume that a news tag library contains the tags lookup and item:<br />
 
 lookup<br />
@@ -3356,12 +3451,13 @@ D. &lt;table&gt;<br />
 
 &lt;/table&gt;<br />
 
-Answer:<span class='answer'> C</span><br />
+Answer:<span class='answer'> C<br />
 
 解析：(同27题)lookup获取新闻标题并执行标签体(&lt;tr&gt;&lt;td&gt;)形成表格<br />
 
 <br />
 
+</span>
 <span id="q94">Q: 94</span> Click the Exhibit button.<br />
 
 Assuming the tag library in the exhibit is imported with the prefix stock, which custom tag invocation<br />
@@ -3418,8 +3514,8 @@ xsi:schemaLocation=&quot;http://java.sum.com/xml/ns/j2ee web-jsptaglibrary_2_0.x
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/attribute&gt;<br />
 
-&nbsp; &lt;/tag&gt;</p>
-<p>&lt;/taglib&gt;<br />
+&nbsp; &lt;/tag&gt;<br />
+&lt;/taglib&gt;<br />
 
 A. &lt;stock:quote symbol=&quot;SUNW&quot; /&gt;<br />
 
@@ -3445,15 +3541,16 @@ E. &lt;stock:quote symbol=&quot;SUNW&quot; var=&quot;quote&quot;&gt;<br />
 
 &lt;/stock:quote&gt;<br />
 
-Answer:<span class='answer'> D</span><br />
+Answer:<span class='answer'> D<br />
 
-解析：</p>
-<p>&lt;name-from-attribute&gt;指的是创建的变量名称从属性name中来取得(变量名为var的值，即quote),</p>
-<p>&lt;rtexprvalue&gt;表示的是属性是否接受scriptlet表达式的计算结果，默认情况下为false，即只能接受静态值,</p>
-<p>标签设置变量值var=quote，${quote}用EL表达式输出quote变量。<br />
+解析：<br />
+&lt;name-from-attribute&gt;指的是创建的变量名称从属性name中来取得(变量名为var的值，即quote),<br />
+&lt;rtexprvalue&gt;表示的是属性是否接受scriptlet表达式的计算结果，默认情况下为false，即只能接受静态值,<br />
+标签设置变量值var=quote，${quote}用EL表达式输出quote变量。<br />
 
 <br />
 
+</span>
 <span id="q95">Q: 95</span> Which two are true about the JSTL core iteration custom tags? (Choose<br />
 
 two.)<br />
@@ -3470,15 +3567,16 @@ E. When looping over integers (for example begin='1' end='10'), a loop status ob
 
 body.<br />
 
-Answer:<span class='answer'> A, C</span></p>
-<p>解析：</p>
-<p>B.tag标签体没限制scripting。</p>
-<p>D.key和value都能输出。</p>
-<p>E.没限制。</p>
-<p><br />
+Answer:<span class='answer'> A, C<br />
+解析：<br />
+B.tag标签体没限制scripting。<br />
+D.key和value都能输出。<br />
+E.没限制。<br />
+<br />
 
 <br />
 
+</span>
 <span id="q96">Q: 96</span> Assume a JavaBean com.example.GradedTestBean exists and has two<br />
 
 attributes. The attribute name is of type java.lang.String and the attribute score is of type<br />
@@ -3515,11 +3613,11 @@ E. &lt;c:set target=&quot;${resultMap}&quot; property=&quot;${results[0].name}&q
 
 value=&quot;${results[0].score}&quot; /&gt;<br />
 
-Answer:<span class='answer'> E</span><br />
+Answer:<span class='answer'> E<br />
 
-解析：把bean的name和score用set存进HashMap中。</p>
-<p>c:set有两种用法</p>
-<p>设置作用域属性<span><span class="tag">&lt;</span>
+解析：把bean的name和score用set存进HashMap中。<br />
+c:set有两种用法<br />
+设置作用域属性<span><span class="tag">&lt;</span>
 
 <span class="tag-name">c:set</span>
 
@@ -3553,8 +3651,8 @@ Answer:<span class='answer'> E</span><br />
 
 </span>
 
-</p>
-<p><span><span>设置bean属性或Map值</span>
+<br />
+<span><span>设置bean属性或Map值</span>
 
 </span>
 
@@ -3598,10 +3696,11 @@ Answer:<span class='answer'> E</span><br />
 
 </span>
 
-</p>
-<p>
 <br />
 
+<br />
+
+</span>
 <span id="q97">Q: 97</span> You are creating a JSP page to display a collection of data. This data can be<br />
 
 displayed in several different ways so the architect on your project decided to create a generic servlet that<br />
@@ -3682,11 +3781,11 @@ D. &lt;c:import var='dataString' url='/WEB-INF/data'&gt;<br />
 
 &lt;/ul&gt;<br />
 
-Answer:<span class='answer'> D</span><br />
+Answer:<span class='answer'> D<br />
 
-解析：(同30题)</p>
-<p>&lt;c:import var=&quot;保存目标文件的命名变量&quot; url=&quot;目标文件&quot;&gt;</p>
-<p>&lt;c:forEach var=&quot;命名变量&quot;&nbsp; items=&quot;被分字符串&quot;&nbsp; delims=&quot;分隔符&quot; &gt;</p>
+解析：(同30题)<br />
+&lt;c:import var=&quot;保存目标文件的命名变量&quot; url=&quot;目标文件&quot;&gt;<br />
+&lt;c:forEach var=&quot;命名变量&quot;&nbsp; items=&quot;被分字符串&quot;&nbsp; delims=&quot;分隔符&quot; &gt;<br />
 <pre><span><strong>
 </strong>
 
@@ -3701,9 +3800,10 @@ Answer:<span class='answer'> D</span><br />
 
 
 </pre>
-<p>
+
 <br />
 
+</span>
 <span id="q98">Q: 98</span> A web application contains a tag file called beta.tag in<br />
 
 /WEB-INF/tags/alpha. A JSP page called sort.jsp exists in the web application and contains only this JSP<br />
@@ -3736,13 +3836,14 @@ F. The sort.jsp page produces a translation error because the tagdir attribute o
 
 other than /WEB-INF/tags, which is illegal.<br />
 
-Answer:<span class='answer'> B, E</span><br />
+Answer:<span class='answer'> B, E<br />
 
-解析：</p>
-<p>tagdir=标签文件实际位置，uri=标签文件映射位置。<br />
+解析：<br />
+tagdir=标签文件实际位置，uri=标签文件映射位置。<br />
 
 <br />
 
+</span>
 <span id="q99">Q: 99</span> What is the purpose of session management?<br />
 
 A. To manage the user's login and logout activities.<br />
@@ -3755,12 +3856,13 @@ D. To tell the web container to keep the HTTP connection alive so it can make su
 
 delay of making the TCP connection.<br />
 
-Answer:<span class='answer'> C</span><br />
+Answer:<span class='answer'> C<br />
 
 解析：会话管理的目的是在服务器储存信息<br />
 
 <br />
 
+</span>
 <span id="q100">Q: 100</span> The Squeaky Beans Inc. shopping application was initially developed for a<br />
 
 non-distributed environment. The company recently purchased the Acme Application Server, which<br />
@@ -3785,12 +3887,13 @@ D. Storing references to Enterprise JavaBeans components in the HttpSession obje
 
 by J2EE web containers.<br />
 
-Answer:<span class='answer'> A, D</span></p>
-<p>解析：</p>
-<p>B.HttpSession在分布式环境中，能跨JVM操作。</p>
-<p>C.可能存在不同的数据库中。</p>
-<p>D.分布式容器可能不支持非分布式组件。</p>   
-<p><span id="q101">Q: 101</span> In your web application, you need to execute a block of code whenever the<br />
+Answer:<span class='answer'> A, D<br />
+解析：<br />
+B.HttpSession在分布式环境中，能跨JVM操作。<br />
+C.可能存在不同的数据库中。<br />
+D.分布式容器可能不支持非分布式组件。<br />   
+</span>
+<span id="q101">Q: 101</span> In your web application, you need to execute a block of code whenever the<br />
 session object is first created. Which design will accomplish this goal?<br />
 A. Create an HttpSessionListener class and implement the sessionInitialized method with that block of code.<br />
 B. Create an HttpSessionActivationListener class and implement the sessionCreated method with that block of<br />
@@ -3800,29 +3903,32 @@ code.<br />
 D. Create an HttpSessionListener class and implement the sessionCreated method with that block of code.<br />
 E. Create a Filter class, call the getSession(true) method, and if the result was NOT null, then execute that<br />
 block of code.<br />
-Answer:<span class='answer'> D</span><br />
+Answer:<span class='answer'> D<br />
 解析：HttpSessionListener类只有sessionCreated和sessionDestroyed方法<br />
 <br />
+</span>
 <span id="q102">Q: 102</span> Which interface must a class implement so that instances of the class are<br />
 notified after any object is added to a session?<br />
 A.javax.servlet.http.HttpSessionListener<br />
 B.javax.servlet.http.HttpSessionValueListener<br />
 C.javax.servlet.http.HttpSessionBindingListener<br />
 D.javax.servlet.http.HttpSessionAttributeListener<br />
-Answer:<span class='answer'> D</span><br />
+Answer:<span class='answer'> D<br />
 解析：监听会话添加属性用HttpSessionAttributeListener<br />
 <br />
+</span>
 <span id="q103">Q: 103</span> Which method must be used to encode a URL passed as an argument to<br />
 HttpServletResponse.sendRedirect when using URL rewriting for session tracking?<br />
 A.ServletResponse.encodeURL<br />
 B.HttpServletResponse.encodeURL<br />
 C.ServletResponse.encodeRedirectURL<br />
 D.HttpServletResponse.encodeRedirectURL<br />
-Answer:<span class='answer'> D</span><br />
+Answer:<span class='answer'> D<br />
 解析：<br />
 encodeURL和encodeRedirectURL都可用于URL重新<br />
 encodeRedirectURL用于sendRedirect方法<br />
 <br />
+</span>
 <span id="q104">Q: 104</span> Users of your web application have requested that they should be able to<br />
 set the duration of their sessions. So for example, one user might want a webapp to stay connected for an<br />
 hour rather than the webapp's default of fifteen minutes; another user might want to stay connected for a<br />
@@ -3842,9 +3948,10 @@ E. User user = // retrieve the User object from the database<br />
 session.setMaxInactiveInterval(user.getSessionDuration());<br />
 F. User user = // retrieve the User object from the database<br />
 session.setMaxDurationInterval(user.getSessionDuration());<br />
-Answer:<span class='answer'> E</span><br />
+Answer:<span class='answer'> E<br />
 解析：HttpSession的setMaxInactiveInterval方法设置最长持续时间<br />
 <br />
+</span>
 <span id="q105">Q: 105</span> Which two classes or interfaces provide a getSession method? (Choose<br />
 two.)<br />
 A.javax.servlet.http.HttpServletRequest<br />
@@ -3852,12 +3959,13 @@ B.javax.servlet.http.HttpSessionContext<br />
 C.javax.servlet.http.HttpServletResponse<br />
 D.javax.servlet.http.HttpSessionBindingEvent<br />
 E.javax.servlet.http.HttpSessionAttributeEvent<br />
-Answer:<span class='answer'> A, D</span><br />
+Answer:<span class='answer'> A, D<br />
 解析：<br />
 HttpServletRequest接口和HttpSessionBindingEvent类提供getSession方法，<br />
 HttpSessionContext也提供，但该类的方法已经被废除，<br />
 没有HttpSessionAttributeEvent这个类<br />
 <br />
+</span>
 <span id="q106">Q: 106</span> Given the security constraint in a DD:<br />
 101. &lt;security-constraint&gt;<br />
 102. &lt;web-resource-collection&gt;<br />
@@ -3877,25 +3985,28 @@ C.MANAGER can do a TRACE on any resource in the /Bar/Baz directory.<br />
 D.DEVELOPER can do a GET on resources in the /Bar/Baz directory.<br />
 E.DEVELOPER can do only a POST on resources in the /Bar/Baz directory.<br />
 F.DEVELOPER can do a TRACE on any resource in the /Bar/Baz directory.<br />
-Answer:<span class='answer'> A, C, D, F</span><br />
+Answer:<span class='answer'> A, C, D, F<br />
 解析:(同40题)E.只有DEVELOPER有POST的访问权，但不是只有。<br />
 <br />
+</span>
 <span id="q107">Q: 107</span> Which activity supports the data integrity requirements of an application?<br />
 A.using HTTPS as a protocol<br />
 B.using an LDAP security realm<br />
 C.using HTTP Basic authentication<br />
 D.using forms-based authentication<br />
-Answer:<span class='answer'> A</span><br />
+Answer:<span class='answer'> A<br />
 解析：使用加密通道POST(HTTPS)保证信息的真实性。<br />
 <br />
+</span>
 <span id="q108">Q: 108</span> Which mechanism requires the client to provide its public key certificate?<br />
 A.HTTP Basic Authentication<br />
 B.Form Based Authentication<br />
 C.HTTP Digest Authentication<br />
 D.HTTPS Client Authentication<br />
-Answer:<span class='answer'> D</span><br />
+Answer:<span class='answer'> D<br />
 解析：HTTPS要求客户端提供安全证书。<br />
 <br />
+</span>
 <span id="q109">Q: 109</span> Given the two security constraints in a deployment descriptor:<br />
 101. &lt;security-constraint&gt;<br />
 102. &lt;!--a correct url-pattern and http-method goes here--&gt;<br />
@@ -3922,11 +4033,12 @@ C. &lt;auth-constraint&gt;<br />
 D. &lt;auth-constraint&gt;<br />
 &lt;role-name&gt;MARKETING&lt;/role-name&gt;<br />
 &lt;/auth-constraint&gt;<br />
-Answer:<span class='answer'> B, D</span><br />
+Answer:<span class='answer'> B, D<br />
 解析：两个安全限制有同样的内容，即SALES不用设置了(SALES设置貌似重复了)。<br />
 A.标签体内容为空，即谁也不能访问。<br />
 C.声明ANY用户可以访问<br />
 <br />
+</span>
 <span id="q110">Q: 110</span> Given this fragment in a servlet:<br />
 23. if(req.isUserInRole(&quot;Admin&quot;)) {<br />
 24. // do stuff<br />
@@ -3946,19 +4058,21 @@ B.The deployment descriptor is NOT valid.<br />
 C.If line 24 executes, the user's role will be Admin.<br />
 D.If line 24 executes, the user's role will be Administrator.<br />
 E.If line 24 executes the user's role will NOT be predictable.<br />
-Answer:<span class='answer'> D</span><br />
+Answer:<span class='answer'> D<br />
 解析：Admin链接到Administrator，判断Admin实际是判断Administrator.<br />
 <br />
+</span>
 <span id="q111">Q: 111</span> Which two are true about authentication? (Choose two.)<br />
 A. Form-based logins should NOT be used with HTTPS.<br />
 B. When using Basic Authentication the target server is NOT authenticated.<br />
 C. J2EE compliant web containers are NOT required to support the HTTPS protocol.<br />
 D. Web containers are required to support unauthenticated access to unprotected web resources.<br />
 E. Form-based logins should NOT be used when sessions are maintained by cookies or SSL session information.<br />
-Answer:<span class='answer'> B, D</span><br />
+Answer:<span class='answer'> B, D<br />
 解析：<br />
 B.使用Basic安全认证的，目标服务是非认证的。<br />
 D.非安全的访问只能访问公开资源。<br />
+</span>
 <span id="q112">Q: 112</span> Given:<br />
 11. &lt;%<br />
 12. request.setAttribute(&quot;vals&quot;, new String[]{&quot;1&quot;,&quot;2&quot;,&quot;3&quot;,&quot;4&quot;});<br />
@@ -3973,9 +4087,10 @@ D.${vals[index]}<br />
 E.${vals}[index]<br />
 F.${vals.(vals.index)}<br />
 G.${vals[vals[index-1]]}<br />
-Answer:<span class='answer'> B, D, G</span><br />
+Answer:<span class='answer'> B, D, G<br />
 解析:EL格式，G.先获取字符串的&quot;2&quot;,再获取下标为&quot;2&quot;的值&quot;3&quot;.<br />
 <br />
+</span>
 <span id="q113">Q: 113</span> Given:<br />
 11. &lt;% java.util.Map map = new java.util.HashMap();<br />
 12. request.setAttribute(&quot;map&quot;, map);<br />
@@ -3989,12 +4104,13 @@ C.${map.a and map.b}<br />
 D.${map.false or map.true}<br />
 E.${map.a and map.b or map.a}<br />
 F.${map['true'] or map['false']}<br />
-Answer:<span class='answer'> A, B, E</span><br />
+Answer:<span class='answer'> A, B, E<br />
 解析：<br />
 A.not false =true(强制转换Boolean.valueOf(&quot;42&quot;)为false)<br />
 B.true or false = true<br />
 E.true and false or true =true<br />
 <br />
+</span>
 <span id="q114">Q: 114</span> Given:<br />
 http://com.example/myServlet.jsp?num=one&amp;num=two&amp;num=three<br />
 Which two produce the output &quot;one, two and three&quot;? (Choose two.)<br />
@@ -4005,11 +4121,12 @@ D.${paramValues.num[0]}, ${paramValues.num[1]} and ${paramValues.num[2]}<br />
 E.${paramValues[&quot;num&quot;][0]}, ${paramValues[&quot;num&quot;][1]} and ${paramValues[&quot;num&quot;][2]}<br />
 F.${parameterValues.num[0]}, ${parameterValues.num[1]} and ${parameterValues.num[2]}<br />
 G.${parameterValues[&quot;num&quot;][&quot;0&quot;]}, ${parameterValues[&quot;num&quot;][&quot;1&quot;]} and ${parameterValues[&quot;num&quot;][&quot;2&quot;]}<br />
-Answer:<span class='answer'> D, E</span><br />
+Answer:<span class='answer'> D, E<br />
 解析：<br />
 ${paramValues.num}等于request.getParameterValues(&quot;num&quot;)<br />
 ${param.num}等于request.getParameter(&quot;num&quot;)<br />
 <br />
+</span>
 <span id="q115">Q: 115</span> Given a web application in which the cookie userName is expected to<br />
 contain the name of the user. Which EL expression evaluates to that user name?<br />
 A.${userName}<br />
@@ -4018,9 +4135,10 @@ C.${cookie.user.name}<br />
 D.${cookies.userName[0]}<br />
 E.${cookies.userName}[1]<br />
 F.${cookies.get('userName')}<br />
-Answer:<span class='answer'> B</span><br />
+Answer:<span class='answer'> B<br />
 解析：EL表达式能直接访问属性。相当于request.getCookies.getuserName<br />
 <br />
+</span>
 <span id="q116">Q: 116</span> Given an EL function declared with:<br />
 11. &lt;function&gt;<br />
 12. &lt;name&gt;spin&lt;/name&gt;<br />
@@ -4040,11 +4158,12 @@ public static String spin().<br />
 E. The function method must have the signature:<br />
 public static String spinIt().<br />
 F. The function class must be named Spinner, and must be in the package com.example.<br />
-Answer:<span class='answer'> E, F</span><br />
+Answer:<span class='answer'> E, F<br />
 解析：<br />
 E.从声明中可知标记方法为为String spinIt(),静态调用所以是static标记的。<br />
 F.见声明中的function-class<br />
 <br />
+</span>
 <span id="q117">Q: 117</span> Given a JSP page:<br />
 11. &lt;n:recurse&gt;<br />
 12.&nbsp;&nbsp;&nbsp; &nbsp;&lt;n:recurse&gt;<br />
@@ -4066,9 +4185,10 @@ increment counter and continue from where getChildTags() is called. Skip process
 D. If the tag has a body, invoke the fragment for that body.Otherwise, start a counter at 1. Call getParent(). If it<br />
 returns null, output the value of the counter Otherwise, increment the counter and continue from where<br />
 getParent() is called.<br />
-Answer:<span class='answer'> D</span><br />
+Answer:<span class='answer'> D<br />
 解析：从最里面有标签体的算起，调用父节点计算层次。<br />
 <br />
+</span>
 <span id="q118">Q: 118</span> Click the Exhibit button.<br />
 The h:highlight tag renders its body, highlighting an arbitrary number of words, each of which is passed<br />
 as an attribute (word1, word2, ...). For example, a JSP page can invoke the h:highlight tag as follows:<br />
@@ -4103,12 +4223,13 @@ C.add a getter and setter for the color attribute<br />
 D.create and implement a TagExtraInfo class<br />
 E.implement the DynamicAttributes interface<br />
 F.add a getter and setter for the word1 and word2 attributes<br />
-Answer:<span class='answer'> A, C, E</span><br />
+Answer:<span class='answer'> A, C, E<br />
 解析：<br />
 A.继承SimpleTagSupport应实现doTag方法<br />
 C.设置颜色属性<br />
 E.实现动态属性接口<br />
 <br />
+</span>
 <span id="q119">Q: 119</span> Given:<br />
 5. public class MyTagHandler extends TagSupport {<br />
 6. public int doStartTag() throws JspException {<br />
@@ -4129,11 +4250,12 @@ C. JspWriter w = new JspWriter(pageContext.getWriter());<br />
 &nbsp;&nbsp; w.print(&quot;foo&quot;);<br />
 D. JspWriter w = new JspWriter(pageContext.getResponse());<br />
 &nbsp;&nbsp; w.print(&quot;foo&quot;);<br />
-Answer:<span class='answer'> A</span><br />
+Answer:<span class='answer'> A<br />
 解析：PageContext继承JspContext<br />
 JspContext的getOut返回JspWriter类型<br />
 PageContext和JspContext都没有getWriter方法。<br />
 <br />
+</span>
 <span id="q120">Q: 120</span> Given:<br />
 6. &lt;myTag:foo bar='42'&gt;<br />
 7. &lt;%=&quot;processing&quot; %&gt;<br />
@@ -4145,7 +4267,7 @@ B.The doAfterBody method is NOT called.<br />
 C.The EVAL_PAGE constant is a valid return value for the doEndTag method.<br />
 D.The SKIP_PAGE constant is a valid return value for the doStartTag method.<br />
 E.The EVAL_BODY_BUFFERED constant is a valid return value for the doStartTag method.<br />
-Answer:<span class='answer'> A, C</span><br />
+Answer:<span class='answer'> A, C<br />
 解析：<br />
 A.doStartTag最早执行<br />
 B.doAfterBody在执行标签体后执行。<br />
@@ -4153,6 +4275,7 @@ C.EVAL_PAGE继续处理页面，可供doEndTag()使用<br />
 D.SKIP_PAGE忽略对余下页面的处理，可供doEndTag()使用<br />
 E.EVAL_BODY_BUFFERED申请缓冲区，有setBodyContext()函数得到BodyContext对象(处理在doStartTag之后)<br />
 <br />
+</span>
 <span id="q121">Q: 121</span> Which three are valid values for the body-content attribute of a tag<br />
 directive in a tag file? (Choose three.)<br />
 A.EL<br />
@@ -4161,10 +4284,11 @@ C.empty<br />
 D.dynamic<br />
 E.scriptless<br />
 F.tagdependent<br />
-Answer:<span class='answer'> C, E, F</span><br />
+Answer:<span class='answer'> C, E, F<br />
 解析：<br />
 标签文件中可用的指令有empty、scriptless(java语法)和tagdependent(tag依赖)<br />
 <br />
+</span>
 <span id="q122">Q: 122</span> The Squeaky Bean company has decided to port their web application to a<br />
 new J2EE 1.4 container. While reviewing the application, a developer realizes that in multiple places<br />
 within the current application, nearly duplicate code exists that finds enterprise beans. Which pattern<br />
@@ -4175,9 +4299,10 @@ C.Service Locator<br />
 D.Intercepting Filter<br />
 E.Business Delegate<br />
 F.Model-View-Controller<br />
-Answer:<span class='answer'> C</span><br />
+Answer:<span class='answer'> C<br />
 解析：(同56题)Service Locator利用统一的服务器访问方法，减少重复。<br />
 &nbsp;<br />
+</span>
 <span id="q123">Q: 123</span> A developer is designing a web application that makes many fine-grained<br />
 remote data requests for each client request. During testing, the developer discovers that the volume of<br />
 remote requests significantly degrades performance of the application. Which design pattern provides a<br />
@@ -4188,10 +4313,11 @@ C.Service Locator<br />
 D.Dispatcher View<br />
 E.Business Delegate<br />
 F.Model-View-Controller<br />
-Answer:<span class='answer'> B</span><br />
+Answer:<span class='answer'> B<br />
 解析：<br />
 B.传输对象，减少颗粒度。<br />
 <br />
+</span>
 <span id="q124">Q: 124</span> In an n-tier application, which two invocations are typically remote, not<br />
 local? (Choose two.)<br />
 A.JSP to Transfer Object<br />
@@ -4200,11 +4326,12 @@ C.Controller to request object<br />
 D.Transfer Object to Entity Bean<br />
 E.Controller to Business Delegate<br />
 F.Business Delegate to Service Locator<br />
-Answer:<span class='answer'> B, D</span><br />
+Answer:<span class='answer'> B, D<br />
 解析：<br />
 B.服务器定位调用JNDI。<br />
 D.调用实体bean。<br />
 <br />
+</span>
 <span id="q125">Q: 125</span> A developer has created a special servlet that is responsible for generating<br />
 XML content that is sent to a data warehousing subsystem. This subsystem uses HTTP to request these<br />
 large data files, which are compressed by the servlet to save internal network bandwidth. The developer<br />
@@ -4216,9 +4343,10 @@ B.View Helper<br />
 C.Transfer Object<br />
 D.Intercepting Filter<br />
 E.Composite Facade<br />
-Answer:<span class='answer'> D</span><br />
+Answer:<span class='answer'> D<br />
 解析：(同58题)拦截器过滤，预处理数据。<br />
 <br />
+</span>
 <span id="q126">Q: 126</span> A developer is designing the presentation tier for a web application which<br />
 requires a centralized request handling to complete common processing required by each request. Which<br />
 design pattern provides a solution to this problem?<br />
@@ -4228,10 +4356,11 @@ C.Service Activator<br />
 D.Intercepting Filter<br />
 E.Business Delegate<br />
 F.Data Access Object<br />
-Answer:<span class='answer'> B</span><br />
+Answer:<span class='answer'> B<br />
 解析：Front Controller(前端控制器)在web应用的前端(Front)设置一个<br />
 入口控制器(Controller)，统一处理所以请求。<br />
 <br />
+</span>
 <span id="q127">Q: 127</span> You are designing an n-tier Java EE application. You have already<br />
 decided that some of your JSPs will need to get data from a Customer entity bean. You are trying to<br />
 decide whether to use a Customer stub object or a Transfer Object. Which two statements are true?<br />
@@ -4242,11 +4371,12 @@ C.The stub will increase the logic necessary in the JSPs.<br />
 D.In both cases, the JSPs can use EL expressions to get data.<br />
 E.Only the Transfer Object will need to use a Business Delegate.<br />
 F.Using the stub approach allows you to design the application without using a Service Locator.<br />
-Answer:<span class='answer'> A, D</span><br />
+Answer:<span class='answer'> A, D<br />
 解析：<br />
 A.传输对象能减少颗粒度，但会增加网络浏览。<br />
 D.JSP可以使用EL表达式获得数据。<br />
 <br />
+</span>
 <span id="q128">Q: 128</span> You have a simple web application that has a single Front Controller<br />
 servlet that dispatches to JSPs to generate a variety of views. Several of these views require further<br />
 database processing to retrieve the necessary order object using the orderID request parameter. To do<br />
@@ -4271,13 +4401,14 @@ D. String T=&quot;/WEB-INF/retreiveOrder.do?orderID=%d&amp;jspURL=%s&quot;;<br /
 &nbsp;&nbsp; String url = String.format(T, orderID, jspURL);<br />
 &nbsp;&nbsp; Dispatcher view = context.getDispatcher(url);<br />
 &nbsp;&nbsp; view.forwardRequest(request, response);<br />
-Answer:<span class='answer'> C</span><br />
+Answer:<span class='answer'> C<br />
 解析：<br />
 使用fromat设置带参数的url地址<br />
 服务器重定向方法:<br />
 javax.servlet.RequestDispatcher的forward方法<br />
 javax.servlet.http.HttpServletResponse的sendRedirect方法<br />
 <br />
+</span>
 <span id="q129">Q: 129</span> You have built a web application that you license to small businesses. The<br />
 webapp uses a context parameter, called licenseExtension, which enables certain advanced features based<br />
 on your client's license package. When a client pays for a specific service, you provide them with a license<br />
@@ -4301,9 +4432,10 @@ E. String ext = context.getInitParameter('licenseExtension');<br />
 if ( ext == null ) {<br />
 context.setInitParameter('licenseExtension', DEFAULT);<br />
 }<br />
-Answer:<span class='answer'> A</span><br />
+Answer:<span class='answer'> A<br />
 解析：上下文参数(context parameters)不能在部署文件插入内容。<br />
 <br />
+</span>
 <span id="q130">Q: 130</span> You have a use case in your web application that adds several<br />
 session-scoped attributes. At the end of the use case, one of these objects, the manager attribute, is<br />
 removed and then it needs to decide which of the other session-scoped attributes to remove.<br />
@@ -4316,11 +4448,12 @@ C. The object of the manager attribute should implement the HttpSessionBindingLi
 deleteAttribute method on the appropriate session attributes.<br />
 D. The object of the manager attribute should implement the HttpSessionListener and it should call the<br />
 deleteAttribute method on the appropriate session attributes.<br />
-Answer:<span class='answer'> A</span><br />
+Answer:<span class='answer'> A<br />
 解析：<br />
 HttpSessionListenter的sessionCreated()和sessionDestroyed()监听当前session的创建和销毁情况<br />
 HttpSessionBindingListener的valueBound()和valueUnbound()监听数据的绑定和取消绑定(removeAttribute会触发valueUnbound事件)<br />
 <br />
+</span>
 <span id="q131">Q: 131</span> You want to create a filter for your web application and your filter will<br />
 implement javax.servlet.Filter.<br />
 Which two statements are true? (Choose two.)<br />
@@ -4332,11 +4465,12 @@ D. The method that your filter invokes on the object it received that implements
 invoke either another filter or a servlet.<br />
 E. Your filter class must implement a doFilter method that takes, among other things, an HTTPServletRequest<br />
 object and an HTTPServletResponse object.<br />
-Answer:<span class='answer'> A, D</span><br />
+Answer:<span class='answer'> A, D<br />
 解析：<br />
 A.过滤器必须实现初始化和销毁方法<br />
 D.FilterChain能够调用下一个过滤器或者servlet<br />
 <br />
+</span>
 <span id="q132">Q: 132</span> Your web site has many user-customizable features, for example font and<br />
 color preferences on web pages. Your IT department has already built a subsystem for user preferences<br />
 using Java SE's lang.util.prefs package APIs and you have been ordered to reuse this subsystem in your<br />
@@ -4383,12 +4517,13 @@ se.getSession().addAttribute(&quot;prefs&quot;, userPrefs);<br />
 }<br />
 // more code here<br />
 }<br />
-Answer:<span class='answer'> A</span><br />
+Answer:<span class='answer'> A<br />
 解析:<br />
 HttpSessionListener监听session的创建和销毁<br />
 HttpSessionEvent只有getSession()方法。<br />
 (另外HttpSessionEvent没有getServletContext方法，HttpSession才有，可能题目有误)<br />
 <br />
+</span>
 <span id="q133">Q: 133</span> Given the web application deployment descriptor elements:<br />
 11.&lt;filter&gt;<br />
 12.&lt;filter-name&gt;ParamAdder&lt;/filter-name&gt;<br />
@@ -4407,11 +4542,12 @@ B.&lt;dispatcher&gt;INCLUDE&lt;/dispatcher&gt;<br />
 C.&lt;dispatcher&gt;include&lt;/dispatcher&gt;<br />
 D.&lt;filter-condition&gt;INCLUDE&lt;/filter-condition&gt;<br />
 E.&lt;filter-condition&gt;include&lt;/filter-condition&gt;<br />
-Answer:<span class='answer'> B</span><br />
+Answer:<span class='answer'> B<br />
 解析：<br />
 &lt;dispatcher&gt;&lt;/dispatcher&gt;指定被过滤的方法，<br />
 有四个可能值:REQUEST,FORWARD,INCLUDE和ERROR，默认为REQUEST。<br />
 <br />
+</span>
 <span id="q134">Q: 134</span> Your web application uses a simple architecture in which servlets handle<br />
 requests and then forward to a JSP using a request dispatcher. You need to pass information calculated<br />
 by the servlet to the JSP; furthermore, that JSP uses a custom tag and must also process this information.<br />
@@ -4421,9 +4557,10 @@ A.Store the data in a public instance variable in the servlet.<br />
 B.Add an attribute to the request object before using the request dispatcher.<br />
 C.Add an attribute to the context object before using the request dispatcher.<br />
 D.This CANNOT be done as the tag handler has no means to extract this data.<br />
-Answer:<span class='answer'> B</span><br />
+Answer:<span class='answer'> B<br />
 解析：从servlet向jsp传送数据，而且不能被其它servlet访问，可以跳转前添加到request作用域。<br />
 <br />
+</span>
 <span id="q135">Q: 135</span> A JSP page needs to set the property of a given JavaBean to a value that is<br />
 calculated with the JSP page. Which three jsp:setProperty attributes must be used to perform this<br />
 initialization? (Choose three.)<br />
@@ -4434,7 +4571,7 @@ D.param<br />
 E.value<br />
 F.property<br />
 G.attribute<br />
-Answer:<span class='answer'> C, E, F</span><br />
+Answer:<span class='answer'> C, E, F<br />
 解析：<br />
 jsp:setProperty有四个属性：<br />
 name:必须，要设置属性的bean<br />
@@ -4443,6 +4580,7 @@ value:可选，指定bean的属性的值<br />
 param:可选，指定请求参数作为bean属性的值<br />
 (value和param二选一)<br />
 <br />
+</span>
 <span id="q136">Q: 136</span> Your web application views all have the same header, which includes the<br />
 &lt;title&gt; tag in the &lt;head&gt; element of the rendered HTML. You have decided to remove this redundant<br />
 HTML code from your JSPs and put it into a single JSP called /WEB-INF/jsp/header.jsp. However, the<br />
@@ -4466,11 +4604,12 @@ D. &lt;jsp:insert page='/WEB-INF/jsp/header.jsp'&gt;<br />
 E. &lt;jsp:include page='/WEB-INF/jsp/header.jsp'&gt;<br />
 &nbsp;&nbsp; &lt;jsp:param name='pageTitle' value='Welcome Page' /&gt;<br />
 &nbsp;&nbsp; &lt;/jsp:include&gt;<br />
-Answer:<span class='answer'> E</span><br />
+Answer:<span class='answer'> E<br />
 解析：El表达式不能用来赋值。<br />
 &lt;jsp:include page=&quot;&quot;&gt;动态调用页面。<br />
 jsp:param将一个参数加入当前参数组。<br />
 <br />
+</span>
 <span id="q137">Q: 137</span> A JSP page needs to instantiate a JavaBean to be used by only that page.<br />
 Which two jsp:useBean attributes must be used to access this attribute in the JSP page? (Choose two.)<br />
 A.id<br />
@@ -4479,12 +4618,13 @@ C.name<br />
 D.class<br />
 E.scope<br />
 F.create<br />
-Answer:<span class='answer'> A, D</span><br />
+Answer:<span class='answer'> A, D<br />
 解析：<br />
 jsp:useBean属性<br />
 id 引用该Bean的变量。<br />
 class 该Bean的完整包名。<br />
 <br />
+</span>
 <span id="q138">Q: 138</span> Click the Exhibit button.<br />
 Given the HTML form:<br />
 1. &lt;html&gt;<br />
@@ -4539,19 +4679,21 @@ D. &lt;jsp:useBean id=&quot;product&quot; type=&quot;com.example.Product&quot;&g
 &nbsp;&nbsp; &lt;jsp:setProperty name=&quot;product&quot; property=&quot;name&quot; value=&quot;&lt;%= request.getParameter( &quot;i1&quot; ) %&gt;&quot; /&gt;<br />
 &nbsp;&nbsp; &lt;jsp:setProperty name=&quot;product&quot; property=&quot;price&quot; value=&quot;&lt;%= request.getParameter( &quot;i2&quot; ) %&gt;&quot; /&gt;<br />
 &nbsp;&nbsp; &lt;/jsp:useBean&gt;<br />
-Answer:<span class='answer'> C</span><br />
+Answer:<span class='answer'> C<br />
 解析：<br />
 jsp:useBean必须有id和class(包名)<br />
 jsp:setProperty设置bean属性，name为bean名，property为属性，param将请求参数作为指定属性的值。<br />
 <br />
+</span>
 <span id="q139">Q: 139</span> Click the Task button.<br />
 Place the events in the order they occur.<br />
-Answer:<span class='answer'> Check ExamWorx eEngine, Download from Member Center</span></p>
-<p><img src="0_1303055398B3bI.gif" alt="" /></p>
-<p><img src="0_1303055441EHDe.gif" alt="" /></p>
-<p>解析：Servlet执行顺序。<br />
+Answer:<span class='answer'> Check ExamWorx eEngine, Download from Member Center<br />
+<img src="0_1303055398B3bI.gif" alt="" /><br />
+<img src="0_1303055441EHDe.gif" alt="" /><br />
+解析：Servlet执行顺序。<br />
 <br />
 <br />
+</span>
 <span id="q140">Q: 140</span> For an HttpServletResponse response, which two create a custom header?<br />
 (Choose two.)<br />
 A.response.setHeader(&quot;X-MyHeader&quot;, &quot;34&quot;);<br />
@@ -4560,11 +4702,12 @@ C.response.setHeader(new HttpHeader(&quot;X-MyHeader&quot;, &quot;34&quot;));<br
 D.response.addHeader(new HttpHeader(&quot;X-MyHeader&quot;, &quot;34&quot;));<br />
 E.response.addHeader(new ServletHeader(&quot;X-MyHeader&quot;, &quot;34&quot;));<br />
 F.response.setHeader(new ServletHeader(&quot;X-MyHeader&quot;, &quot;34&quot;));<br />
-Answer:<span class='answer'> A, B</span><br />
+Answer:<span class='answer'> A, B<br />
 解析：设置头文件<br />
 HttpServletResponse.addHeader(java.lang.String name,java.lang.String value)<br />
 HttpServletResponse.setHeader(java.lang.String name,java.lang.String value)<br />
 <br />
+</span>
 <span id="q141">Q: 141</span> You need to create a servlet filter that stores all request headers to a<br />
 database for all requests to the web application's home page &quot;/index.jsp&quot;. Which HttpServletRequest<br />
 method allows you to retrieve all of the request headers?<br />
@@ -4574,11 +4717,12 @@ C.java.util.Iterator getHeaderNames()<br />
 D.java.util.Iterator getRequestHeaders()<br />
 E.java.util.Enumeration getHeaderNames()<br />
 F.java.util.Enumeration getRequestHeaders()<br />
-Answer:<span class='answer'> E</span><br />
+Answer:<span class='answer'> E<br />
 解析：<br />
 HttpServletRequest.getHeaderNames 以Enumeration返回所有请求头的名字。<br />
 没有getRequestHeaders()方法。<br />
 <br />
+</span>
 <span id="q142">Q: 142</span> Given an HttpServletRequest request and HttpServletResponse response,<br />
 which sets a cookie &quot;username&quot; with the value &quot;joe&quot; in a servlet?<br />
 A.request.addCookie(&quot;username&quot;, &quot;joe&quot;)<br />
@@ -4588,17 +4732,18 @@ D.request.addHeader(new Cookie(&quot;username&quot;, &quot;joe&quot;))<br />
 E.request.addCookie(new Cookie(&quot;username&quot;, &quot;joe&quot;))<br />
 F.response.addCookie(new Cookie(&quot;username&quot;, &quot;joe&quot;))<br />
 G.response.addHeader(new Cookie(&quot;username&quot;, &quot;joe&quot;))<br />
-Answer:<span class='answer'> F</span><br />
+Answer:<span class='answer'> F<br />
 解析：<br />
 设置cookie用HttpServletResponse.addCookie(Cookie cookie)<br />
 <br />
+</span>
 <span id="q143">Q: 143</span> Click the Task button.<br />
 Given a request from mybox.example.com, with an IP address of 10.0.1.11 on port 33086, place the<br />
 appropriate ServletRequest methods onto their corresponding return values.<br />
-Answer:<span class='answer'> Check ExamWorx eEngine, Download from Member Center</span></p>
-<p><img src="0_1303055516rpQs.gif" alt="" /></p>
-<p><img src="0_1303055547e5hS.gif" alt="" /></p>
-<p>解析：<br />
+Answer:<span class='answer'> Check ExamWorx eEngine, Download from Member Center<br />
+<img src="0_1303055516rpQs.gif" alt="" /><br />
+<img src="0_1303055547e5hS.gif" alt="" /><br />
+解析：<br />
 getServerPort返回请求所使用端口<br />
 getServerAddr返回请求所指向主机地址(API没有该方法)<br />
 getServerName返回请求所指向主机名<br />
@@ -4606,6 +4751,7 @@ getRemotePort返回客户端端口<br />
 getRemoteAddr返回客户端ip<br />
 getRemoteHost返回客户端主机名<br />
 <br />
+</span>
 <span id="q144">Q: 144</span> Your web application requires the ability to load and remove web files<br />
 dynamically to the web container's file system. Which two HTTP methods are used to perform these<br />
 actions? (Choose two.)<br />
@@ -4615,11 +4761,12 @@ C.SEND<br />
 D.DELETE<br />
 E.REMOVE<br />
 F.DESTROY<br />
-Answer:<span class='answer'> A, D</span><br />
+Answer:<span class='answer'> A, D<br />
 解析：<br />
 PUT 请求服务器存储一个资源<br />
 DELETE 请求服务器删除资源<br />
 <br />
+</span>
 <span id="q145">Q: 145</span> Every page of your web site must include a common set of navigation<br />
 menus at the top of the page. This menu is static HTML and changes frequently, so you have decided to<br />
 use JSP's static import mechanism. Which JSP code snippet accomplishes this goal?<br />
@@ -4629,9 +4776,10 @@ C.&lt;%@ import page='/common/menu.html' %&gt;<br />
 D.&lt;%@ include file='/common/menu.html' %&gt;<br />
 E.&lt;%@ page include='/common/menu.html' %&gt;<br />
 F.&lt;%@ include page='/common/menu.html' %&gt;<br />
-Answer:<span class='answer'> D</span><br />
+Answer:<span class='answer'> D<br />
 &lt;%@include file=&quot;&quot;&gt;编译时导入该页面，即静态调用。<br />
 <br />
+</span>
 <span id="q146">Q: 146</span> For manageability purposes, you have been told to add a &quot;count&quot; instance<br />
 variable to a critical JSP Document so that a JMX MBean can track how frequent this JSP is being<br />
 invoked. Which JSP code snippet must you use to declare this instance variable in the JSP Document?<br />
@@ -4645,9 +4793,10 @@ int count = 0;<br />
 D. &lt;jsp:scriptlet.declaration&gt;<br />
 int count = 0;<br />
 &lt;jsp:scriptlet.declaration&gt;<br />
-Answer:<span class='answer'> A</span><br />
+Answer:<span class='answer'> A<br />
 解析：jspx声明方法为&lt;jsp:declaration&gt;&lt;/jsp:declaration&gt;(题中结束标记有误)<br />
 <br />
+</span>
 <span id="q147">Q: 147</span> You have a new IT manager that has mandated that all JSPs must be<br />
 refactored to include no scritplet code. The IT manager has asked you to enforce this. Which deployment<br />
 descriptor element will satisfy this constraint?<br />
@@ -4667,12 +4816,13 @@ D. &lt;jsp-property-group&gt;<br />
 &nbsp;&nbsp; &lt;url-pattern&gt;*.jsp&lt;/url-pattern&gt;<br />
 &nbsp;&nbsp; &lt;scripting-invalid&gt;true&lt;/scripting-invalid&gt;<br />
 &nbsp;&nbsp; &lt;/jsp-property-group&gt;<br />
-Answer:<span class='answer'> D</span><br />
+Answer:<span class='answer'> D<br />
 解析：<br />
 &lt;jsp-property-group&gt;对多个具有相同属性的JSP统一定义<br />
 &lt;url-pattern&gt;设置值影响的范围<br />
 &lt;scripting-incalid&gt;若为true表示不支持scripting语法<br />
 <br />
+</span>
 <span id="q148">Q: 148</span> You need to create a JSP that generates some JavaScript code to populate<br />
 an array of strings used on the client-side. Which JSP code snippet will create this array?<br />
 A. MY_ARRAY = new Array();<br />
@@ -4691,11 +4841,12 @@ D. MY_ARRAY = new Array();<br />
 &lt;% for ( int i = 0; i &lt; serverArray.length; i++ ) { %&gt;<br />
 MY_ARRAY[${i}] = '${serverArray[i]}';<br />
 &lt;% } %&gt;<br />
-Answer:<span class='answer'> C</span><br />
+Answer:<span class='answer'> C<br />
 解析：<br />
 scripting中不能包含scripting<br />
 EL不能获取scripting中的属性<br />
 <br />
+</span>
 <span id="q149">Q: 149</span> You are building a Front Controller using a JSP page and you need to<br />
 determine if the user's session has NOT been created yet and perform some special processing for this<br />
 case. Which scriptlet code snippet will perform this test?<br />
@@ -4711,12 +4862,13 @@ C. &lt;% if ( requestObject.getSession(false) == null ) {<br />
 D. &lt;% if ( requestObject.getHttpSession(false) == null ) {<br />
 // special processing<br />
 } %&gt;<br />
-Answer:<span class='answer'> A</span><br />
+Answer:<span class='answer'> A<br />
 解析：<br />
 getSession都是返回当前用户的会话对象，参数的区别在于<br />
 参数为true，如果&ldquo;当前用户的会话对象&rdquo;为空（第一次访问时）则创建一个新的会话对象返回<br />
-参数为false，如果&ldquo;当前用户的会话对象&rdquo;为空，则返回null（即不自动创建会话对象）</p>
-<p><br />
+参数为false，如果&ldquo;当前用户的会话对象&rdquo;为空，则返回null（即不自动创建会话对象）<br />
+<br />
+</span>
 <span id="q150">Q: 150</span> You are creating a new JSP page and you need to execute some code that<br />
 acts when the page is first executed, but only once. Which three are possible mechanisms for performing<br />
 this initialization code? (Choose three.)<br />
@@ -4725,20 +4877,22 @@ B.In the jspInit method.<br />
 C.In the constructor of the JSP's Java code.<br />
 D.In a JSP declaration, which includes an initializer block.<br />
 E.In a JSP declaration, which includes a static initializer block.<br />
-Answer:<span class='answer'> B, D, E</span><br />
+Answer:<span class='answer'> B, D, E<br />
 解析：(同89题)<br />
 A.只有servlet才有init方法<br />
 C.jsp没有构造方法。<br />
 D.动态块，初始化是运行一次，相当于构造方法<br />
-E.静态块，运行时只执行一次。<br /></p>   
+E.静态块，运行时只执行一次。<br /><br />   
 
-<p><span id="q151">Q: 151</span> Click the Task button.<br>
+</span>
+<span id="q151">Q: 151</span> Click the Task button.<br>
 Place the code snippets in the proper order to construct the JSP code to include dynamic content into a<br>
 JSP page at request-time.<br>
-Answer:<span class='answer'> Check ExamWorx eEngine, Download from Member Center</span></p>
-<p><img src="0_1306817409YcIi.gif" alt=""><img src="0_1306817418ehL9.gif" alt=""><br>
+Answer:<span class='answer'> Check ExamWorx eEngine, Download from Member Center<br />
+<img src="0_1306817409YcIi.gif" alt=""><img src="0_1306817418ehL9.gif" alt=""><br>
 解析:动态加载页面&lt;jsp:include page=&quot;&quot;/&gt;<br>
 <br>
+</span>
 <span id="q152">Q: 152</span> Given:<br>
 6. &lt;% int[] nums = {42, 420, 4200};<br>
 7. request.setAttribute(&quot;foo&quot;, nums); %&gt;<br>
@@ -4747,11 +4901,12 @@ A.${true or false}<br>
 B.${requestScope[foo][0] &gt; 500}<br>
 C.${requestScope['foo'][1] = 420}<br>
 D.${(requestScope['foo'][0] lt 50) &amp;&amp; (3 gt 2)}<br>
-Answer:<span class='answer'> A, D</span><br>
+Answer:<span class='answer'> A, D<br>
 解析：<br>
 EL获取request中参数的方法${foo[0]}=${requestScope['foo'][0]}=42<br>
 ==(是否相等)或者eq(equal)<br>
 <br>
+</span>
 <span id="q153">Q: 153</span> Click the Exhibit button.<br>
 Given:<br>
 11. &lt;% com.example.Advisor advisor = new com.example.Advisor(); %&gt;<br>
@@ -4776,13 +4931,14 @@ C.${requestScope.foo.advice}<br>
 D.${requestScope[foo[advice]]}<br>
 E.${requestScope[&quot;foo&quot;][&quot;advice&quot;]}<br>
 F.${requestScope[&quot;foo&quot;[&quot;advice&quot;]]}<br>
-Answer:<span class='answer'> A, C, E</span><br>
+Answer:<span class='answer'> A, C, E<br>
 解析：EL获取request中的属性的方法：<br>
 ${foo.advice}<br>
 ${requestScope.foo.advice}<br>
 ${requestScope[&quot;foo&quot;][&quot;advice&quot;]}<br>
 另外：EL的foo.advice=advice(即foo).getAdvice()<br>
 <br>
+</span>
 <span id="q154">Q: 154</span> You are creating an error page that provides a user-friendly screen<br>
 whenever a server exception occurs. You want to hide the stack trace, but you do want to provide the<br>
 exception's error message to the user so the user can provide it to the customer service agent at your<br>
@@ -4793,12 +4949,13 @@ C.Message: &lt;b&gt;${request.exception.message}&lt;/b&gt;<br>
 D.Message: &lt;b&gt;${pageContext.exception.message}&lt;/b&gt;<br>
 E.Message: &lt;b&gt;${request.exception.errorMessage}&lt;/b&gt;<br>
 F.Message: &lt;b&gt;${pageContext.exception.errorMessage}&lt;/b&gt;<br>
-Answer:<span class='answer'> D</span><br>
+Answer:<span class='answer'> D<br>
 解析：<br>
 EL没有exception和request(有requestScopr)对象<br>
 EL用pageContext获得当前页面的javax.servlet.jsp.PageContext对象<br>
 exception只有getMessage没有getErrorMessage方法<br>
 <br>
+</span>
 <span id="q155">Q: 155</span> You are building a dating web site. The client's date of birth is collected<br>
 along with lots of other information. You have created an EL function with the signature:<br>
 calcAge(java.util.Date):int and it is assigned to the name, age, in the namespace, funct. In one of your<br>
@@ -4810,11 +4967,12 @@ C.${funct:age(client.birthDate) &lt; 25}<br>
 D.${funct:age[client.birthDate] &lt; 25}<br>
 E.${funct:calcAge(client.birthDate) &lt; 25}<br>
 F.${funct:calcAge[client.birthDate] &lt; 25}<br>
-Answer:<span class='answer'> C</span><br>
+Answer:<span class='answer'> C<br>
 解析：<br>
 EL函数calcAge标记为age,并且命名空间为funct<br>
 调用该函数：${funct:age(client.birthDate)}<br>
 <br>
+</span>
 <span id="q156">Q: 156</span> Given:<br>
 11. &lt;% java.util.Map map = new java.util.HashMap();<br>
 12. request.setAttribute(&quot;map&quot;, map);<br>
@@ -4829,9 +4987,10 @@ C.${map[&quot;c&quot;]}<br>
 D.${map.map.b}<br>
 E.${map[map.b]}<br>
 F.${map.(map.b)}<br>
-Answer:<span class='answer'> A, C, E</span><br>
+Answer:<span class='answer'> A, C, E<br>
 解析：${map.c}=${map[&quot;c&quot;]} ${map.b}=&quot;c&quot;<br>
 <br>
+</span>
 <span id="q157">Q: 157</span> Assume the tag handler for a st:simple tag extends SimpleTagSupport. In<br>
 what way can scriptlet code be used in the body of st:simple?<br>
 A. set the body content type to JSP in the TLD<br>
@@ -4839,20 +4998,22 @@ B. Scriptlet code is NOT legal in the body of st:simple.<br>
 C. add scripting-enabled=&quot;true&quot; to the start tag for the st:simple element<br>
 D. add a pass-through Classic tag with a body content type of JSP to the body of st:simple, and place the<br>
 scriptlet code in the body of that tag<br>
-Answer:<span class='answer'> B</span><br>
+Answer:<span class='answer'> B<br>
 解析：scriptlet不能用在标签体内，虽然&lt;body-content&gt;有个scriptless选项，但是不能使用jsp脚本(scriptlet)。<br>
 <br>
+</span>
 <span id="q158">Q: 158</span> Which statement is true if the doStartTag method returns<br>
 EVAL_BODY_BUFFERED ?<br>
 A.The tag handler must implement BodyTag.<br>
 B.The doAfterBody method is NOT called.<br>
 C.The setBodyContent method is called once.<br>
 D.It is never legal to return EVAL_BODY_BUFFERED from doStartTag.<br>
-Answer:<span class='answer'> C</span><br>
+Answer:<span class='answer'> C<br>
 解析：<br>
 A.实现BodyTag接口或者继承BodyTagSupport类(该类实现了BodyTag接口)<br>
 C.EVVAL_BODY_BUFFERED:申请缓冲区，由setBodyContent()函数得到的BodyContent对象来处理tag的body。<br>
 <br>
+</span>
 <span id="q159">Q: 159</span> You are creating a library of custom tags that mimic the HTML form tags.<br>
 When the user submits a form that fails validation, the JSP form is forwarded back to the user. The<br>
 &lt;t:textField&gt; tag must support the ability to re-populate the form field with the request parameters from<br>
@@ -4902,23 +5063,25 @@ D. public void doTag() throws JspException {<br>
 &nbsp;&nbsp;&nbsp; } (Exception e) { throw new JspException(e); }<br>
 &nbsp;&nbsp;&nbsp; }<br>
 &nbsp;&nbsp;&nbsp; private static String INPUT = &quot;&lt;input type='text' name='%s' value='%s' /&gt;&quot;;<br>
-Answer:<span class='answer'> C</span><br>
+Answer:<span class='answer'> C<br>
 解析：<br>
 JspContext是pageContext的父类，主要用于继承，并且与servlet无关。<br>
 doTag()方法为SimpleTagSupport中的方法，继承该类实现一些简单的自订标签。<br>
 doStartTag()方法为TagSupport中的方法，继承该类处理一些回传&#20540;的问题，可以获得pageContext属性。<br>
 <br>
+</span>
 <span id="q160">Q: 160</span> Which two directives are applicable only to tag files? (Choose two.)<br>
 A. tag<br>
 B. page<br>
 C. taglib<br>
 D. include<br>
 E. variable<br>
-Answer:<span class='answer'> A, E</span><br>
+Answer:<span class='answer'> A, E<br>
 解析：<br>
 tag files中能使用的指令元素有taglib、include、tag、attribute、variable<br>
 只有tag files才有的就是tag和variable<br>
 <br>
+</span>
 <span id="q161">Q: 161</span> The tl:taskList and tl:task tags output a set of tasks to the response and are<br>
 used as follows:<br>
 11. &lt;tl:taskList&gt;<br>
@@ -4942,12 +5105,13 @@ TaskListTag, and call addTaskName().<br>
 E. Create an addTaskName method in TaskListTag. Have the TaskListTag.doStartTag method, return<br>
 BodyTag.EVAL_BODY_BUFFERED. In the TaskTag.doStartTag method, call findAncestorWithClass() on the<br>
 PageContext, passing TaskListTag as the class to find. Cast the result to TaskListTag and call addTaskName().<br>
-Answer:<span class='answer'> D</span><br>
+Answer:<span class='answer'> D<br>
 解析：<br>
 BodyTagSupport的父类为TagSupport<br>
 TagSupport的getParent()方法可以获得父Tag<br>
 TagSupport的findAncestorWithClass()方法可以递归找到要找的Tag(BodyTagSupport没有该方法)<br>
 <br>
+</span>
 <span id="q162">Q: 162</span> Click the Exhibit button.<br>
 Given:<br>
 10. &lt;form action='create_product.jsp'&gt;<br>
@@ -4990,7 +5154,7 @@ D.param<br>
 E. property<br>
 F. reqParam<br>
 G. attribute<br>
-Answer:<span class='answer'> B, D, E</span><br>
+Answer:<span class='answer'> B, D, E<br>
 解析：<br>
 jsp:setProperty有四个属性：<br>
 name:指定属性所属的Bean(必需)<br>
@@ -4998,6 +5162,7 @@ property:指定要设置的属性(必须)<br>
 param:指定请求的参数作为Bean的&#20540;(二选一)<br>
 value:指定Bean的属性的&#20540;<br>
 <br>
+</span>
 <span id="q163">Q: 163</span> Given:<br>
 1. package com.example;<br>
 2.<br>
@@ -5019,11 +5184,12 @@ scope=&quot;session&quot; /&gt;<br>
 D. &lt;jsp:useBean id=&quot;item&quot; type=&quot;com.example.ConcreteItem&quot;<br>
 class=&quot;com.example.AbstractItem&quot;<br>
 scope=&quot;session&quot; /&gt;<br>
-Answer:<span class='answer'> B, C</span><br>
+Answer:<span class='answer'> B, C<br>
 解析：jsp:useBean:<br>
 class设置Bean的完整包名。<br>
 type设置该对象的变量的类型。<br>
 <br>
+</span>
 <span id="q164">Q: 164</span> Your web application views all have the same header, which includes the<br>
 &lt;title&gt; tag in the &lt;head&gt; element of the rendered HTML. You have decided to remove this redundant<br>
 HTML code from your JSPs and put it into a single JSP called /WEB-INF/jsp/header.jsp. However, the<br>
@@ -5047,10 +5213,11 @@ D. &lt;jsp:insert page='/WEB-INF/jsp/header.jsp'&gt;<br>
 E. &lt;jsp:include page='/WEB-INF/jsp/header.jsp'&gt;<br>
 &lt;jsp:param name='pageTitle' value='Welcome Page' /&gt;<br>
 &lt;/jsp:include&gt;<br>
-Answer:<span class='answer'> E</span><br>
+Answer:<span class='answer'> E<br>
 解析：&lt;jsp:include page=&quot;&quot;&gt;动态加载页面<br>
 B的pageTile设置不对。<br>
 <br>
+</span>
 <span id="q165">Q: 165</span> Click the Exhibit button.<br>
 Given the JSP code:<br>
 1. &lt;%<br>
@@ -5098,12 +5265,13 @@ scope=&quot;page&quot; /&gt;<br>
 E. &lt;jsp:useBean id=&quot;product&quot; type=&quot;com.example.Product&quot;&gt;<br>
 &lt;%= product.getName() %&gt;<br>
 &lt;/jsp:useBean&gt;<br>
-Answer:<span class='answer'> B, D</span><br>
+Answer:<span class='answer'> B, D<br>
 解析：<br>
 jsp:useBean先引入Bean再在页面中使用。<br>
 scope默认为page(pageContext)<br>
 顺便讲下jsp:useBean的class和type的区别，class为bean的类(包括包名)，type为bean的类型(父类或者接口)<br>
 <br>
+</span>
 <span id="q166">Q: 166</span> If you want to use the Java EE platform's built-in type of authentication<br>
 that uses a custom HTML page for authentication, which two statements are true? (Choose two.)<br>
 A. Your deployment descriptor will need to contain this tag:<br>
@@ -5114,12 +5282,13 @@ D. You must have a tag in your deployment descriptor that allows you to point to
 an HTML page for handling any login errors.<br>
 E. In the HTML related to authentication for this application, you must use predefined variable names for the<br>
 variables that store the user and password values.<br>
-Answer:<span class='answer'> D, E</span><br>
+Answer:<span class='answer'> D, E<br>
 解析：<br>
 &lt;auth-method&gt;的取&#20540;为BASIC/FORM/DIGEST/CLIENT-CERT<br>
 D.必须指定登录页面和错误页面<br>
 E.登录页面的用户名和密码必须指定<br>
 <br>
+</span>
 <span id="q167">Q: 167</span> Given the two security constraints in a deployment descriptor:<br>
 101. &lt;security-constraint&gt;<br>
 102. &lt;!--a correct url-pattern and http-method goes here--&gt;<br>
@@ -5145,9 +5314,10 @@ C. &lt;auth-constraint&gt;<br>
 D. &lt;auth-constraint&gt;<br>
 &lt;role-name&gt;MARKETING&lt;/role-name&gt;<br>
 &lt;/auth-constraint&gt;<br>
-Answer:<span class='answer'> B, D</span><br>
+Answer:<span class='answer'> B, D<br>
 解析：A.表示没有用户可以访问该资源。<br>
 <br>
+</span>
 <span id="q168">Q: 168</span> Which two are valid values for the &lt;transport-guarantee&gt; element inside a<br>
 &lt;security-constraint&gt; element of a web application deployment descriptor? (Choose two.)<br>
 A.NULL<br>
@@ -5155,45 +5325,49 @@ B.SECURE<br>
 C.INTEGRAL<br>
 D.ENCRYPTED<br>
 E.CONFIDENTIAL<br>
-Answer:<span class='answer'> C, E</span><br>
+Answer:<span class='answer'> C, E<br>
 解析:&lt;transport-guarantee&gt;的元素必须有如下&#20540;：<br>
 NONE：不需要传输保证<br>
 INTEGRAL：确保数据的真实性，数据传输过程中不嫩更改<br>
 CONFIDENTIAL：只有授权的用户能读取数据，即传输必须加密。<br>
 <br>
+</span>
 <span id="q169">Q: 169</span> Which basic authentication type is optional for a J2EE 1.4 compliant web<br>
 container?<br>
 A.HTTP Basic Authentication<br>
 B.Form Based Authentication<br>
 C.HTTP Digest Authentication<br>
 D.HTTPS Client Authentication<br>
-Answer:<span class='answer'> C</span><br>
+Answer:<span class='answer'> C<br>
 解析:<br>
 C.HTTP Digest Authentication(摘要认证)<br>
 <br>
+</span>
 <span id="q170">Q: 170</span> Which security mechanism uses the concept of a realm?<br>
 A.authorization<br>
 B.data integrity<br>
 C.confidentiality<br>
 D.authentication<br>
-Answer:<span class='answer'> D</span><br>
+Answer:<span class='answer'> D<br>
 解析：<br>
 A.authorization授权<br>
 D.authentication认证(使用域控制)<br>
 <br>
+</span>
 <span id="q171">Q: 171</span> Which two security mechanisms can be directed through a sub-element of<br>
 the &lt;user-data-constraint&gt; element in a web application deployment descriptor? (Choose two.)<br>
 A.authorization<br>
 B.data integrity<br>
 C.confidentiality<br>
 D.authentication<br>
-Answer:<span class='answer'> B, C</span><br>
+Answer:<span class='answer'> B, C<br>
 解析：&lt;user-data-constraint&gt;用于设置怎么保护数据传输，<br>
 必须包含一个transport-guarantee子元素，可选&#20540;如下：<br>
 NONE:不用传输保证。<br>
 INTEGRAL:保密传输，途中不能改变。<br>
 CONFIDENTIAL:传送的数据必须是加密的。<br>
 <br>
+</span>
 <span id="q172">Q: 172</span> You are developing several tag libraries that will be sold for development<br>
 of third-party web applications. You are about to publish the first three libraries as JAR files:<br>
 container-tags.jar, advanced-html-form-tags.jar, and basic-html-form-tags.jar. Which two techniques are<br>
@@ -5204,9 +5378,10 @@ C.The TLD must be located within the META-INF/tld/ directory of the JAR file.<br
 D.The TLD must be located within a subdirectory of WEB-INF directory of the JAR file.<br>
 E.The TLD must be located within a subdirectory of META-INF directory of the JAR file.<br>
 F.The TLD must be located within a subdirectory of META-INF/tld/ directory of the JAR file.<br>
-Answer:<span class='answer'> B, E</span><br>
+Answer:<span class='answer'> B, E<br>
 解析：jar中的tld文件必须放在META-INF文件下或该文件子文件下，才能识别。<br>
 <br>
+</span>
 <span id="q173">Q: 173</span> A custom tag is defined to take three attributes. Which two correctly<br>
 invoke the tag within a JSP page? (Choose two.)<br>
 A. &lt;prefix:myTag a=&quot;foo&quot; b=&quot;bar&quot; c=&quot;baz&quot; /&gt;<br>
@@ -5226,10 +5401,11 @@ G. &lt;prefix:myTag&gt;<br>
 &nbsp;&nbsp; &lt;jsp:attribute name=&quot;b&quot;&gt;bar&lt;/jsp:attribute&gt;<br>
 &nbsp;&nbsp; &lt;jsp:attribute name=&quot;c&quot;&gt;baz&lt;/jsp:attribute&gt;<br>
 &nbsp;&nbsp; &lt;/prefix:myTag&gt;<br>
-Answer:<span class='answer'> A, G</span><br>
+Answer:<span class='answer'> A, G<br>
 解析：自定义标签myTag能同时设置三个属性&#20540;<br>
 jsp:attribute用于设置属性。<br>
 <br>
+</span>
 <span id="q174">Q: 174</span> In a JSP-centric shopping cart application, you need to move a client's<br>
 home address of the Customer object into the shipping address of the Order object. The address data is<br>
 stored in a value object class called Address with properties for: street address, city, province, country,<br>
@@ -5246,11 +5422,12 @@ E. &lt;c:set target='${order}' property='shipAddress'&gt;<br>
 F. &lt;c:setProperty name='${order}' property='shipAddress'&gt;<br>
 &nbsp;&nbsp; &lt;jsp:getProperty name='client' property='homeAddress' /&gt;<br>
 &nbsp;&nbsp; &lt;/c:setProperty&gt;<br>
-Answer:<span class='answer'> B, E</span><br>
+Answer:<span class='answer'> B, E<br>
 解析：c:set标签有两种设置:var和target<br>
 var用于设置域属性，target版本用于设置bean属性或Map&#20540;<br>
 如果target指定是一个bean，property用于指定bean的一个属性,value指定属性&#20540;。<br>
 <br>
+</span>
 <span id="q175">Q: 175</span> You have been contracted to create a web site for a free dating service.<br>
 One feature is the ability for one client to send a message to another client, which is displayed in the latter<br>
 client's private page. Your contract explicitly states that security is a high priority. Therefore, you need to<br>
@@ -5262,11 +5439,12 @@ B.&lt;c:out value='${message}' /&gt;<br>
 C.&lt;c:out value='${message}' escapeXml='true' /&gt;<br>
 D.&lt;c:out eliminateXml='true'&gt;${message}&lt;/c:out&gt;<br>
 E.&lt;c:out value='${message}' eliminateXml='true' /&gt;<br>
-Answer:<span class='answer'> B, C</span><br>
+Answer:<span class='answer'> B, C<br>
 解析：c:out用于显示表达式的&#20540;，有如下属性：<br>
 value:定义求解的表达式。<br>
 escapeXML:可选属性,指定输出特殊标记,如果为true，则自动处理。<br>
 <br>
+</span>
 <span id="q176">Q: 176</span> Click the Exhibit button.<br>
 Assuming the tag library in the exhibit is imported with the prefix forum, which custom tag invocation<br>
 produces a translation error in a JSP page?<br>
@@ -5306,14 +5484,15 @@ D. &lt;forum:message from=&quot;My Name&quot; subject=&quot;My Subject&quot;&gt;
 E. &lt;forum:message from=&quot;My Name&quot; subject=&quot;&lt;%= request.getParameter( &quot;subject&quot; ) %&gt;&quot;&gt;<br>
 &nbsp;&nbsp; My message body.<br>
 &nbsp;&nbsp; &lt;/forum:message&gt;<br>
-Answer:<span class='answer'> D</span><br>
-解析：</p>
-<p>题目要求选择产生编译错误的选项。<br>
+Answer:<span class='answer'> D<br>
+解析：<br />
+题目要求选择产生编译错误的选项。<br>
 &lt;body-content&gt;<span style="font-family:宋体">设置可以使用</span><span style="font-family:Times New Roman">scriptless</span>但是不能使用scriptlet<span style="font-family:宋体">，所以</span><span style="font-family:Times New Roman">D</span><span style="font-family:宋体">不正确</span><br>
 &lt;rtexprvalue&gt;<span style="font-family:宋体">设置属性取动态&#20540;还是静态&#20540;，如果</span><span style="font-family:Times New Roman">true</span><span style="font-family:宋体">即</span>可以取动态&#20540;例如EL<span style="font-family:宋体">表达式</span><br>
-</p>
+<br />
 <br>
 <br>
+</span>
 <span id="q177">Q: 177</span> Which JSTL code snippet can be used to import content from another web<br>
 resource?<br>
 A.&lt;c:import url=&quot;foo.jsp&quot;/&gt;<br>
@@ -5321,9 +5500,10 @@ B.&lt;c:import page=&quot;foo.jsp&quot;/&gt;<br>
 C.&lt;c:include url=&quot;foo.jsp&quot;/&gt;<br>
 D.&lt;c:include page=&quot;foo.jsp&quot;/&gt;<br>
 E.Importing cannot be done in JSTL. A standard action must be used instead.<br>
-Answer:<span class='answer'> A</span><br>
+Answer:<span class='answer'> A<br>
 解析:&lt;c:import url=&quot;&quot;&gt;相当于&lt;jsp:include page=&quot;&quot;&gt;<br>
 <br>
+</span>
 <span id="q178">Q: 178</span> Click the Exhibit button.<br>
 Assume the tag library in the exhibit is placed in a web application in the path<br>
 /WEB-INF/tld/example.tld.<br>
@@ -5348,9 +5528,10 @@ A. &lt;%@ taglib prefix=&quot;ex&quot; uri=&quot;/WEB-INF/tld&quot; %&gt;<br>
 B. &lt;%@ taglib uri=&quot;/WEB-INF/tld/example.tld&quot; %&gt;<br>
 C. &lt;%@ taglib prefix=&quot;ex&quot; uri=&quot;http://localhost:8080/tld/example.tld&quot; %&gt;<br>
 D. &lt;%@ taglib prefix=&quot;ex&quot; uri=&quot;http://example.com/tld/example&quot; %&gt;<br>
-Answer:<span class='answer'> D</span><br>
+Answer:<span class='answer'> D<br>
 解析：taglib的设置要按照tag library中的属性,short-name即前缀，uri为路径。<br>
 <br>
+</span>
 <span id="q179">Q: 179</span> Which JSTL code snippet produces the output &quot;big number&quot; when X is<br>
 greater than 42, but outputs &quot;small number&quot; in all other cases?<br>
 A. &lt;c:if test='&lt;%= (X &gt; 42) %&gt;'&gt;<br>
@@ -5373,13 +5554,14 @@ E. &lt;c:choose&gt;<br>
 &nbsp;&nbsp; &lt;c:when test='&lt;%= (X &gt; 42) %&gt;'&gt;big number&lt;/c:when&gt;<br>
 &nbsp;&nbsp; &lt;c:otherwise&gt;small number&lt;/c:otherwise&gt;<br>
 &nbsp;&nbsp; &lt;/c:choose&gt;<br>
-Answer:<span class='answer'> E</span><br>
+Answer:<span class='answer'> E<br>
 解析：jstl中没有else(then也没有)的用法，可以如下替代：<br>
 &lt;c:choose&gt;<br>
 &nbsp;&nbsp;&nbsp; &lt;c:when test=&quot;&quot;&gt;if&lt;/c:when&gt;<br>
 &nbsp;&nbsp;&nbsp; &lt;c:otherwise&gt;else&lt;/otherwise&gt;<br>
 &lt;c:choose&gt;<br>
 <br>
+</span>
 <span id="q180">Q: 180</span> A developer chooses to avoid using SingleThreadModel but wants to<br>
 ensure that data is updated in a thread-safe manner. Which two can support this design goal? (Choose<br>
 two.)<br>
@@ -5388,9 +5570,10 @@ B.Store the data in an instance variable.<br>
 C.Store the data in the HttpSession object.<br>
 D.Store the data in the ServletContext object.<br>
 E.Store the data in the ServletRequest object.<br>
-Answer:<span class='answer'> A, E</span><br>
+Answer:<span class='answer'> A, E<br>
 解析：本地变量和ServletRequest对象是线程安全的。<br>
 <br>
+</span>
 <span id="q181">Q: 181</span> Your web application uses a simple architecture in which servlets handle<br>
 requests and then forward to a JSP using a request dispatcher. You need to pass information calculated<br>
 in the servlet to the JSP for view generation. This information must NOT be accessible to any other<br>
@@ -5401,9 +5584,10 @@ B.Add attributes on the request object.<br>
 C.Add parameters to the request object.<br>
 D.Use the pageContext object to add request attributes.<br>
 E.Add parameters to the JSP's URL when generating the request dispatcher.<br>
-Answer:<span class='answer'> B, E</span><br>
+Answer:<span class='answer'> B, E<br>
 解析：(同134)要不被其它servlet访问，可以将其属性添加到request域中，或在路径后添加属性和&#20540;。<br>
 <br>
+</span>
 <span id="q182">Q: 182</span> For which three events can web application event listeners be registered?<br>
 (Choose three.)<br>
 A.when a session is created<br>
@@ -5412,12 +5596,13 @@ C.when a session has timed out<br>
 D.when a cookie has been created<br>
 E.when a servlet has forwarded a request<br>
 F.when a session attribute value is changed<br>
-Answer:<span class='answer'> A, C, F</span><br>
+Answer:<span class='answer'> A, C, F<br>
 解析：<br>
 A.session created-&gt;sessionCreated(HttpSessonListener)<br>
 C.session timeout-&gt;SessionDestroyed(HttpSessionListener)<br>
 F.session changed-&gt;Attribute Added/Removed/Replaced(HttpSessionAttributeEvent)<br>
 <br>
+</span>
 <span id="q183">Q: 183</span> Given:<br>
 String value = getServletContext().getInitParameter(&quot;foo&quot;);<br>
 in an HttpServlet and a web application deployment descriptor that contains:<br>
@@ -5432,12 +5617,13 @@ C.The foo initialization parameter is NOT a servlet initialization parameter.<br
 D.Compilation fails because ServletContext does NOT have a getInitParameter method.<br>
 E.The foo parameter must be defined within the &lt;servlet&gt; element of the deployment descriptor.<br>
 F.The foo initialization parameter can also be retrieved using getServletConfig().getInitParameter(&quot;foo&quot;).<br>
-Answer:<span class='answer'> A, C</span><br>
+Answer:<span class='answer'> A, C<br>
 解析：<br>
 A.foo的&#20540;只能读取，不能设置。<br>
 C.foo是application(servletcontext)范围的参数，<br>
 &nbsp; servlet范围参数用&lt;init-param&gt;设置。<br>
 <br>
+</span>
 <span id="q184">Q: 184</span> Click the Exhibit button. Given the web application deployment descriptor<br>
 elements:<br>
 11. &lt;filter&gt;<br>
@@ -5487,12 +5673,13 @@ A.The output &quot;filterAdded = null&quot; is written to the response stream.<b
 B.The output &quot;filterAdded = addedByFilter&quot; is written to the response stream.<br>
 C.An exception is thrown at runtime within the service method of the Source servlet.<br>
 D.An exception is thrown at runtime within the service method of the Destination servlet.<br>
-Answer:<span class='answer'> A</span><br>
-<p>解析：<span style="font-family:Times New Roman">servlet-2.4</span><span style="font-family:宋体">中</span><span style="font-family:Times New Roman">Filter</span><span style="font-family:宋体">默认下只拦截外部提交</span>，forward<span style="font-family:宋体">和</span><span style="font-family:Times New Roman">include</span><span style="font-family:宋体">这些内部转发不会被拦截，</span></p>
-<p>如果要求处理内部拦截必须配置&lt;dispatcher&gt;FORWARD&lt;/dispatcher&gt;</p>
-<p>所以题中的<span style="font-family:Times New Roman">filter</span>没有执行。</p>
+Answer:<span class='answer'> A<br>
+解析：<span style="font-family:Times New Roman">servlet-2.4</span><span style="font-family:宋体">中</span><span style="font-family:Times New Roman">Filter</span><span style="font-family:宋体">默认下只拦截外部提交</span>，forward<span style="font-family:宋体">和</span><span style="font-family:Times New Roman">include</span><span style="font-family:宋体">这些内部转发不会被拦截，</span><br />
+如果要求处理内部拦截必须配置&lt;dispatcher&gt;FORWARD&lt;/dispatcher&gt;<br />
+所以题中的<span style="font-family:Times New Roman">filter</span>没有执行。<br />
 <br>
 <br>
+</span>
 <span id="q185">Q: 185</span> Given a Filter class definition with this method:<br>
 21. public void doFilter(ServletRequest request,<br>
 22. ServletResponse response,<br>
@@ -5506,9 +5693,10 @@ A.chain.forward(request, response);<br>
 B.chain.doFilter(request, response);<br>
 C.request.forward(request, response);<br>
 D.request.doFilter(request, response);<br>
-Answer:<span class='answer'> B</span><br>
+Answer:<span class='answer'> B<br>
 解析：FilterChain.doFilter(request,response)跳转到下一个过滤器或页面;<br>
 <br>
+</span>
 <span id="q186">Q: 186</span> Servlet A forwarded a request to servlet B using the forward method of<br>
 RequestDispatcher. What attribute in B's request object contains the URI of the original request received<br>
 by servlet A?<br>
@@ -5517,9 +5705,10 @@ B.javax.servlet.forward.request_uri<br>
 C.javax.servlet.forward.REQUEST_URI<br>
 D.javax.servlet.request_dispatcher.request_uri<br>
 E.javax.servlet.request_dispatcher.REQUEST_URI<br>
-Answer:<span class='answer'> B</span><br>
+Answer:<span class='answer'> B<br>
 解析：javax.servlet.forward.request_uri跳转前的原始路径。<br>
 <br>
+</span>
 <span id="q187">Q: 187</span> You want to create a valid directory structure for your Java EE web<br>
 application, and you want to put your web application into a WAR file called MyApp.war. Which two<br>
 are true about the WAR file? (Choose two.)<br>
@@ -5528,11 +5717,12 @@ B. At deploy time, Java EE containers add a file called MANIFEST.MF directly int
 C. It can instruct your Java EE container to verify, at deploy time, whether you have properly configured your<br>
 application's classes.<br>
 D. At deploy time, Java EE containers add a directory call META-WAR directly into the MyApp directory.<br>
-Answer:<span class='answer'> A, C</span><br>
+Answer:<span class='answer'> A, C<br>
 解析：<br>
 A.部署时，容器会加载META-INF中的配置文件。<br>
 C.容器加载配置文件，检查配置是否正确<br>
 <br>
+</span>
 <span id="q188">Q: 188</span> Which two from the web application deployment descriptor are valid?<br>
 (Choose two.)<br>
 A. &lt;error-page&gt;<br>
@@ -5555,12 +5745,13 @@ E. &lt;error-page&gt;<br>
 &nbsp;&nbsp; &lt;exception-type&gt;NullPointerException&lt;/exception-type&gt;<br>
 &nbsp;&nbsp; &lt;location&gt;/error.html&lt;/location&gt;<br>
 &nbsp;&nbsp; &lt;/error-page&gt;<br>
-Answer:<span class='answer'> C, D</span><br>
+Answer:<span class='answer'> C, D<br>
 解析：<br>
 在web.xml中设置错误页面的方法有两种：<br>
 错误码(&lt;error-code&gt;)或异常类型(&lt;exception-type)<br>
 java.lang.Error不是异常<br>
 <br>
+</span>
 <span id="q189">Q: 189</span> After a merger with another small business, your company has inherited a<br>
 legacy WAR file but the original source files were lost. After reading the documentation of that web<br>
 application, you discover that the WAR file contains a useful tag library that you want to reuse in your<br>
@@ -5574,9 +5765,10 @@ top-level directory, repackage the whole thing as a JAR file, and place that JAR
 directory.<br>
 D. Unpack the legacy WAR file, move the TLD file to the META-INF directory, move the class files to the<br>
 top-level directory, repackage the WAR, and place that WAR file in your webapp's WEB-INF directory.<br>
-Answer:<span class='answer'> C</span><br>
+Answer:<span class='answer'> C<br>
 解析：(同44题）解压war文件，把tld文件和class文件放置在自己的程序下，达到复用的目的，再把自己的程序打包成war使用。<br>
 <br>
+</span>
 <span id="q190">Q: 190</span> Which path is required to be present within a WAR file?<br>
 A./classes<br>
 B./index.html<br>
@@ -5585,10 +5777,11 @@ D./WEB-INF/web.xml<br>
 E./WEB-INF/classes<br>
 F./WEB-INF/index.html<br>
 G./META-INF/index.xml<br>
-Answer:<span class='answer'> D</span><br>
+Answer:<span class='answer'> D<br>
 解析：<br>
 D.web.xml程序配置文件<br>
 <br>
+</span>
 <span id="q191">Q: 191</span> Given:<br>
 11. &lt;servlet&gt;<br>
 12. &lt;servlet-name&gt;catalog&lt;/servlet-name&gt;<br>
@@ -5601,13 +5794,14 @@ B.Line 14 is not valid for a servlet declaration.<br>
 C.One instance of the servlet will be loaded at startup.<br>
 D.Ten instances of the servlet will be loaded at startup.<br>
 E.The servlet will be referenced by the name catalog in mappings.<br>
-Answer:<span class='answer'> C, E</span><br>
+Answer:<span class='answer'> C, E<br>
 解析：<br>
 &lt;load-on-startup&gt;设置容器是否在启动是加载该servlet<br>
 当&#20540;为0或者大于0时，表示启动时加载.<br>
 C.启动是会加载一个servlet实例<br>
 E.mapping的名字应该是该servlet的名字<br>
 <br>
+</span>
 <span id="q192">Q: 192</span> You have built a web application with tight security. Several directories of<br>
 your webapp are used for internal purposes and you have overridden the default servlet to send an<br>
 HTTP 403 status code for any request that maps to one of these directories. During testing, the Quality<br>
@@ -5633,13 +5827,14 @@ D. &lt;error-page&gt;<br>
 &nbsp;&nbsp; &lt;status-code&gt;403&lt;/status-code&gt;<br>
 &nbsp;&nbsp; &lt;location&gt;/WEB-INF/jsps/error403.jsp&lt;/location&gt;<br>
 &nbsp;&nbsp; &lt;/error-page&gt;<br>
-Answer:<span class='answer'> C</span><br>
+Answer:<span class='answer'> C<br>
 解析：(同76题)设置xml错误页面<br>
 &lt;error-page&gt;<br>
 &lt;error-code&gt;..&lt;/error-code&gt;(或者&lt;exception-type&gt;)<br>
 &lt;location&gt;..&lt;/location&gt;<br>
 &lt;/error-page&gt;<br>
 <br>
+</span>
 <span id="q193">Q: 193</span> Given a portion of a valid Java EE web application's directory structure:<br>
 MyApp<br>
 |<br>
@@ -5661,9 +5856,10 @@ D.Only File3.html is directly accessible.<br>
 E.Only File1.html and File2.html are directly accessible.<br>
 F.Only File1.html and File3.html are directly accessible.<br>
 G.Only File2.html and File3.html are directly accessible.<br>
-Answer:<span class='answer'> B</span><br>
+Answer:<span class='answer'> B<br>
 解析：META-INF和WEB-INF目录默认禁止访问。<br>
 <br>
+</span>
 <span id="q194">Q: 194</span> A web component accesses a local EJB session bean with a component<br>
 interface of com.example.Account with a home interface of com.example.AccountHome and a JNDI<br>
 reference of ejb/Account. Which makes the local EJB component accessible to the web components in the<br>
@@ -5692,13 +5888,14 @@ D. &lt;ejb-remote-ref&gt;<br>
 &nbsp;&nbsp; &lt;local-home&gt;com.example.AccountHome&lt;/local-home&gt;<br>
 &nbsp;&nbsp; &lt;local&gt;com.example.Account&lt;/local&gt;<br>
 &nbsp;&nbsp; &lt;/ejb-remote-ref&gt;<br>
-Answer:<span class='answer'> C</span><br>
+Answer:<span class='answer'> C<br>
 解析：<br>
 &lt;resource-ref&gt;资源引用<br>
 &lt;resource-env-ref&gt;资源环境引用<br>
 &lt;ejb-ref&gt;声明对bean的home接口的引用。<br>
 &lt;ejb-local-ref&gt;声明对bean的本地home接口的引用。<br>
 <br>
+</span>
 <span id="q195">Q: 195</span> One of the use cases in your web application uses many session-scoped<br>
 attributes. At the end of the use case, you want to clear out this set of attributes from the session object.<br>
 Assume that this static variable holds this set of attribute names:<br>
@@ -5721,9 +5918,10 @@ D. for ( String attr : USE_CASE_ATTRS ) {<br>
 &nbsp;&nbsp;&nbsp; session.deleteAttribute(attr);<br>
 }<br>
 E. session.deleteAllAttributes(USE_CASE_ATTRS);<br>
-Answer:<span class='answer'> C</span><br>
+Answer:<span class='answer'> C<br>
 解析：HttpSession删除属性方法removeAttribute();<br>
 <br>
+</span>
 <span id="q196">Q: 196</span> Given an HttpServletRequest request:<br>
 22. String id = request.getParameter(&quot;jsessionid&quot;);<br>
 23. // insert code here<br>
@@ -5734,10 +5932,11 @@ B.HttpSession session = request.getSession(id);<br>
 C.HttpSession session = request.getSession(true);<br>
 D.HttpSession session = request.getSession(false);<br>
 E.HttpSession session = request.getSession(&quot;jsessionid&quot;);<br>
-Answer:<span class='answer'> A, C, D</span><br>
+Answer:<span class='answer'> A, C, D<br>
 解析：HttpServletRequest获取HttpSession的方法有：<br>
 getSession(),getSession(boolean create)a<br>
 <br>
+</span>
 <span id="q197">Q: 197</span> A developer for the company web site has been told that users may turn off<br>
 cookie support in their browsers. What must the developer do to ensure that these customers can still use<br>
 the web application?<br>
@@ -5748,9 +5947,10 @@ C. The developer can ignore this issue. Web containers are required to support a
 cookies are not supported.<br>
 D. The developer must add the string ?id=&lt;sessionid&gt; to the end of every URL to ensure that the conversation<br>
 with the browser can continue.<br>
-Answer:<span class='answer'> A</span><br>
+Answer:<span class='answer'> A<br>
 解析：(同22题)禁用cookie后，能使用URL重写传送参数<br>
 <br>
+</span>
 <span id="q198">Q: 198</span> You need to store a floating point number, called Tsquare, in the session<br>
 scope. Which two code snippets allow you to retrieve this value? (Choose two.)<br>
 A.float Tsquare = session.getFloatAttribute(&quot;Tsquare&quot;);<br>
@@ -5759,9 +5959,10 @@ C.float Tsquare = (float) session.getNumericAttribute(&quot;Tsquare&quot;);<br>
 D.float Tsquare = ((Float) session.getAttribute.(&quot;Tsquare&quot;)).floatValue();<br>
 E.float Tsquare = ((Float) session.getFloatAttribute.(&quot;Tsquare&quot;)).floatValue;<br>
 F.float Tsquare = ((Float) session.getNumericAttribute.(&quot;Tsquare&quot;)).floatValue;<br>
-Answer:<span class='answer'> B, D</span><br>
+Answer:<span class='answer'> B, D<br>
 解析：session.getAttribute获取session中的参数。<br>
 <br>
+</span>
 <span id="q199">Q: 199</span> Given the definition of MyObject and that an instance of MyObject is<br>
 bound as a session attribute:<br>
 8. package com.example;<br>
@@ -5776,9 +5977,10 @@ C. The com.example.MyObject must be declared as a servlet event listener in the 
 descriptor.<br>
 D. The valueUnbound method of the MyObject instance is called when the session to which it is bound times<br>
 out.<br>
-Answer:<span class='answer'> D</span><br>
+Answer:<span class='answer'> D<br>
 解析：HttpSessionBindingListener有两个方法：valueBound()和valueUnbound()<br>
 <br>
+</span>
 <span id="q200">Q: 200</span> As a convenience feature, your web pages include an Ajax request every<br>
 five minutes to a special servlet that monitors the age of the user's session. The client-side JavaScript that<br>
 handles the Ajax callback displays a message on the screen as the session ages. The Ajax call does NOT<br>
@@ -5801,22 +6003,24 @@ C.session.getLastAccessedTime().getTime() - session.getCreationTime().getTime();
 D.session.getLastAccessed() - session.getCreationTime();<br>
 E.session.getMaxInactiveInterval() - session.getCreationTime();<br>
 F.session.getLastAccessedTime() - session.getCreationTime();<br>
-Answer:<span class='answer'> F</span><br>
+Answer:<span class='answer'> F<br>
 解析：(同24题)最后访问时间-创建时间(不用再getTime)<br>
    
 
-<p><span id="q201">Q: 201</span> Which statement is true about web container session management?<br>
+</span>
+<span id="q201">Q: 201</span> Which statement is true about web container session management?<br>
 A. Access to session-scoped attributes is guaranteed to be thread-safe by the web container.<br>
 B. To activate URL rewriting, the developer must use the HttpServletResponse.setURLRewriting method.<br>
 C. If the web application uses HTTPS, then the web container may use the data on the HTTPS request stream<br>
 to identify the client.<br>
 D. The JSESSIONID cookie is stored permanently on the client so that a user may return to the web<br>
 application and the web container will rejoin that session.<br>
-Answer:<span class='answer'> C</span><br>
+Answer:<span class='answer'> C<br>
 解析：(同25题)<br>
 B.URL重写用HttpServletResponse.encodeURL(或encodeRedirectURL)<br>
 D.JSESSIONID是禁用cookie时，URL重写产生的<br>
 <br>
+</span>
 <span id="q202">Q: 202</span> You are designing an n-tier Java EE application. You have already<br>
 decided that some of your JSPs will need to get data from a Customer entity bean. You are trying to<br>
 decide whether to use a Customer stub object or a Transfer Object. Which two statements are true?<br>
@@ -5827,11 +6031,12 @@ C.The stub will increase the logic necessary in the JSPs.<br>
 D.In both cases, the JSPs can use EL expressions to get data.<br>
 E.Only the Transfer Object will need to use a Business Delegate.<br>
 F.Using the stub approach allows you to design the application without using a Service Locator.<br>
-Answer:<span class='answer'> A, D</span><br>
+Answer:<span class='answer'> A, D<br>
 解析：(同127题)<br>
 A.传输对象减少颗粒度，但会增加网络压力。<br>
 D.JSP能使用EL表达式获取数据。<br>
 <br>
+</span>
 <span id="q203">Q: 203</span> Which two are characteristics of the Intercepting Filter pattern? (Choose<br>
 two.)<br>
 A.It provides centralized request handling for incoming requests.<br>
@@ -5839,11 +6044,12 @@ B.It forces resource authentication to be distributed across web components.<br>
 C.It reduces coupling between presentation-tier clients and underlying business services.<br>
 D.It can be added and removed unobtrusively, without requiring changes to existing code.<br>
 E.It allows preprocessing and postprocessing on the incoming requests and outgoing responses.<br>
-Answer:<span class='answer'> D, E</span><br>
+Answer:<span class='answer'> D, E<br>
 解析:<br>
 D.拦截器提供抽插式的组件<br>
 E.拦截器能在请求之前或之后处理数据<br>
 <br>
+</span>
 <span id="q204">Q: 204</span> A developer has created a web application that includes a servlet for each<br>
 use case in the application. These servlets have become rather difficult to maintain because the request<br>
 processing methods have become very large. There is also common processing code in many servlets<br>
@@ -5855,10 +6061,11 @@ C. Front Controller<br>
 D. Session Facade<br>
 E. Business Delegate<br>
 F. Model-View-Controller<br>
-Answer:<span class='answer'> C, F</span><br>
+Answer:<span class='answer'> C, F<br>
 C.Front Controller(前端控制器)统一处理所有请求。<br>
 F.mvc模式减少耦合和重复代码<br>
 <br>
+</span>
 <span id="q205">Q: 205</span> A developer is designing a multi-tier web application and discovers a need<br>
 to hide the details of establishing and maintaining remote communications from the client. In addition,<br>
 the application needs to find, in a transparent manner, the heterogeneous business components used to<br>
@@ -5868,11 +6075,12 @@ B.Business Delegate and Service Locator<br>
 C.Front Controller and Business Delegate<br>
 D.Intercepting Filter and Transfer Object<br>
 E.Model-View-Controller and Intercepting Filter<br>
-Answer:<span class='answer'> B</span><br>
+Answer:<span class='answer'> B<br>
 解析：<br>
 Business Delegate(业务代理)减少表示层和逻辑层的耦合，实现对业务逻辑的透明调用。<br>
 Service Locator(服务器定位)使用统一的服务访问，隐藏详细操作。<br>
 <br>
+</span>
 <span id="q206">Q: 206</span> A developer is designing a web application that must support multiple<br>
 interfaces, including:<br>
 an XML web service for B2B<br>
@@ -5884,9 +6092,10 @@ B.Business Delegate<br>
 C.Data Access Object<br>
 D.Model-View-Controller<br>
 E.Chain of Responsibility<br>
-Answer:<span class='answer'> D</span><br>
+Answer:<span class='answer'> D<br>
 解析：mvc模式使数据和页面分离，使相同的数据能对应不同的页面<br>
 <br>
+</span>
 <span id="q207">Q: 207</span> A developer is designing a web application which extensively uses EJBs<br>
 and JMS. The developer finds that there is a lot of duplicated code to build the JNDI contexts to access<br>
 the beans and queues. Further, because of the complexity, there are numerous errors in the code. Which<br>
@@ -5897,9 +6106,10 @@ C.Service Locator<br>
 D.Session Facade<br>
 E.Business Delegate<br>
 F.Data Access Object<br>
-Answer:<span class='answer'> C</span><br>
+Answer:<span class='answer'> C<br>
 解析：Service Locator(服务器定位)，提供统一的服务器访问方法，减少重复代码。<br>
 <br>
+</span>
 <span id="q208">Q: 208</span> A developer is designing a web application that must support multiple<br>
 interfaces, including:<br>
 an XML web service for B2B<br>
@@ -5911,9 +6121,10 @@ B.Business Delegate<br>
 C.Data Access Object<br>
 D.Model-View-Controller<br>
 E.Chain of Responsibility<br>
-Answer:<span class='answer'> D</span><br>
+Answer:<span class='answer'> D<br>
 解析:(同206)mvc支持不同的页面使用相同的数据<br>
 <br>
+</span>
 <span id="q209">Q: 209</span> Which two are characteristics of the Front Controller pattern? (Choose<br>
 two.)<br>
 A.It simplifies remote interfaces to distributed objects.<br>
@@ -5921,11 +6132,12 @@ B.It promotes cleaner application partitioning and encourages reuse.<br>
 C.It provides an initial point of contact for handling all related requests.<br>
 D.It reduces maintainability due to the increased complexity of the design.<br>
 E.It provides loosely coupled handlers that can be combined in various permutations.<br>
-Answer:<span class='answer'> B, C</span><br>
+Answer:<span class='answer'> B, C<br>
 解析：<br>
 B.前端控制使程序结构更清晰和增加重用性.<br>
 C.提供一个联系的中心处理所以请求关系。<br>
 <br>
+</span>
 <span id="q210">Q: 210</span> Squeaky Beans Inc. hired an outside consultant to develop their web<br>
 application. To finish the job quickly, the consultant created several dozen JSP pages that directly<br>
 communicate with the database. The Squeaky business team has since purchased a set of business objects<br>
@@ -5936,10 +6148,11 @@ A.Transfer Object<br>
 B.Service Locator<br>
 C.Intercepting Filter<br>
 D.Business Delegate<br>
-Answer:<span class='answer'> D</span><br>
+Answer:<span class='answer'> D<br>
 解析：Business Delegate增加代理层访问数据（使新页面能用于原理的逻辑控制）。<br>
 <br>
 <br>
+</span>
 <span id="q211">Q: 211</span> A developer is designing the presentation tier for a web application that<br>
 relies on a complex session bean. The session bean is still being developed and the APIs for it are NOT<br>
 finalized. Any changes to the session bean API directly impacts the development of the presentation tier.<br>
@@ -5950,9 +6163,10 @@ C.Composite View<br>
 D.Intercepting Filter<br>
 E.Business Delegate<br>
 F.Chain of Responsibility<br>
-Answer:<span class='answer'> E</span><br>
+Answer:<span class='answer'> E<br>
 解析：Business Delegate业务代理能适应不同层之间的变化。<br>
 <br>
+</span>
 <span id="q212">Q: 212</span> A developer is designing a multi-tier web application and discovers a need<br>
 to log each incoming client request. Which two patterns, taken independently, provide a solution for this<br>
 problem? (Choose two.)<br>
@@ -5962,9 +6176,10 @@ C.Front Controller<br>
 D.Intercepting Filter<br>
 E.Business Delegate<br>
 F.Model-View-Controller<br>
-Answer:<span class='answer'> C, D</span><br>
+Answer:<span class='answer'> C, D<br>
 解析：前端控制加拦截过滤记录每一个客户端的请求。<br>
 <br>
+</span>
 <span id="q213">Q: 213</span> A developer is designing a multi-tier web application and discovers a need<br>
 to hide the details of establishing and maintaining remote communications from the client. In addition,<br>
 because the business and resource tiers are distributed, the application needs to minimize the inter-tier<br>
@@ -5975,16 +6190,18 @@ B.Front Controller and Service Locator<br>
 C.Business Delegate and Transfer Object<br>
 D.Business Delegate and Intercepting Filter<br>
 E.Model-View-Controller and Intercepting Filter<br>
-Answer:<span class='answer'> C</span><br>
+Answer:<span class='answer'> C<br>
 解析：Business Delegate隐藏访问细节,Transfer Object减少传输颗粒度提高网络质量。<br>
 <br>
+</span>
 <span id="q214">Q: 214</span> Click the Task button.<br>
 Place the servlet name onto every request URL, relative to the web application context root, that will<br>
 invoke that servlet. Every request URL must be filled.<br>
-Answer:<span class='answer'> Check ExamWorx eEngine, Download from Member Center</span></p>
-<p><img src="0_1306817734bz19.gif" alt=""><img src="0_1306817742pJ2R.gif" alt=""><br>
+Answer:<span class='answer'> Check ExamWorx eEngine, Download from Member Center<br />
+<img src="0_1306817734bz19.gif" alt=""><img src="0_1306817742pJ2R.gif" alt=""><br>
 解析：请求/data/*返回DataServlet,请求*.do返回ControServlet<br>
 <br>
+</span>
 <span id="q215">Q: 215</span> Given a portion of a valid Java EE web application's directory structure:<br>
 MyApp<br>
 |<br>
@@ -6004,9 +6221,10 @@ D.Only File3.html is directly accessible.<br>
 E.Only File1.html and File2.html are directly accessible.<br>
 F.Only File1.html and File3.html are directly accessible.<br>
 G.Only File2.html and File3.html are directly accessible.<br>
-Answer:<span class='answer'> E</span><br>
+Answer:<span class='answer'> E<br>
 解析：META-INF和WEB-INF目录默认禁止访问<br>
 <br>
+</span>
 <span id="q216">Q: 216</span> Which three are described in the standard web application deployment<br>
 descriptor? (Choose three.)<br>
 A.session configuration<br>
@@ -6015,9 +6233,10 @@ C.context root for the application<br>
 D.servlet instance pool configuration<br>
 E.web container default port bindings<br>
 F.ServletContext initialization parameters<br>
-Answer:<span class='answer'> A, B, F</span><br>
+Answer:<span class='answer'> A, B, F<br>
 解析：(同82)C.上下文路径，D.servlet初始化实例池，E.容器默认端口都不是web程序部署的内容。<br>
 <br>
+</span>
 <span id="q217">Q: 217</span> You have created a servlet that generates weather maps. The data for these<br>
 maps is calculated by a remote host. The IP address of this host is usually stable, but occasionally does<br>
 have to change as the corporate network grows and changes. This IP address used to be hard coded, but<br>
@@ -6045,7 +6264,7 @@ E. &lt;serlvet-param&gt;<br>
 &lt;param-name&gt;WeatherServlet.hostIP&lt;/param-name&gt;<br>
 &lt;param-value&gt;127.0.4.20&lt;/param-value&gt;<br>
 &lt;/servlet-param&gt;<br>
-Answer:<span class='answer'> D</span><br>
+Answer:<span class='answer'> D<br>
 解析：<br>
 application范围内的参数：<br>
 &lt;context-param&gt;<br>
@@ -6058,27 +6277,30 @@ servlet范围内参数：<br>
 &lt;param-value&gt;&lt;/param-value&gt;<br>
 &lt;/init-param&gt;<br>
 <br>
+</span>
 <span id="q218">Q: 218</span> In which two locations can library dependencies be defined for a web<br>
 application? (Choose two.)<br>
 A.the web application deployment descriptor<br>
 B.the /META-INF/dependencies.xml file<br>
 C.the /META-INF/MANIFEST.MF manifest file<br>
 D.the /META-INF/MANIFEST.MF manifest of a JAR in the web application classpath<br>
-Answer:<span class='answer'> C, D</span><br>
+Answer:<span class='answer'> C, D<br>
 解析：声明库依赖:在/META-INF/MANIFEST.MF文件中描述，或者导入jar包<br>
 <br>
+</span>
 <span id="q219">Q: 219</span> Which two about WAR files are true? (Choose two.)<br>
 A.WAR files must be located in the web application library directory.<br>
 B.WAR files must contain the web application deployment descriptor.<br>
 C.WAR files must be created by using archive tools designed specifically for that purpose.<br>
 D.The web container must serve the content of any META-INF directory located in a WAR file.<br>
 E.The web container must allow access to resources in JARs in the web application library directory.<br>
-Answer:<span class='answer'> B, E</span><br>
+Answer:<span class='answer'> B, E<br>
 解析：(同47)<br>
 B.WAR文件必须包含web应用程序的部署文件。<br>
 D.WAR中的META-INF文件夹存放一些配置文件。<br>
 E.web容器能访问库文件夹内jar文件中的资源。<br>
 <br>
+</span>
 <span id="q220">Q: 220</span> Given this fragment from a Java EE deployment descriptor:<br>
 341.&lt;error-page&gt;<br>
 342.&lt;exception-type&gt;java.lang.Throwable&lt;/exception-type&gt;<br>
@@ -6094,9 +6316,10 @@ A.The deployment descriptor is invalid.<br>
 B.The container invokes mainError.jsp.<br>
 C.The container invokes castError.jsp.<br>
 D.Neither mainError.jsp nor castError.jsp is invoked.<br>
-Answer:<span class='answer'> C</span><br>
+Answer:<span class='answer'> C<br>
 解析：ClassCastException异常返回castError.jsp页面<br>
 <br>
+</span>
 <span id="q221">Q: 221</span> Which defines the welcome files in a web application deployment<br>
 descriptor?<br>
 A. &lt;welcome&gt;<br>
@@ -6129,9 +6352,10 @@ E. &lt;welcome&gt;<br>
 &lt;location&gt;index.html&lt;/location&gt;<br>
 &lt;/welcome-file&gt;<br>
 &lt;/welcome&gt;<br>
-Answer:<span class='answer'> B</span><br>
+Answer:<span class='answer'> B<br>
 解析：B.设置欢迎页面，D也不会错，但是默认生成的是不带'/'<br>
 <br>
+</span>
 <span id="q222">Q: 222</span> Click the Exhibit button.<br>
 Assume the product attribute does NOT yet exist in any scope.<br>
 Which two create an instance of com.example.Product and initialize the name and price properties to the<br>
@@ -6173,12 +6397,13 @@ D. &lt;jsp:useBean id=&quot;product&quot; class=&quot;com.example.Product&quot;&
 &nbsp;&nbsp; &lt;jsp:setProperty name=&quot;product&quot; property=&quot;name&quot;value=&quot;${name}&quot; /&gt;<br>
 &nbsp;&nbsp; &lt;jsp:setProperty name=&quot;product&quot; property=&quot;price&quot;value=&quot;${price}&quot; /&gt;<br>
 &nbsp;&nbsp; &lt;/jsp:useBean&gt;<br>
-Answer:<span class='answer'> A, C</span><br>
+Answer:<span class='answer'> A, C<br>
 解析：<br>
 A.property=&quot;*&quot;表示所有名字和bean名字匹配的请教参数都会传递给相应的get方法。<br>
 B.scriptlet不能设置bean的属性。<br>
 C.EL表达式获取传递参数：${param.name}<br>
 <br>
+</span>
 <span id="q223">Q: 223</span> Click the Exhibit button.<br>
 A session-scoped attribute, product, is stored by a servlet. That servlet then forwards to a JSP page. This<br>
 attribute holds an instance of the com.example.Product class with a name property of &quot;The Matrix&quot; and<br>
@@ -6219,9 +6444,10 @@ C.Default costs 39.95<br>
 D.The Matrix costs 0.0<br>
 E.The Matrix costs 49.95<br>
 F.The Matrix costs 39.95<br>
-Answer:<span class='answer'> B</span><br>
+Answer:<span class='answer'> B<br>
 解析：jsp:useBean指定id和scope能找已存在的实例，因为scope默认是page所以E不对。<br>
 <br>
+</span>
 <span id="q224">Q: 224</span> Click the Exhibit button.<br>
 A servlet sets a session-scoped attribute product with an instance of com.example.Product and forwards<br>
 to a JSP.<br>
@@ -6258,9 +6484,10 @@ D. &lt;jsp:getProperty name=&quot;product&quot; class=&quot;com.example.Product&
 E. &lt;jsp:useBean id=&quot;product&quot; type=&quot;com.example.Product&quot;&gt;<br>
 &nbsp;&nbsp; &lt;%= product.getName() %&gt;<br>
 &nbsp;&nbsp; &lt;/jsp:useBean&gt;<br>
-Answer:<span class='answer'> A, B</span><br>
+Answer:<span class='answer'> A, B<br>
 解析：只问怎么输出bean的&#20540;，C、E没指定scope，Djsp:getProperty没有class属性<br>
 <br>
+</span>
 <span id="q225">Q: 225</span> You have built your own light-weight templating mechanism. Your<br>
 servlets, which handle each request, dispatch the request to one of a small set of template JSP pages. Each<br>
 template JSP controls the layout of the view by inserting the header, body, and footer elements into<br>
@@ -6274,11 +6501,12 @@ C.&lt;jsp:include page='${bodyURL}' /&gt;<br>
 D.&lt;jsp:include file='${bodyURL}' /&gt;<br>
 E.&lt;jsp:insert page='&lt;%= bodyURL %&gt;' /&gt;<br>
 F.&lt;jsp:include page='&lt;%= bodyURL %&gt;' /&gt;<br>
-Answer:<span class='answer'> C</span><br>
+Answer:<span class='answer'> C<br>
 解析：<br>
 &lt;jsp:include&nbsp; page=“ “/&gt;动作是在请求时，装入该page所指页面。<br>
 &lt;%@ include file=“ ”%&gt;转译时与该页面一起翻译成java代码；<br>
 <br>
+</span>
 <span id="q226">Q: 226</span> Given:<br>
 3. public class MyTagHandler extends TagSupport {<br>
 4. public int doStartTag() {<br>
@@ -6298,9 +6526,10 @@ D. HttpSession s = pageContext.getSession();<br>
 &nbsp;&nbsp; Object o = s.getAttribute(&quot;foo&quot;);<br>
 E. HttpServletRequest r = pageContext.getRequest();<br>
 &nbsp;&nbsp; Object o = r.getAttribute(&quot;foo&quot;);<br>
-Answer:<span class='answer'> B, C, D</span><br>
+Answer:<span class='answer'> B, C, D<br>
 解析：findAttribute能在所以范围中查找属性，pageContext为上下文，getSession恩能从上下文中获取会话<br>
 <br>
+</span>
 <span id="q227">Q: 227</span> You are creating a content management system (CMS) with a web<br>
 application front-end. The JSP that displays a given document in the CMS has the following general<br>
 structure:<br>
@@ -6332,10 +6561,11 @@ D. public void doStartTag() {<br>
 &nbsp;&nbsp; Tag docTag = findAncestor(this, DocumentTag.class);<br>
 &nbsp;&nbsp; ((DocumentTag)docTag).addCitation(this.docID);<br>
 }<br>
-Answer:<span class='answer'> A</span><br>
+Answer:<span class='answer'> A<br>
 解析：SimpleTag只有doTag()方法,BodyTag才有doStartTag()方法。<br>
 findAncestor递归查找tag标签.<br>
 <br>
+</span>
 <span id="q228">Q: 228</span> Given:<br>
 6. &lt;myTag:foo bar='42'&gt;<br>
 7. &lt;%=&quot;processing&quot; %&gt;<br>
@@ -6347,7 +6577,7 @@ B.The doAfterBody method is NOT called.<br>
 C.The EVAL_PAGE constant is a valid return value for the doEndTag method.<br>
 D.The SKIP_PAGE constant is a valid return value for the doStartTag method.<br>
 E.The EVAL_BODY_BUFFERED constant is a valid return value for the doStartTag method.<br>
-Answer:<span class='answer'> A, C</span><br>
+Answer:<span class='answer'> A, C<br>
 解析：继承TagSupport类：<br>
 A.doStartTag方法会被第一个调用<br>
 B.doAfterBody处理标签体。<br>
@@ -6355,6 +6585,7 @@ C.EVAL_PAGE继续处理页面，由doEndTag返回<br>
 D.SKIP_PAGE停止处理页面，有doEndTag返回<br>
 E.BodyTag的doStartTag方法才能返回EVAL_BODY_BUFFERED<br>
 <br>
+</span>
 <span id="q229">Q: 229</span> Which two are true concerning the objects available to developers creating<br>
 tag files? (Choose two.)<br>
 A.The session object must be declared explicitly.<br>
@@ -6362,11 +6593,12 @@ B.The request and response objects are available implicitly.<br>
 C.The output stream is available through the implicit outStream object.<br>
 D.The servlet context is available through the implicit servletContext object.<br>
 E.The JspContext for the tag file is available through the implicit jspContext object.<br>
-Answer:<span class='answer'> B, E</span><br>
+Answer:<span class='answer'> B, E<br>
 解析：<br>
 tag file中的out.config.request.response.session.application能够隐式调用。<br>
 E.tag file中的JspContext编译时会转为jspContext对象<br>
 <br>
+</span>
 <span id="q230">Q: 230</span> You web application uses a lot of Java enumerated types in the domain<br>
 model of the application. Built into each enum type is a method, getDisplay(), which returns a localized,<br>
 user-oriented string. There are many uses for presenting enums within the web application, so your<br>
@@ -6412,10 +6644,11 @@ try {<br>
 &nbsp;&nbsp;&nbsp; }<br>
 &nbsp;&nbsp;&nbsp; } (Exception e) { throw new JspException(e); }<br>
 }<br>
-Answer:<span class='answer'> B</span><br>
+Answer:<span class='answer'> B<br>
 解析：SimpleTag的doTag()可以设置标签体使用的一个属性，要先调用getJspContext().setAttribute(),再调用getJspBody().invoke()<br>
 invoke(null)输出的结果不被缓存。<br>
 <br>
+</span>
 <span id="q231">Q: 231</span> Which two statements are true about the security-related tags in a valid<br>
 Java EE deployment descriptor? (Choose two.)<br>
 A. Every &lt;security-constraint&gt; tag must have at least one &lt;http-method&gt; tag.<br>
@@ -6424,7 +6657,7 @@ C. A given &lt;auth-constraint&gt; tag can apply to only one &lt;web-resource-co
 D. A given &lt;web-resource-collection&gt; tag can contain from zero to many &lt;url-pattern&gt; tags.<br>
 E. It is possible to construct a valid &lt;security-constraint&gt; tag such that, for a given resource, no user roles can<br>
 access that resource.<br>
-Answer:<span class='answer'> B, E</span><br>
+Answer:<span class='answer'> B, E<br>
 解析：<br>
 A.&lt;security-constraint&gt;的子标签&lt;http-method&gt;是可选的，如果没有该标签表示禁止所以HTTP方法。<br>
 B.&lt;security-constraint&gt;标签体内能有多个&lt;web-resource-collection&gt;标签。<br>
@@ -6438,6 +6671,7 @@ E.可以有没有角色能访问的资源。<br>
 　　&lt;!-- ... --&gt;<br>
 &lt;/security-constraint&gt;<br>
 <br>
+</span>
 <span id="q232">Q: 232</span> Which element of a web application deployment descriptor<br>
 &lt;security-constraint&gt; element is required?<br>
 A.&lt;realm-name&gt;<br>
@@ -6445,9 +6679,10 @@ B.&lt;auth-method&gt;<br>
 C.&lt;security-role&gt;<br>
 D.&lt;transport-guarantee&gt;<br>
 E.&lt;web-resource-collection&gt;<br>
-Answer:<span class='answer'> E</span><br>
+Answer:<span class='answer'> E<br>
 解析：&lt;security-constraint&gt;必须有资源列表<br>
 <br>
+</span>
 <span id="q233">Q: 233</span> Which two are required elements for the &lt;web-resource-collection&gt;<br>
 element of a web application deployment descriptor? (Choose two.)<br>
 A.&lt;realm-name&gt;<br>
@@ -6455,9 +6690,10 @@ B.&lt;url-pattern&gt;<br>
 C.&lt;description&gt;<br>
 D.&lt;web-resource-name&gt;<br>
 E.&lt;transport-guarantee&gt;<br>
-Answer:<span class='answer'> B, D</span><br>
+Answer:<span class='answer'> B, D<br>
 解析：&lt;web-resource-colection&gt;必须有&lt;web-resource-name&gt;和&lt;url-pattern&gt;,可选&lt;description&gt;和&lt;http-method&gt;<br>
 <br>
+</span>
 <span id="q234">Q: 234</span> Given:<br>
 3. class MyServlet extends HttpServlet {<br>
 4. public void doPut(HttpServletRequest req,HttpServletResponse resp)throws ServletException, IOException {<br>
@@ -6477,9 +6713,10 @@ C.A user whose role is Admin can perform a POST.<br>
 D.A user whose role is Member can perform a PUT.<br>
 E.A user whose role is Member can perform a POST.<br>
 F.A user whose role is Member can perform a GET.<br>
-Answer:<span class='answer'> A, B, C, E</span><br>
+Answer:<span class='answer'> A, B, C, E<br>
 解析：(同36)只有Admin用户有GET、PUT方法的访问权。<br>
 <br>
+</span>
 <span id="q235">Q: 235</span> What is true about Java EE authentication mechanisms?<br>
 A. If your deployment descriptor correctly declares an authentication type of CLIENT_CERT, your users must<br>
 have a certificate from an official source before they can use your application.<br>
@@ -6489,13 +6726,14 @@ C. If you want your web application to support the widest possible array of brow
 authentication, the best choice of Java EE authentication mechanisms is DIGEST.<br>
 D. To use Java EE FORM authentication, you must declare two HTML files in your deployment descriptor,<br>
 and you must use a predefined action in the HTML file that handles your user's login.<br>
-Answer:<span class='answer'> D</span><br>
+Answer:<span class='answer'> D<br>
 解析：(同37)<br>
 BASIC：HTTP规范<br>
 DIGEST：HTTP规范，数据完整性强一些，但不算SSL<br>
 FORM：J2EE规范，数据完整性非常弱，没有加密，允许有登录界面。<br>
 CLIENT-CERT：J2EE规范，数据完整性很强，公共钥匙<br>
 <br>
+</span>
 <span id="q236">Q: 236</span> Which two statements are true about using the isUserInRole method to<br>
 implement security in a Java EE application? (Choose two.)<br>
 A. It can be invoked only from the doGet or doPost methods.<br>
@@ -6505,11 +6743,12 @@ D. Using the isUserInRole method overrides any declarative authentication relate
 invoked.<br>
 E. Using the isUserInRole method overrides any declarative authorization related to the method in which it is<br>
 invoked.<br>
-Answer:<span class='answer'> B, C</span><br>
+Answer:<span class='answer'> B, C<br>
 解析：<br>
 B.isUserInRole能单独用于getRemoteUser方法中<br>
 C.如果角色没有定义，isUserInRole返回trus<br>
 <br>
+</span>
 <span id="q237">Q: 237</span> Given an HttpServletRequest request and an HttpServletResponse<br>
 response:<br>
 41. HttpSession session = null;<br>
@@ -6525,11 +6764,12 @@ B.session = request.getSession();<br>
 C.session = request.getSession(true);<br>
 D.session = request.getSession(false);<br>
 E.session = request.getSession(&quot;jsessionid&quot;);<br>
-Answer:<span class='answer'> D</span><br>
+Answer:<span class='answer'> D<br>
 解析：<br>
 C.getSession(true)如果没有该域中没有session就新建一个并返回<br>
 D.getSession(false)如果没有session,返回null<br>
 <br>
+</span>
 <span id="q238">Q: 238</span> You need to store a floating point number, called Tsquare, in the session<br>
 scope. Which two code snippets allow you to retrieve this value? (Choose two.)<br>
 A. float Tsquare = session.getFloatAttribute(&quot;Tsquare&quot;);<br>
@@ -6538,9 +6778,10 @@ C. float Tsquare = (float) session.getNumericAttribute(&quot;Tsquare&quot;);<br>
 D. float Tsquare = ((Float) session.getAttribute.(&quot;Tsquare&quot;)).floatValue();<br>
 E. float Tsquare = ((Float) session.getFloatAttribute.(&quot;Tsquare&quot;)).floatValue;<br>
 F. float Tsquare = ((Float) session.getNumericAttribute.(&quot;Tsquare&quot;)).floatValue;<br>
-Answer:<span class='answer'> B, D</span><br>
+Answer:<span class='answer'> B, D<br>
 解析：从session中获取参数getAttribute,其它选项都不对。<br>
 <br>
+</span>
 <span id="q239">Q: 239</span> A web application uses the HttpSession mechanism to determine if a user<br>
 is &quot;logged in.&quot; When a user supplies a valid user name and password, an HttpSession is created for that<br>
 user.<br>
@@ -6552,38 +6793,42 @@ A.getCreationTime<br>
 B.invalidateAfter<br>
 C.getLastAccessedTime<br>
 D.getMaxInactiveInterval<br>
-Answer:<span class='answer'> A</span><br>
+Answer:<span class='answer'> A<br>
 解析：<br>
 A.getCreationTime获得session创建时间，比较当前时间就可以知道会话产生时间。<br>
 D.getMaxInactiveInterval获得session存活时间。 <br>
 <br>
+</span>
 <span id="q240">Q: 240</span> Which method must be used to encode a URL passed as an argument to<br>
 HttpServletResponse.sendRedirect when using URL rewriting for session tracking?<br>
 A.ServletResponse.encodeURL<br>
 B.HttpServletResponse.encodeURL<br>
 C.ServletResponse.encodeRedirectURL<br>
 D.HttpServletResponse.encodeRedirectURL<br>
-Answer:<span class='answer'> D</span><br>
+Answer:<span class='answer'> D<br>
 解析：encodeRedirectURL通过sendRedirect方法重定向地址。<br>
 <br>
+</span>
 <span id="q241">Q: 241</span> Which interface must a session attribute implement if it needs to be<br>
 notified when a web container persists a session?<br>
 A. javax.servlet.http.HttpSessionListener<br>
 B. javax.servlet.http.HttpSessionBindingListener<br>
 C. javax.servlet.http.HttpSessionAttributeListener<br>
 D. javax.servlet.http.HttpSessionActivationListener<br>
-Answer:<span class='answer'> D</span><br>
+Answer:<span class='answer'> D<br>
 解析：HttpSessionActivationListener监听session的活动状态。<br>
 <br>
+</span>
 <span id="q242">Q: 242</span> What is the purpose of session management?<br>
 A. To manage the user's login and logout activities.<br>
 B. To store information on the client-side between HTTP requests.<br>
 C. To store information on the server-side between HTTP requests.<br>
 D. To tell the web container to keep the HTTP connection alive so it can make subsequent requests without the<br>
 delay of making the TCP connection.<br>
-Answer:<span class='answer'> C</span><br>
+Answer:<span class='answer'> C<br>
 解析：session会话的一般用途是保存信息在服务器端。<br>
 <br>
+</span>
 <span id="q243">Q: 243</span> You need to store a Java long primitive attribute, called customerOID, into<br>
 the session scope. Which two code snippets allow you to insert this value into the session? (Choose two.)<br>
 A. long customerOID = 47L;<br>
@@ -6598,9 +6843,10 @@ E. long customerOID = 47L;<br>
 &nbsp;&nbsp; session.setLongAttribute(&quot;customerOID&quot;, customerOID);<br>
 F. long customerOID = 47L;<br>
 &nbsp;&nbsp; session.setNumericAttribute(&quot;customerOID&quot;, customerOID);<br>
-Answer:<span class='answer'> A, C</span><br>
+Answer:<span class='answer'> A, C<br>
 解析：设置参数用setAttribute，其它选项的方法都不正确<br>
 <br>
+</span>
 <span id="q244">Q: 244</span> Click the Exhibit button.<br>
 Assuming the tag library in the exhibit is imported with the prefix forum, which custom tag invocation<br>
 produces a translation error in a JSP page?<br>
@@ -6640,14 +6886,15 @@ D. &lt;forum:message from=&quot;My Name&quot; subject=&quot;My Subject&quot;&gt;
 E. &lt;forum:message from=&quot;My Name&quot;subject=&quot;&lt;%= request.getParameter( &quot;subject&quot; ) %&gt;&quot;&gt;<br>
 &nbsp;&nbsp;&nbsp; My message body.<br>
 &nbsp;&nbsp; &lt;/forum:message&gt;<br>
-Answer:<span class='answer'> D</span><br>
-</p>
-<p>解析：(<span style="font-family:宋体">同</span><span style="font-family:Times New Roman">176)</span>题目要求选择产生编译错误的选项。<br>
+Answer:<span class='answer'> D<br>
+<br />
+解析：(<span style="font-family:宋体">同</span><span style="font-family:Times New Roman">176)</span>题目要求选择产生编译错误的选项。<br>
 &lt;body-content&gt;<span style="font-family:宋体">设置可以使用</span><span style="font-family:Times New Roman">scriptless</span>但是不能使用scriptlet<span style="font-family:宋体">，所以</span><span style="font-family:Times New Roman">D</span><span style="font-family:宋体">不正确</span><br>
 &lt;rtexprvalue&gt;<span style="font-family:宋体">设置属性取动态&#20540;还是静态&#20540;，如果</span><span style="font-family:Times New Roman">true</span><span style="font-family:宋体">即</span>可以取动态&#20540;例如EL<span style="font-family:宋体">表达式</span><br>
-</p>
+<br />
 <br>
 <br>
+</span>
 <span id="q245">Q: 245</span> Given in a single JSP page:<br>
 &lt;%@ taglib prefix='java' uri='myTags' %&gt;<br>
 &lt;%@ taglib prefix='JAVA' uri='moreTags' %&gt;<br>
@@ -6657,13 +6904,14 @@ B. The URI 'myTags' must be properly mapped to a TLD file by the web container.<
 C. A translation error occurs because the prefix is considered identical by the web container.<br>
 D. For the tag usage &lt;java:tag1/&gt;, the tag1 must be unique in the union of tag names in 'myTags' and<br>
 'moreTags'.<br>
-Answer:<span class='answer'> A, B</span><br>
+Answer:<span class='answer'> A, B<br>
 解析：<br>
 A.java是保留关键字<br>
 B.uri指定标签库文件<br>
 C.prefix并没有重复<br>
 D.不同标签库中的标签名可以重复。<br>
 <br>
+</span>
 <span id="q246">Q: 246</span> In a JSP-centric shopping cart application, you need to move a client's<br>
 home address of the Customer object into the shipping address of the Order object. The address data is<br>
 stored in a value object class called Address with properties for: street address, city, province, country,<br>
@@ -6680,11 +6928,12 @@ E. &lt;c:set target='${order}' property='shipAddress'&gt;<br>
 F. &lt;c:setProperty name='${order}' property='shipAddress'&gt;<br>
 &nbsp;&nbsp;&nbsp; &lt;jsp:getProperty name='client' property='homeAddress' /&gt;<br>
 &nbsp;&nbsp; &lt;/c:setProperty&gt;<br>
-Answer:<span class='answer'> B, E</span><br>
+Answer:<span class='answer'> B, E<br>
 解析：<br>
 &lt;c:set target=&quot;&quot;&gt;设定bean或者map属性。<br>
 &lt;c:set var=&quot;&quot;&gt;设定变量范围比如：session<br>
 <br>
+</span>
 <span id="q247">Q: 247</span> Given that a scoped attribute cart exists only in a user's session, which two,<br>
 taken independently, ensure the scoped attribute cart no longer exists? (Choose two.)<br>
 A.${cart = null}<br>
@@ -6694,9 +6943,10 @@ D.&lt;c:remove var=&quot;cart&quot; scope=&quot;session&quot; /&gt;<br>
 E.&lt;c:remove scope=&quot;session&quot;&gt;cart&lt;/c:remove&gt;<br>
 F.&lt;c:remove var=&quot;${cart}&quot; scope=&quot;session&quot; /&gt;<br>
 G.&lt;c:remove scope=&quot;session&quot;&gt;${cart}&lt;/c:remove&gt;<br>
-Answer:<span class='answer'> B, D</span><br>
+Answer:<span class='answer'> B, D<br>
 解析：&lt;c:remove var=&quot;&quot; scope=&quot;&quot;&gt;移除范围变量，var指定变量，scope指定范围。<br>
 <br>
+</span>
 <span id="q248">Q: 248</span> In which three directories, relative to a web application's root, may a tag<br>
 library descriptor file reside when deployed directly into a web application? (Choose three.)<br>
 A./WEB-INF<br>
@@ -6705,9 +6955,10 @@ C./WEB-INF/tlds<br>
 D./META-INF/tlds<br>
 E./WEB-INF/resources<br>
 F./META-INF/resources<br>
-Answer:<span class='answer'> A, C, E</span><br>
+Answer:<span class='answer'> A, C, E<br>
 解析：除了/META-INF路径，该路径保存配置信息。<br>
 <br>
+</span>
 <span id="q249">Q: 249</span> You have been contracted to create a web site for a free dating service.<br>
 One feature is the ability for one client to send a message to another client, which is displayed in the latter<br>
 client's private page. Your contract explicitly states that security is a high priority. Therefore, you need to<br>
@@ -6719,9 +6970,10 @@ B.&lt;c:out value='${message}' /&gt;<br>
 C.&lt;c:out value='${message}' escapeXml='true' /&gt;<br>
 D.&lt;c:out eliminateXml='true'&gt;${message}&lt;/c:out&gt;<br>
 E.&lt;c:out value='${message}' eliminateXml='true' /&gt;<br>
-Answer:<span class='answer'> B, C</span><br>
+Answer:<span class='answer'> B, C<br>
 解析：(同175)&lt;c:out&gt;标签有一个escapeXml属性，默认为true，将html标签转为转义字符。<br>
 <br>
+</span>
 <span id="q250">Q: 250</span> A custom tag is defined to take three attributes. Which two correctly<br>
 invoke the tag within a JSP page? (Choose two.)<br>
 A. &lt;prefix:myTag a=&quot;foo&quot; b=&quot;bar&quot; c=&quot;baz&quot; /&gt;<br>
@@ -6741,10 +6993,11 @@ G. &lt;prefix:myTag&gt;<br>
 &nbsp;&nbsp;&nbsp; &lt;jsp:attribute name=&quot;b&quot;&gt;bar&lt;/jsp:attribute&gt;<br>
 &nbsp;&nbsp; &lt;jsp:attribute name=&quot;c&quot;&gt;baz&lt;/jsp:attribute&gt;<br>
 &lt;/prefix:myTag&gt;<br>
-Answer:<span class='answer'> A, G</span><br>
+Answer:<span class='answer'> A, G<br>
 解析：(同173)其它选项attribute属性设置不正确。
    
-<p><span id="q251">Q: 251</span> Which two are true about the JSTL core iteration custom tags? (Choose<br />
+</span>
+<span id="q251">Q: 251</span> Which two are true about the JSTL core iteration custom tags? (Choose<br />
 two.)<br />
 A. It may iterate over arrays, collections, maps, and strings.<br />
 B. The body of the tag may contain EL code, but not scripting code.<br />
@@ -6752,45 +7005,49 @@ C. When looping over collections, a loop status object may be used in the tag bo
 D. It may iterate over a map, but only the key of the mapping may be used in the tag body.<br />
 E. When looping over integers (for example begin='1' end='10'), a loop status object may not be used in the tag<br />
 body.<br />
-Answer:<span class='answer'> A, C</span><br />
+Answer:<span class='answer'> A, C<br />
 解析：JSTL用&lt;c:forEach&gt;递归输出内容<br />
 forEach的配置：&lt;body-content&gt;JSP&lt;/body-content&gt;<br />
 B.标签体可以使用EL和scripting<br />
 D.可以输出key，或者和value一起输出<br />
 E.可以不用标记，而把所有的值一起输出<br />
 <br />
+</span>
 <span id="q252">Q: 252</span> Which two are valid and equivalent? (Choose two.)<br />
 A. &lt;%! int i; %&gt;<br />
 B. &lt;%= int i; %&gt;<br />
 C. &lt;jsp:expr&gt;int i;&lt;/jsp:expr&gt;<br />
 D. &lt;jsp:scriptlet&gt;int i;&lt;/jsp:scriptlet&gt;<br />
 E. &lt;jsp:declaration&gt;int i;&lt;/jsp:declaration&gt;<br />
-Answer:<span class='answer'> A, E</span><br />
+Answer:<span class='answer'> A, E<br />
 解析：<br />
 &lt;%!int i;%&gt;等价于&lt;jsp:declaration&gt;声明变量<br />
 &lt;jsp:expression&gt;用于表达式<br />
 &lt;jsp:scriptlet&gt;用于scriptlet<br />
 &lt;jsp:text&gt;用于嵌入文本<br />
 <br />
+</span>
 <span id="q253">Q: 253</span> The JSP developer wants a comment to be visible in the final output to the<br />
 browser. Which comment style needs to be used in a JSP page?<br />
 A.&lt;!-- this is a comment --&gt;<br />
 B.&lt;% // this is a comment %&gt;<br />
 C.&lt;%-- this is a comment --%&gt;<br />
 D.&lt;% /** this is a comment **/ %&gt;<br />
-Answer:<span class='answer'> A</span><br />
+Answer:<span class='answer'> A<br />
 解析：<br />
 &lt;!--xxx--&gt;html式注解，客户端可见<br />
 &lt;%--xxx--&gt;jsp式注解，客户端不可见<br />
 <br />
+</span>
 <span id="q254">Q: 254</span> Which is a benefit of precompiling a JSP page?<br />
 A.It avoids initialization on the first request.<br />
 B.It provides the ability to debug runtime errors in the application.<br />
 C.It provides better performance on the first request for the JSP page.<br />
 D.It avoids execution of the _jspService method on the first request.<br />
-Answer:<span class='answer'> C</span><br />
+Answer:<span class='answer'> C<br />
 解析：JSP预编译(为Servlet)，使JSP页面加载时，更好表现内容<br />
 <br />
+</span>
 <span id="q255">Q: 255</span> Given tutorial.jsp:<br />
 2. &lt;h1&gt;EL Tutorial&lt;/h1&gt;<br />
 3. &lt;h2&gt;Example 1&lt;/h2&gt;<br />
@@ -6824,12 +7081,13 @@ E. &lt;jsp-config&gt;<br />
 &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;isElIgnored&gt;true&lt;/isElIgnored&gt;<br />
 &nbsp;&nbsp;&nbsp; &lt;/jsp-property-group&gt;<br />
 &nbsp;&nbsp; &lt;/jsp-config&gt;<br />
-Answer:<span class='answer'> D</span><br />
+Answer:<span class='answer'> D<br />
 解析：<br />
 &lt;jsp-property-group&gt;对多个具有相同属性的JSP统一定义<br />
 &lt;url-pattern&gt;设置值所影响的范围<br />
 &lt;el-ignored&gt;若为true表示不支持EL表达式<br />
 <br />
+</span>
 <span id="q256">Q: 256</span> In a JSP-centric web application, you need to create a catalog browsing<br />
 JSP page. The catalog is stored as a List object in the catalog attribute of the webapp's ServletContext<br />
 object. Which scriptlet code snippet gives you access to the catalog object?<br />
@@ -6837,9 +7095,10 @@ A.&lt;% List catalog = config.getAttribute(&quot;catalog&quot;); %&gt;<br />
 B.&lt;% List catalog = context.getAttribute(&quot;catalog&quot;); %&gt;<br />
 C.&lt;% List catalog = application.getAttribute(&quot;catalog&quot;); %&gt;<br />
 D.&lt;% List catalog = servletContext.getAttribute(&quot;catalog&quot;); %&gt;<br />
-Answer:<span class='answer'> C</span><br />
+Answer:<span class='answer'> C<br />
 解析：JSP的application即Servlet的ServletContext。<br />
 <br />
+</span>
 <span id="q257">Q: 257</span> You are building your own layout mechanism by including dynamic<br />
 content for the page's header and footer sections. The footer is always static, but the header generates the<br />
 &lt;title&gt; tag that requires the page name to be specified dynamically when the header is imported. Which<br />
@@ -6856,11 +7115,12 @@ C. &lt;jsp:include page='/WEB-INF/jsp/header.jsp'&gt;<br />
 D. &lt;jsp:import page='/WEB-INF/jsp/header.jsp'&gt;<br />
 &nbsp;&nbsp;&nbsp; &lt;jsp:attribute name='pageName' value='Welcome Page' /&gt;<br />
 &nbsp;&nbsp; &lt;/jsp:import&gt;<br />
-Answer:<span class='answer'> A</span><br />
+Answer:<span class='answer'> A<br />
 解析：<br />
 &lt;jsp:include page=''&gt;动态加载页面<br />
 &lt;jsp:param name='' value=''&gt;设置参数<br />
 <br />
+</span>
 <span id="q258">Q: 258</span> Which ensures that a JSP response is of type &quot;text/plain&quot;?<br />
 A.&lt;%@ page mimeType=&quot;text/plain&quot; %&gt;<br />
 B.&lt;%@ page contentType=&quot;text/plain&quot; %&gt;<br />
@@ -6868,11 +7128,12 @@ C.&lt;%@ page pageEncoding=&quot;text/plain&quot; %&gt;<br />
 D.&lt;%@ page contentEncoding=&quot;text/plain&quot; %&gt;<br />
 E.&lt;% response.setEncoding(&quot;text/plain&quot;); %&gt;<br />
 F.&lt;% response.setMimeType(&quot;text/plain&quot;); %&gt;<br />
-Answer:<span class='answer'> B</span><br />
+Answer:<span class='answer'> B<br />
 解析：<br />
 &lt;%@ page contentType=''%&gt;设置整个页面的编码类型<br />
 &lt;% response.contentType=''%&gt;设置响应的编码<br />
 <br />
+</span>
 <span id="q259">Q: 259</span> Your web application uses a simple architecture in which servlets handle<br />
 requests and then forward to a JSP using a request dispatcher. You need to pass information calculated<br />
 in the servlet to the JSP for view generation. This information must NOT be accessible to any other<br />
@@ -6883,9 +7144,10 @@ B.Add attributes on the request object.<br />
 C.Add parameters to the request object.<br />
 D.Use the pageContext object to add request attributes.<br />
 E.Add parameters to the JSP's URL when generating the request dispatcher.<br />
-Answer:<span class='answer'> B, E</span><br />
+Answer:<span class='answer'> B, E<br />
 解析：只有接收页面才能读取参数属性，可以该属性放在request或者URL路径后面。<br />
 <br />
+</span>
 <span id="q260">Q: 260</span> All of your JSPs need to have a link that permits users to email the web<br />
 master. This web application is licensed to many small businesses, each of which have a different email<br />
 address for the web master. You have decided to use a context parameter that you specify in the<br />
@@ -6899,9 +7161,10 @@ A.&lt;a href='mailto:${contextParam.webmasterEmail}'&gt;contact us&lt;/a&gt;<br 
 B.&lt;a href='mailto:${applicationScope.webmasterEmail}'&gt;contact us&lt;/a&gt;<br />
 C.&lt;a href='mailto:${contextInitParam.webmasterEmail}'&gt;contact us&lt;/a&gt;<br />
 D.&lt;a href='mailto:${initParam.webmasterEmail}'&gt;contact us&lt;/a&gt;<br />
-Answer:<span class='answer'> D</span><br />
+Answer:<span class='answer'> D<br />
 解析：EL获取&lt;context-param&gt;中的属性：${initParam.name}<br />
 <br />
+</span>
 <span id="q261">Q: 261</span> Which three are true about servlet filters? (Choose three.)<br />
 A. A filter must implement the destroy method.<br />
 B. A filter must implement the doFilter method.<br />
@@ -6911,17 +7174,18 @@ E. A filter that is part of a filter chain passes control to the next filter in 
 FilterChain.forward method.<br />
 F. For each &lt;filter&gt; element in the web application deployment descriptor, multiple instances of a filter may be<br />
 created by the web container.<br />
-Answer:<span class='answer'> A, B, C</span><br />
+Answer:<span class='answer'> A, B, C<br />
 解析：<br />
 filter文件必须实现destroy().doFilter().init()<br />
 E.执行下一个过滤器，filterChain.doFilter()<br />
 F.一个filter只有一个实例<br />
 <br />
+</span>
 <span id="q262">Q: 262</span> Click the Task button.<br />
 Place the XML elements in the web application deployment descriptor solution to configure a servlet<br />
 context event listener named com.example.MyListener.<br />
-Answer:<span class='answer'> Check ExamWorx eEngine, Download from Member Center</span></p>
-<p><img src="0_1306817922zKb3.gif" alt="" />
+Answer:<span class='answer'> Check ExamWorx eEngine, Download from Member Center<br />
+<img src="0_1306817922zKb3.gif" alt="" />
 <img src="0_13068179301vn1.gif" alt="" />
 <br />
 解析：监听器格式<br />
@@ -6929,6 +7193,7 @@ Answer:<span class='answer'> Check ExamWorx eEngine, Download from Member Center
 &nbsp; &lt;listener-class&gt;&lt;/listener-class&gt;<br />
 &nbsp;&lt;/listener&gt;<br />
 <br />
+</span>
 <span id="q263">Q: 263</span> Which is true about the web container request processing model?<br />
 A. The init method on a filter is called the first time a servlet mapped to that filter is invoked.<br />
 B. A filter defined for a servlet must always forward control to the next resource in the filter chain.<br />
@@ -6936,9 +7201,10 @@ C. Filters associated with a named servlet are applied in the order they appear 
 deployment descriptor file.<br />
 D. If the init method on a filter throws an UnavailableException, then the container will make no further<br />
 attempt to execute it.<br />
-Answer:<span class='answer'> C</span><br />
+Answer:<span class='answer'> C<br />
 解析：filter按部署文件web.xml中的顺序执行<br />
 <br />
+</span>
 <span id="q264">Q: 264</span> Your IT department is building a lightweight Front Controller servlet that<br />
 invokes an application logic object with the interface:<br />
 public interface ApplicationController {<br />
@@ -6958,11 +7224,12 @@ C. RequestDispatcher view = context.getRequestDispatcher(viewURL);<br />
 &nbsp;&nbsp; view.forward(request, response);<br />
 D. RequestDispatcher view = request.getRequestDispatcher(viewURL);<br />
 &nbsp;&nbsp; view.forward(request, response);<br />
-Answer:<span class='answer'> D</span><br />
+Answer:<span class='answer'> D<br />
 解析：<br />
 HttpServletRequest.getRequestDispatcher(parh)返回地址资源<br />
 RequestDispatcher.forward(r,r)传递到该地址<br />
 <br />
+</span>
 <span id="q265">Q: 265</span> Given that a web application consists of two HttpServlet classes, ServletA<br />
 and ServletB, and the ServletA.service method:<br />
 20. String key = &quot;com.example.data&quot;;<br />
@@ -6984,17 +7251,19 @@ synchronized(session) {<br />
 &nbsp;&nbsp;&nbsp; session.setAttribute(key, &quot;Hello&quot;);<br />
 &nbsp;&nbsp;&nbsp; value = session.getAttribute(key);<br />
 }<br />
-Answer:<span class='answer'> C, E</span><br />
+Answer:<span class='answer'> C, E<br />
 解析：给session加同步锁<br />
 <br />
+</span>
 <span id="q266">Q: 266</span> Which retrieves all cookies sent in a given HttpServletRequest request?<br />
 A.request.getCookies()<br />
 B.request.getAttributes()<br />
 C.request.getSession().getCookies()<br />
 D.request.getSession().getAttributes()<br />
-Answer:<span class='answer'> A</span><br />
+Answer:<span class='answer'> A<br />
 解析：从request中获取所有cookie方法：getCookies()<br />
 <br />
+</span>
 <span id="q267">Q: 267</span> Your company has a corporate policy that prohibits storing a customer's<br />
 credit card number in any corporate database. However, users have complained that they do NOT want<br />
 to re-enter their credit card number for each transaction. Your management has decided to use<br />
@@ -7022,23 +7291,25 @@ E. 10. Cookie c = new Cookie(&quot;creditCard&quot;, usersCard);<br />
 &nbsp;&nbsp; 11. c.setSecure(true);<br />
 &nbsp;&nbsp; 12. c.setAge(10368000);<br />
 &nbsp;&nbsp; 13. response.setCookie(c);<br />
-Answer:<span class='answer'> C</span><br />
+Answer:<span class='answer'> C<br />
 解析：(同63)<br />
 setSecure设置cookie是否通过安全通道传送<br />
 setMagAge设置cookie的生命周期<br />
 addCookie添加cookie<br />
 <br />
+</span>
 <span id="q268">Q: 268</span> Click the Task button.<br />
 Given a servlet mapped to /control, place the correct URI segment returned as a String on the<br />
 corresponding HttpServletRequest method call for the URI: /myapp/control/processorder.<br />
-Answer:<span class='answer'> Check ExamWorx eEngine, Download from Member Center</span></p>
-<p><img src="0_1306817999Cn6P.gif" alt="" />
+Answer:<span class='answer'> Check ExamWorx eEngine, Download from Member Center<br />
+<img src="0_1306817999Cn6P.gif" alt="" />
 <img src="0_13068180358T8o.gif" alt="" />
 <br />
 解析：(同60)<br />
 servlet mapped to /control所以getServletPath为/control<br />
 getContext为/myapp,getPathInfo为/processorder<br />
 <br />
+</span>
 <span id="q269">Q: 269</span> A web browser need NOT always perform a complete request for a<br />
 particular page that it suspects might NOT have changed. The HTTP specification provides a mechanism<br />
 for the browser to retrieve only a partial response from the web server; this response includes<br />
@@ -7050,9 +7321,10 @@ C.SEND<br />
 D.HEAD<br />
 E.TRACE<br />
 F.OPTIONS<br />
-Answer:<span class='answer'> D</span><br />
+Answer:<span class='answer'> D<br />
 解析：HTTP的HEAD方法获取http的头部信息<br />
 <br />
+</span>
 <span id="q270">Q: 270</span> You are creating a servlet that generates stock market graphs. You want to<br />
 provide the web browser with precise information about the amount of data being sent in the response<br />
 stream. Which two HttpServletResponse methods will you use to provide this information? (Choose<br />
@@ -7063,19 +7335,21 @@ C.response.setHeader(&quot;Length&quot;, numberOfBytes);<br />
 D.response.setIntHeader(&quot;Length&quot;, numberOfBytes);<br />
 E.response.setHeader(&quot;Content-Length&quot;, numberOfBytes);<br />
 F.response.setIntHeader(&quot;Content-Length&quot;, numberOfBytes);<br />
-Answer:<span class='answer'> B, F</span><br />
+Answer:<span class='answer'> B, F<br />
 解析：HttpServletResponse设置内容长度<br />
 setContentLength(int len)or setIntHeader(&quot;Content-Length&quot;,int len)<br />
 <br />
+</span>
 <span id="q271">Q: 271</span> Which two prevent a servlet from handling requests? (Choose two.)<br />
 A.The servlet's init method returns a non-zero status.<br />
 B.The servlet's init method throws a ServletException.<br />
 C.The servlet's init method sets the ServletResponse's content length to 0.<br />
 D.The servlet's init method sets the ServletResponse's content type to null.<br />
 E.The servlet's init method does NOT return within a time period defined by the servlet container.<br />
-Answer:<span class='answer'> B, E</span><br />
+Answer:<span class='answer'> B, E<br />
 解析：阻止一个servlet处理请求的方法，在init方法中抛出异常或者init方法不返回内容并设置时间点<br />
 <br />
+</span>
 <span id="q272">Q: 272</span> A web application allows the HTML title banner to be set using a servlet<br />
 context initialization parameter called titleStr. Which two properly set the title in this scenario? (Choose<br />
 two.)<br />
@@ -7086,9 +7360,10 @@ D.&lt;title&gt;${paramValues.titleStr}&lt;/title&gt;<br />
 E.&lt;title&gt;${initParam['titleStr']}&lt;/title&gt;<br />
 F.&lt;title&gt;${servletParams.titleStr}&lt;/title&gt;<br />
 G.&lt;title&gt;${request.get(&quot;titleStr&quot;)}&lt;/title&gt;<br />
-Answer:<span class='answer'> B, E</span><br />
+Answer:<span class='answer'> B, E<br />
 解析：获取&lt;context-param&gt;中的值${initParam.name}或${initParam['name']<br />
 <br />
+</span>
 <span id="q273">Q: 273</span> You are building a dating service web site. Part of the form to submit a<br />
 client's profile is a group of radio buttons for the person's hobbies:<br />
 20. &lt;input type='radio' name='hobbyEnum' value='HIKING'&gt;Hiking &lt;br&gt;<br />
@@ -7104,9 +7379,10 @@ B.${hobbies[paramValues.hobbyEnum[N]]}<br />
 C.${hobbies[paramValues@'hobbyEnum'@N]}<br />
 D.${hobbies.get(paramValues.hobbyEnum[N])}<br />
 E.${hobbies[paramValues.hobbyEnum.get(N)]}<br />
-Answer:<span class='answer'> B</span><br />
+Answer:<span class='answer'> B<br />
 解析：EL的paramValues获取数组的参数。[]访问数组或者链表元素<br />
 <br />
+</span>
 <span id="q274">Q: 274</span> Given a web application in which the request parameter productID<br />
 contains a product identifier. Which two EL expressions evaluate the value of the productID? (Choose<br />
 two.)<br />
@@ -7117,9 +7393,10 @@ D.${params.productID[1]}<br />
 E.${paramValues.productID}<br />
 F.${paramValues.productID[0]}<br />
 G.${pageContext.request.productID}<br />
-Answer:<span class='answer'> B, F</span><br />
+Answer:<span class='answer'> B, F<br />
 解析：EL的param获取单一变量的参数，paramValues获取数组的参数。<br />
 <br />
+</span>
 <span id="q275">Q: 275</span> You are building a web application with a scheduling component. On the<br />
 JSP, you need to show the current date, the date of the previous week, and the date of the next week. To<br />
 help you present this information, you have created the following EL functions in the 'd' namespace:<br />
@@ -7131,9 +7408,10 @@ A.${d:dateString(addWeek(curDate(), -1))}<br />
 B.${d:dateString[addWeek[curDate[], -1]]}<br />
 C.${d:dateString[d:addWeek[d:curDate[], -1]]}<br />
 D.${d:dateString(d:addWeek(d:curDate(), -1))}<br />
-Answer:<span class='answer'> D</span><br />
+Answer:<span class='answer'> D<br />
 解析：上一周d:addWeek(d:curDate(),-1),必须带有命名空间<br />
 <br />
+</span>
 <span id="q276">Q: 276</span> You are building a dating web site. The client's date of birth is collected<br />
 along with lots of other information. The Person class has a derived method, getAge():int, which returns<br />
 the person's age calculated from the date of birth and today's date. In one of your JSPs you need to print<br />
@@ -7145,8 +7423,9 @@ C.${client.age between 25 and 35}<br />
 D.${client.age &lt;= 35 &amp;&amp; client.age &gt;= 25}<br />
 E.${client.age le 35 and client.age ge 25}<br />
 F.${not client.age &gt; 35 &amp;&amp; client.age &lt; 25}<br />
-Answer:<span class='answer'> D, E</span><br />
-解析：le(less than)等于&lt;=,gt(great then)等价&gt;=<br /></p>   
+Answer:<span class='answer'> D, E<br />
+解析：le(less than)等于&lt;=,gt(great then)等价&gt;=<br /><br />   
+</span>
 </div>
 
 <script>
